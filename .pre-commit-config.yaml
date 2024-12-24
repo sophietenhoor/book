@@ -1,0 +1,12 @@
+repos:
+- repo: local
+  hooks:
+  - id: jupytext-sync
+    name: Jupytext sync
+    entry: jupytext --sync --pre-commit-mode
+    require_serial: true
+    language: python
+    files: \.(ipynb|md)$
+    exclude: references\.md
+    additional_dependencies:
+    - jupytext
