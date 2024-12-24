@@ -51,12 +51,12 @@ This differential equation can be solved directly to solve structures.
 
 ## Solving differential equation of one field by hand
 
-This differential equations can be solved by integrating four times:
+This differential equations can be solved by integrating:
 
 - $V(x) = -qx + \bar C_{1}$
-- $M(x) = \cfrac{qx^2}{2} + \bar C_1 x + \bar C_2$
-- $\kappa(x) = \cfrac{qx^2}{2EI}+ C_1 x + C_2$
-- $\varphi(x) = \cfrac{qx^3}{6EI} + \cfrac{C_1x^2}{2} + C_2 x+ C_3$
+- $M(x) = -\cfrac{qx^2}{2} + \bar C_1 x + \bar C_2$
+- $\kappa(x) = -\cfrac{qx^2}{2EI}+ \tilde C_1 x + \tilde C_2$
+- $\varphi(x) = -\cfrac{qx^3}{6EI} + \cfrac{\tilde C_1x^2}{2} + \tilde C_2 x+ \tilde C_3$
 - $w(x) = \cfrac{qx^4}{24EI} + \cfrac{C_1x^3}{6} + \cfrac{C_2x^2}{2}+C_3x+C_4 $
 
 The boundary conditions follow from the clamped side at $x=0$ and free end at $x=\ell$:
