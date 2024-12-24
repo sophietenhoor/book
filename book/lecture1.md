@@ -4,5 +4,5 @@ During today's lesson we'll work on:
 - Recap displacement method
 - Element defined by nodal displacements as degrees of freedom
 - Local and global stiffness matrix
-- Neumann and Dirichlet boundary conditions
+- Apply Neumann and Dirichlet boundary conditions
 - Local-global transformations

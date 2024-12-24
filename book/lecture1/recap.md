@@ -13,6 +13,11 @@ kernelspec:
 
 # Recap differential equations for structures
 
+```{custom_download_link} recap.md
+:text: "md:myst"
+:replace_default: "False"
+```
+
 Let's recap how to solve a structure using differential equations.
 
 Given is a cantilever beam with a distributed load:
@@ -163,4 +168,20 @@ Frame structure with many fields
 
 How many integration constants should be solved for here? How many boundary- and interface conditions would be needed for that? It gets annoying very quickly as each of these conditions need to be defined carefully.
 
-The matrix method aims to solve that by not solving for integration constants but for displacements!
+## Equivalence with matrix method
+
+While both methods segment the structure in different parts, the matrix method applies a different principle in solving the structure than when directly solving differential equations: instead of solving for integration constants, nodal displacements are solved for. This shows big potential because setting up all the boundary- and interface conditions can be tedious and is problem-specific. The matrix method applies a generic algorithmic approach to combine all unknown nodal displacements
+
+The similarities and differences are shown in the table below.
+
+:::{table} Equivalence solving differential equations and matrix method
+:widths: auto
+:align: center
+
+|Solving differential equations|Matrix method|
+|:-:|:-:|
+|Segment structure in separate fields|Segment structure in mostly repetitive elements|
+|Define all boundary- and interface conditions|Define relations in generic algorithmic manner|
+|Solve for integration constants $C_1, C_2, ...$|Solve nodal displacements $u_1, u_2, ...$|
+
+:::
