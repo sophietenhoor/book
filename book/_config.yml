@@ -33,6 +33,9 @@ sphinx:
       chtml: {
         mtextInheritFont: true # To typeset text within math prettier
       }
+      tex:
+        macros:
+          "mrm": "\\mathrm"
   extra_extensions:
     - sphinx.ext.imgconverter
     - jupyterbook_patches
