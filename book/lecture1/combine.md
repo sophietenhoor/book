@@ -36,7 +36,7 @@ These equations could also be regarding in a vector formulation. If $\mathbf{f}^
 
 $$ -\sum_e\mathbf{f}^e + \mathbf{f}_\text{nodal} = \mathbf{0} $$
 
-This can also be represented as:
+or:
 
 $$\sum_e\mathbf{f}^e = \mathbf{f}_\text{nodal} $$
 
