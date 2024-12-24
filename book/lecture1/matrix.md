@@ -12,8 +12,11 @@ In [](./single_element.md) you've derived the following two equations relating t
 
 These two equations can be rewritten in a matrix formulation:
 
-$$\cfrac{EA}{\ell}\begin{bmatrix} 1&-1\\-1&1 \end{bmatrix}\begin{bmatrix}u_1\\u_2\end{bmatrix} = \begin{bmatrix}F_1\\F_2\end{bmatrix}\\
-\text{or}\\
+$$\cfrac{EA}{\ell}\begin{bmatrix} 1&-1\\-1&1 \end{bmatrix}\begin{bmatrix}u_1\\u_2\end{bmatrix} = \begin{bmatrix}F_1\\F_2\end{bmatrix}$$
+
+This can represented as follows too:
+
+$$
 \mathbf{K}^{(e)}\mathbf{u}^{(e)}=\mathbf{f}^{(e)}
 $$
 
@@ -28,9 +31,11 @@ Now let's see how to combine multiple elements using our new matrix formulation.
 
 These equation can be represented in a matrix formulation:
 
-$$\begin{bmatrix}{\cA\color{cA}\cfrac{EA_1}{\ell_1}}&{\cA\color{cA}-\cfrac{EA_1}{\ell_1}}&0\\{\cA\color{cA}-\cfrac{EA_1}{\ell_1}}&{\cA\color{cA}\cfrac{EA_1}{\ell_1}}+{\cB\color{cB}\cfrac{EA_2}{\ell_2}}&{\cB\color{cB}-\cfrac{EA_2}{\ell_2}}\\0&{\cB\color{cB}-\cfrac{EA_2}{\ell_2}}&{\cB\color{cB}\cfrac{EA_2}{\ell_2}}\end{bmatrix}\begin{bmatrix}u_1\\[12pt]u_2\\[12pt]u_3\end{bmatrix}=\begin{bmatrix}H\\[12pt]0\\[12pt]F\end{bmatrix} \\
-\text{or}\\
-\mathbf{K}\mathbf{u}=\mathbf{f}$$
+$$\begin{bmatrix}{\cA\color{cA}\cfrac{EA_1}{\ell_1}}&{\cA\color{cA}-\cfrac{EA_1}{\ell_1}}&0\\{\cA\color{cA}-\cfrac{EA_1}{\ell_1}}&{\cA\color{cA}\cfrac{EA_1}{\ell_1}}+{\cB\color{cB}\cfrac{EA_2}{\ell_2}}&{\cB\color{cB}-\cfrac{EA_2}{\ell_2}}\\0&{\cB\color{cB}-\cfrac{EA_2}{\ell_2}}&{\cB\color{cB}\cfrac{EA_2}{\ell_2}}\end{bmatrix}\begin{bmatrix}u_1\\[12pt]u_2\\[12pt]u_3\end{bmatrix}=\begin{bmatrix}H\\[12pt]0\\[12pt]F\end{bmatrix} $$
+
+This can represented as follows too:
+
+$$\mathbf{K}\mathbf{u}=\mathbf{f}$$
 
 
 $\mathbf{K}$ is known as the global stiffness matrix, $\mathbf{u}$ the glocal displacement vector and $\mathbf{f}$ the glocal force vector.
@@ -209,6 +214,7 @@ $$
 $$
 
 This results in:
-$$ u_2 = \displaystyle\cfrac{F\ell_1}{EA_1}\\\text{and}\\u_3 = \displaystyle\cfrac{F\left(EA_1\ell_2 + EA_2\ell_1\right)}{EA_1\,EA_2}$$
+- $ u_2 = \displaystyle\cfrac{F\ell_1}{EA_1}$
+- $u_3 = \displaystyle\cfrac{F\left(EA_1\ell_2 + EA_2\ell_1\right)}{EA_1\,EA_2}$
 
 Later on, we'll introduce another way of solving the system of equations which allows for nonzero Dirichlet boundary conditions.

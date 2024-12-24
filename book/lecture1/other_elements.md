@@ -43,8 +43,11 @@ $$
 	  -\cfrac{EA}{\ell} & 0 & 0 & \cfrac{EA}{\ell} & 0 & 0\\
 	  0 & -\cfrac{12EI}{\ell^3} & \cfrac{6EI}{\ell^2} & 0 & \cfrac{12EI}{\ell^3} & \cfrac{6EI}{\ell^2}\\
 	  0 & -\cfrac{6EI}{\ell^2} & \cfrac{2EI}{\ell} & 0 & \cfrac{6EI}{\ell^2} & \cfrac{4EI}{\ell}\\
-	\end{bmatrix} \\
-  \text{for}\\
+	\end{bmatrix}$$
+
+for
+
+$$
   \mathbf{u}^{(e)} =\begin{bmatrix}
 	  u_1\\
 	  w_1 \\
@@ -112,13 +115,14 @@ eq8 = sym.Eq(M.subs(sol).subs(x,L), T_2_y)
 ```
 
 ```{code-cell} ipython3
-A, b = sym.linear_eq_to_matrix([eq5,eq7, eq6, eq8], [w_1, phi_1, w_2, phi_2])
-display(A)
-display(b)
+K_e, f_e = sym.linear_eq_to_matrix([eq5,eq7, eq6, eq8], [w_1, phi_1, w_2, phi_2])
+display(K_e)
 ```
 
+To use the stiffness matrix without manually copying it over, you can make use of the `lambdify` which converts a symbolic SymPy object in a python function. This allows you to evaluate it for specific numerical values and continue using it in the numerical framework of the matrix method.
+
 ```{code-cell} ipython3
-K = sym.lambdify((L, EI), A)
+K = sym.lambdify((L, EI), K_e)
 print(K.__doc__)
 ```
 
