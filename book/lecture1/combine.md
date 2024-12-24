@@ -27,5 +27,5 @@ Free body diagrams of nodes and elements
 Horizontal equilibrium of each of the nodes gives:
 
 - $\sum F_1 = 0 \Rightarrow {\cA\color{cA}-\cfrac{EA_1}{\ell_1}}u_1 {\cA\color{cA} + \cfrac{EA_1}{\ell_1}}u_2 + H=0$
-- $\sum F_2 = 0 \Rightarrow {\cA\color{cA}\frac{EA_1}{\ell_1}}u_1 {\cA\color{cA} - \frac{EA_1}{\ell_1}}u_2 {\cB\color{cB} -\frac{EA_2}{\ell_2}}u_2 {\cB\color{cB} + \frac{EA_2}{\ell_2}}u_3 =0$
-- $\sum F_3 = 0 \Rightarrow {\cB\color{cB}\frac{EA_2}{\ell_2}}u_2 {\cB\color{cB} - \frac{EA_2}{\ell_2}}u_3 + F=0$ 
+- $\sum F_2 = 0 \Rightarrow {\cA\color{cA}\cfrac{EA_1}{\ell_1}}u_1 {\cA\color{cA} - \cfrac{EA_1}{\ell_1}}u_2 {\cB\color{cB} -\cfrac{EA_2}{\ell_2}}u_2 {\cB\color{cB} + \cfrac{EA_2}{\ell_2}}u_3 =0$
+- $\sum F_3 = 0 \Rightarrow {\cB\color{cB}\cfrac{EA_2}{\ell_2}}u_2 {\cB\color{cB} - \cfrac{EA_2}{\ell_2}}u_3 + F=0$ 
