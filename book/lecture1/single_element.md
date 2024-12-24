@@ -2,7 +2,11 @@
 
 In the previous [chapter](./displacement.md) you've seen how you can solve structure using nodal displacements. However, the approach was still very problem-dependent. As proposed, the matrix method solves this by defining a default element which can be solved for a priori.
 
-Let's define the force-displacement relations for a single element loading in extension. We'll do that using differential equations. Later you'll see how to get the same result using shape functions.
+> Let's define the force-displacement relations for a single element loading in extension in terms of nodal displacements.
+
+We'll do that using differential equations. Later you'll see how to get the same result using shape functions.
+
+Let's consider the most simple extension element:
 
 ```{figure} extensionelement.svg
 :name: extensionelement
