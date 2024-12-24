@@ -158,7 +158,7 @@ The same approach can be taken to tackle problems with more field, like the one 
 :name: bigframe
 :align: center
 
-Frame structure with many field
+Frame structure with many fields
 ```
 
 How many integration constants should be solved for here? How many boundary- and interface conditions would be needed for that? It gets annoying very quickly as each of these conditions need to be defined carefully.
