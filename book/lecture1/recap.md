@@ -133,6 +133,6 @@ As this structure is loaded along its axis, the differential equation for extens
 
 For the first field this gives:
 
-- $\color{cA} EA_1\cfrac{\mrm{d}^2u_1}{\mrm{d}x^2}=0$
+- $\textcolor{cA}EA_1\cfrac{\mrm{d}^2u_1}{\mrm{d}x^2}=0$
 - $u_1 = C_1x + C_2$
 - Boundary conditions: $u_1(0) = 0$
