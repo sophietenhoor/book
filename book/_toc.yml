@@ -17,6 +17,7 @@ parts:
       - file: lecture1/recap.ipynb
       - file: lecture1/displacement.md
       - file: lecture1/single_element.md
+      - file: lecture1/combine.md
     - file: workshop1.md
     - file: lecture2.md
     - file: workshop2.md
