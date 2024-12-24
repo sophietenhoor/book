@@ -53,7 +53,11 @@ This differential equation can be solved directly to solve structures.
 
 This differential equations can be solved by integrating four times:
 
-$$w(x) = \frac{qx^4}{24EI} + \frac{C_1x^3}{6} + \frac{C_2x^2}{2}+C_3x+C_4 $$
+- $V(x) = -qx + \bar C_{1}$
+- $M(x) = \cfrac{qx^2}{2} + \bar C_1 x + \bar C_2$
+- $\kappa(x) = \cfrac{qx^2}{2EI}+ C_1 x + C_2$
+- $\varphi(x) = \cfrac{qx^3}{6EI} + \cfrac{C_1x^2}{2} + C_2 x+ C_3$
+- $w(x) = \cfrac{qx^4}{24EI} + \cfrac{C_1x^3}{6} + \cfrac{C_2x^2}{2}+C_3x+C_4 $
 
 The boundary conditions follow from the clamped side at $x=0$ and free end at $x=\ell$:
 
@@ -139,18 +143,20 @@ As this structure is loaded along its axis, the differential equation for extens
 For the first field this gives:
 
 - ${\cA\color{cA}EA_1\cfrac{\mrm{d}^2u_1}{\mrm{d}x^2}=0}$
-- ${\cA\color{cA}u_1 = C_1x + C_2}$
+- ${\cA\color{cA}N_1 = C_1}$
+- ${\cA\color{cA}u_1(x) = \cfrac{C_1}{EA}x + C_2}$
 - Boundary conditions: ${\cA\color{cA}u_1(0) = 0}$
 
 For the second field it gives:
 
 - ${\cB\color{cB}EA_2\cfrac{\mrm{d}^2u_2}{\mrm{d}x^2}=0}$
-- ${\cB\color{cB}u_2 = C_3x + C_4}$
+- ${\cB\color{cB}N_2 = C_3}$
+- ${\cB\color{cB}u_2(x) = \cfrac{C_3}{EA}x + C_4}$
 - Boundary conditions: ${\cB\color{cB}N_2(\ell_1+\ell_2) = F}$
 
 The two remaining integration constants can be solved by specifying interface conditions:
 - ${\cA\color{cA}u_1(\ell_1)} = {\cB\color{cB}u_2(\ell_1)}$
-- ${\cA\color{cA}N_1(\ell_1)} = {\cB\color{cB}N_2(\ell_1)}$
+- ${\cA\color{cA}N_1} = {\cB\color{cB}N_2}$
 
 +++
 
