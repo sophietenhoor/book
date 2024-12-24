@@ -5,6 +5,11 @@ parts:
   - caption: Course information
     chapters:
     - file: course_information
+    - file: schedule
+    - file: instructions
+    - file: contact_information
+    - url: https://brightspace.tudelft.nl/d2l/home/680476
+      title: Brightspace announcements 📢
   - caption: Activities
     chapters:
     - file: lecture1.md
