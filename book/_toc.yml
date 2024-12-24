@@ -9,5 +9,6 @@ parts:
     chapters:
     - file: lecture1.md
   - caption: Miscellaneous
+    chapters:
     - file: references.md
     - file: credits.md
