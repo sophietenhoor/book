@@ -23,9 +23,22 @@ The learning will be assessed with one assignment provided to you after the seco
 
 The deadline of the assignment is ..., although you're encouraged to finish it directly after completing workshop 2. Doing so allows you to split the workload evenly.
 
-There's no supervisdd
-During the exam assignments, you're allowed to bring your books, notes, etc. and you're allowed to use your laptop including software like SymPy. You're not allowed to communicate during the exam session, which will be strictly monitored. Furthermore, you're not allowed to use structural analysis software.
+The assignment is graded according to the following rubric:
 
-For each exam sessions(consisting of one or more assignments) you'll have three hours.
+:::{table} Rubric
+:widths: auto
+:align: center
+:name: rubric
 
-You pass the courses when you scores sufficient (minimum 6.0) for an assignments on each of the subjects. Each subject is graded separately as a partial grade.
+| Criteria | Insufficient | Sufficient | Good|
+| --- | --- | --- | --- |
+| New implementations | 1.4 points <br> Not all implementations for correct nodal displacements were made <br> OR <br> Implementations are not correct | 2.0125 points <br> Implementations for correct nodal displacements are correct <br> AND <br> Argumentation is not correct, insufficient or missing | 3.5 points <br> Implementations for correct nodal displacements are correct <br> AND <br> Argumentation is correct and sufficient |
+| Sanity checks | 1.4 points <br> Not for all implementations for correct nodal displacements sanity checks were performed<br>OR<br>Argumentation is not correct, insufficient or missing | 2.0125 points <br> For all implementations for correct nodal displacements sanity checks were performed | 3.5 points <br> Sanity checks were performed for all new code implementations were performed <br>AND<br>Argumentation is correct and sufficient |
+| Numerical results | 0.8 points <br> Not all results are correct<br>OR<br>Not all required implementations were made | 1.15 points<br>At least nodal displacements are correct with only a few inconsistencies in other results | 2 points <br> All results are correct |
+| Style | 0.4 points <br> Coding is unclear<br>OR<br>Report is unclear<br>If too much is missing or unclear, the full assignment is graded with a 1 | 0.575 points<br> Coding and report are readable and functional | 1 points <br> Coding and report are well documented |
+
+:::
+
+The assignment is not made under surveillance. You are allowed to collaborate, but you'll need to hand in your own work. You'll have to submit your work to a personal GitHub repository.
+
+Feedback for the assignment will be provided via Brightspace.
