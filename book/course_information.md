@@ -19,7 +19,9 @@ On ... there'll be question hours for the full CIEM5000 module. During these you
 
 (exam-general)=
 ## Assessment
-The learning will be assessed with one assignment provided to you after the second workshops. This assignment is part of the Assignment Portfolio of unit 2, where it counts for 33%. This portfolio will account for 20% of your total grade of CIEM5000.
+The learning will be assessed with one assignment provided to you after the second workshops. It will be posted in [](assignment.md).
+
+This assignment is part of the Assignment Portfolio of unit 2, where it counts for 33%. This portfolio will account for 20% of your total grade of CIEM5000.
 
 The deadline of the assignment is ..., although you're encouraged to finish it directly after completing workshop 2. Doing so allows you to split the workload evenly.
 

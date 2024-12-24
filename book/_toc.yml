@@ -13,6 +13,11 @@ parts:
   - caption: Activities
     chapters:
     - file: lecture1.md
+    - file: workshop1.md
+    - file: lecture2.md
+    - file: workshop2.md
+    - file: additional.md
+    - file: assignment.md
   - caption: Miscellaneous
     chapters:
     - file: references.md
