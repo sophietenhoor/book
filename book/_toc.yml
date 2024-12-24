@@ -19,6 +19,7 @@ parts:
       - file: lecture1/single_element.md
       - file: lecture1/combine.md
       - file: lecture1/matrix.md
+      - file: lecture1/matrix_python.md
     - file: workshop1.md
     - file: lecture2.md
     - file: workshop2.md
