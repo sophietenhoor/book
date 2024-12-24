@@ -1,6 +1,5 @@
-(intro)=
-# Welcome to the Template Book
+# Home
 
-_This is the first page the student will see when opening the url._
+Welcome to the submodule on the Matrix Method for Statics, part of Unit 2 of CIEM5000 Course base Structural Engineering at Delft University of Technology.
 
-This book can be used as a template for other books. It includes a starter package of the software developed by the TeachBooks initiative and some exercises to get you going!
+This TeachBook contains the material for the course.
