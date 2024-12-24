@@ -36,13 +36,13 @@ sphinx:
       tex:
         macros:
           "mrm": "\\mathrm"
-          "\\cA": "\\definecolor{cA}{RGB}{1,113,136}"
-          "\\cB": "\\definecolor{cB}{RGB}{195,49,47}"
-          "\\cC": "\\definecolor{cC}{RGB}{0,102,162}"
-          "\\cD": "\\definecolor{cD}{RGB}{0,183,211}"
-          "\\cE": "\\definecolor{cE}{RGB}{0,163,144}"
-          "\\cF": "\\definecolor{cF}{RGB}{97,164,180}"
-          "\\cG": "\\definecolor{cG}{RGB}{130,215,198}"
+          "cA": "\\definecolor{cA}{RGB}{1,113,136}"
+          "cB": "\\definecolor{cB}{RGB}{195,49,47}"
+          "cC": "\\definecolor{cC}{RGB}{0,102,162}"
+          "cD": "\\definecolor{cD}{RGB}{0,183,211}"
+          "cE": "\\definecolor{cE}{RGB}{0,163,144}"
+          "cF": "\\definecolor{cF}{RGB}{97,164,180}"
+          "cG": "\\definecolor{cG}{RGB}{130,215,198}"
   extra_extensions:
     - sphinx.ext.imgconverter
     - jupyterbook_patches
