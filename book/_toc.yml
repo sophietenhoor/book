@@ -20,6 +20,7 @@ parts:
       - file: lecture1/combine.md
       - file: lecture1/matrix.md
       - file: lecture1/matrix_python.md
+      - file: lecture1/other_elements.ipynb
     - file: workshop1.md
     - file: lecture2.md
     - file: workshop2.md
