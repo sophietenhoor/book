@@ -147,5 +147,3 @@ For the second field it gives:
 The two remaining integration constants can be solved by specifying interface conditions:
 - ${\cA\color{cA}u_1(\ell_1)} = {\cB\color{cB}u_2(\ell_1)}$
 - ${\cA\color{cA}N_1(\ell_1)} = {\cB\color{cB}N_2(\ell_1)}$
-
-<span style="color:blue">${EA_1\cfrac{\mrm{d}^2u_1}{\mrm{d}x^2}=0}$</span>.
