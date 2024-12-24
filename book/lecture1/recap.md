@@ -95,28 +95,25 @@ import sympy as sym
 ```
 
 ```{code-cell} ipython3
-EI, q_z, x, L = sym.symbols('EI, q_z, x, L')
-w = sym.Function('w')
-
-ODE_bending = sym.Eq(w(x).diff(x, 4) *EI, q_z)
-display(ODE_bending)
+EI, q, x, L = sym.symbols('EI, q, x, ell')
+C_1, C_2, C_3, C_4 = sym.symbols('C_1, C_2, C_3, C_4')
 ```
 
 ```{code-cell} ipython3
-w = sym.dsolve(ODE_bending, w(x)).rhs
+V = -sym.integrate(q,x) + C_1
+M = sym.integrate(V,x) + C_2
+kappa = M/EI
+phi = sym.integrate(kappa,x) + C_3
+w = -sym.integrate(phi,x) + C_4
 display(w)
 ```
 
 ```{code-cell} ipython3
-phi = -w.diff(x)
-kappa = phi.diff(x)
-M = EI * kappa
-V = M.diff(x)
 eq1 = sym.Eq(w.subs(x,0),0)
 eq2 = sym.Eq(phi.subs(x,0),0)
 eq3 = sym.Eq(M.subs(x,L),0)
 eq4 = sym.Eq(V.subs(x,L),0)
-C_sol = sym.solve([eq1, eq2, eq3, eq4 ], sym.symbols('C1, C2, C3, C4'))
+C_sol = sym.solve([eq1, eq2, eq3, eq4 ], [C_1, C_2, C_3, C_4])
 for key in C_sol:
     display(sym.Eq(key, C_sol[key]))
 ```
