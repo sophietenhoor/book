@@ -14,7 +14,7 @@ parts:
     chapters:
     - file: lecture1.md
       sections:
-      - file: lecture1/recap.md
+      - file: lecture1/recap.ipynb
     - file: workshop1.md
     - file: lecture2.md
     - file: workshop2.md
