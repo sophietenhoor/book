@@ -83,7 +83,6 @@ sym.init_printing()
 
 ```{code-cell} ipython3
 import sympy as sym
-#sym.init_printing()
 ```
 
 ```{code-cell} ipython3
@@ -109,7 +108,9 @@ eq2 = sym.Eq(phi.subs(x,0),0)
 eq3 = sym.Eq(M.subs(x,L),0)
 eq4 = sym.Eq(V.subs(x,L),0)
 C_sol = sym.solve([eq1, eq2, eq3, eq4 ], sym.symbols('C1, C2, C3, C4'))
-display(C_sol)
+# display each of the constants individually as math output
+for key in C_sol:
+    display(sym.Eq(key, C_sol[key]))
 ```
 
 ```{code-cell} ipython3
