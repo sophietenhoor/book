@@ -111,4 +111,21 @@ w.subs(C_sol)
 
 ## Solving differential equation of two fields
 
-A similar approach can be taken when solving two fields:
+A similar approach can be taken when solving two fields.
+
+Let's investigate the following structure, consisting of two fields.
+
+```{figure} extension2fields.svg
+:name: extension2fields
+:align: center
+
+Extension bar with nodal load
+```
+
+As this structure is loaded along its axis, the differential equation for extension is used.
+
+For the first field this gives:
+
+- $\color{cA} EA_1\cfrac{\mrm{d}^2u_1}{\mrm{d}x^2}=0$
+- $u_1 = C_1x + C_2$
+- Boundary conditions: $u_1(0) = 0$
