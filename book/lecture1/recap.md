@@ -117,7 +117,7 @@ for key in C_sol:
 w.subs(C_sol)
 ```
 
-## Solving differential equation of two fields
+## Solving differential equations of two fields
 
 A similar approach can be taken when solving two fields.
 
@@ -147,3 +147,20 @@ For the second field it gives:
 The two remaining integration constants can be solved by specifying interface conditions:
 - ${\cA\color{cA}u_1(\ell_1)} = {\cB\color{cB}u_2(\ell_1)}$
 - ${\cA\color{cA}N_1(\ell_1)} = {\cB\color{cB}N_2(\ell_1)}$
+
++++
+
+## Solving differential equations of more fields
+
+The same approach can be taken to tackle problems with more field, like the one below:
+
+```{figure} bigframe.svg
+:name: bigframe
+:align: center
+
+Frame structure with many field
+```
+
+How many integration constants should be solved for here? How many boundary- and interface conditions would be needed for that? It gets annoying very quickly as each of these conditions need to be defined carefully.
+
+The matrix method aims to solve that by not solving for integration constants but for displacements!
