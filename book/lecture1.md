@@ -7,3 +7,5 @@ During today's lesson we'll work on:
 - Local and global stiffness matrix
 - Apply Neumann and Dirichlet boundary conditions
 - Local-global transformations
+
+This book shows the full content of the first lecture. The slides of the lecture have the same content and are available [here](./Lecture1.pdf)
