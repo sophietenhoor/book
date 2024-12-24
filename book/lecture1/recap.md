@@ -75,8 +75,15 @@ $w(x) = \cfrac{qx^4}{24EI} - \cfrac{q\ell x^3}{6EI} + \cfrac{q\ell^2x^2}{4EI}$
 The differential equation can also be solved using SymPy:
 
 ```{code-cell} ipython3
+:tags: [thebe-remove-input-init]
+
 import sympy as sym
 sym.init_printing()
+```
+
+```{code-cell} ipython3
+import sympy as sym
+#sym.init_printing()
 ```
 
 ```{code-cell} ipython3
