@@ -30,3 +30,4 @@ Effectively, we replaced the unknown integration constants by unknown nodal disp
 Using our new formulation of unknown, the continuous distributions for the displacement and section force can be evaluated too:
 - $u(x) = u_1\left(1-\cfrac{x}{\ell}\right) + u_2\cfrac{x}{\ell}$
 - $N = -\cfrac{EA}{\ell}u_1+\cfrac{EA}{\ell}u_2$
+
