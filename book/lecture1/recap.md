@@ -4,7 +4,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.13
-    jupytext_version: 1.16.6
+    jupytext_version: 1.16.2
 kernelspec:
   display_name: base
   language: python
@@ -81,6 +81,7 @@ $w(x) = \cfrac{qx^4}{24EI} - \cfrac{q\ell x^3}{6EI} + \cfrac{q\ell^2x^2}{4EI}$
 
 +++
 
+(sympy-ode)=
 ## Solving differential equation of one field using SymPy
 
 The differential equation can also be solved using SymPy:
@@ -189,3 +190,5 @@ The similarities and differences are shown in the table below.
 |Solve for integration constants $C_1, C_2, ...$|Solve nodal displacements $u_1, u_2, ...$|
 
 :::
+
++++

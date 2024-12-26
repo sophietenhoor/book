@@ -4,7 +4,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.13
-    jupytext_version: 1.16.6
+    jupytext_version: 1.16.2
 kernelspec:
   display_name: base
   language: python
@@ -63,7 +63,7 @@ $$
 	$$
 
 ## Derivation using SymPy
-We can make use of software like SymPy to do the calculations in this derivation:
+We can make use of software like SymPy, as we did before in [](sympy-ode) to do the calculations in this derivation:
 
 ```{code-cell} ipython3
 :tags: [thebe-remove-input-init]
@@ -131,5 +131,5 @@ print(K.__doc__)
 ```
 
 ```{code-cell} ipython3
-print('Example of K with L=5 and EI=1000:\n', K(5,1000))
+print('Example of K with L=5 and EI=1000:\n',K(5,1000))
 ```
