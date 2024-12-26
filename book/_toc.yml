@@ -29,7 +29,7 @@ parts:
         - file: Workshop_1_Implement.ipynb
         - file: Workshop_1_Apply.ipynb
         - file: matrixmethod.md
-        - sections:
+          sections:
           - file: __init__.md
           - file: node.md
           - file: elements.md

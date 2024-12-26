@@ -14,7 +14,7 @@ sphinx:
     - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
     thebe_config:
       use_thebe_lite: true
-      exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb"]
+      exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb", "**/*.pdf", "**/*.svg", "**/*.jpg"]
     html_theme_options:
       logo:
         text: Matrix Method in statics
