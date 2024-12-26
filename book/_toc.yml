@@ -23,6 +23,14 @@ parts:
       - file: lecture1/other_elements.ipynb
       - file: lecture1/transformations.md
     - file: workshop1.md
+      sections:
+      - file: preview.md
+        sections:
+        - file: Workshop_1_Implement.ipynb
+        - file: Workshop_1_Apply.ipynb
+        - file: matrixmethod.md
+        - sections:
+          - file: node.py
     - file: lecture2.md
     - file: workshop2.md
     - file: additional.md
