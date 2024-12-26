@@ -30,7 +30,10 @@ parts:
         - file: Workshop_1_Apply.ipynb
         - file: matrixmethod.md
         - sections:
-          - file: node.py
+          - file: __init__.md
+          - file: node.md
+          - file: elements.md
+          - file: constrainer.md
     - file: lecture2.md
     - file: workshop2.md
     - file: additional.md
