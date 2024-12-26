@@ -1,10 +1,10 @@
 # `constrainer.py`
 
-```{code-cell}
+```{code-cell} ipython3
 import numpy as np
 ```
 
-```{code-cell}
+```{code-cell} ipython3
 class Constrainer:
     """
     A class that represents a constrainer for fixing degrees of freedom in a structural analysis.

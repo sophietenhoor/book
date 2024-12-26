@@ -1,10 +1,10 @@
 # `node.py`
 
-```{code-cell}
+```{code-cell} ipython3
 import numpy as np
 ```
 
-```{code-cell}
+```{code-cell} ipython3
 class Node:
     """
     The Node class is used to store node information and keep track of the total number of 

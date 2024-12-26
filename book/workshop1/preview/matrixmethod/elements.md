@@ -1,11 +1,11 @@
 # `elements.py`
 
-```{code-cell}
+```{code-cell} ipython3
 import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-```{code-cell}
+```{code-cell} ipython3
 class Element:
     """
     The Element class keeps track of each element in the model, including cross-section properties, 
