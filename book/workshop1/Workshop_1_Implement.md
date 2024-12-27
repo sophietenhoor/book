@@ -135,6 +135,10 @@ Whenever you make changes to your code in the `./matrixmethod/` folder, you need
 %autoreload 2
 ```
 
+::::::{error}
+Note that in this online book, you cannot make changes to multiple files simultaneously. These instructions are only applicable when you're working on this assignment locally; please fork and clone the assignment to work on it locally from [GitHub](https://github.com/CIEM5000-2025/practice-assignments).
+::::::
+
 ```{exercise-start} 2.2
 :label: exercise2.2
 :nonumber: true
