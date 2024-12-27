@@ -24,16 +24,14 @@ parts:
       - file: lecture1/transformations.md
     - file: workshop1.md
       sections:
-      - file: workshop1/preview.md
+      - file: workshop1/Workshop_1_Implement.ipynb
+      - file: workshop1/Workshop_1_Apply.ipynb
+      - file: workshop1/matrixmethod.md
         sections:
-        - file: workshop1/preview/Workshop_1_Implement.ipynb
-        - file: workshop1/preview/Workshop_1_Apply.ipynb
-        - file: workshop1/preview/matrixmethod.md
-          sections:
-          - file: workshop1/preview/matrixmethod/__init__.md
-          - file: workshop1/preview/matrixmethod/node.md
-          - file: workshop1/preview/matrixmethod/elements.md
-          - file: workshop1/preview/matrixmethod/constrainer.md
+        - file: workshop1/matrixmethod/__init__.md
+        - file: workshop1/matrixmethod/node.md
+        - file: workshop1/matrixmethod/elements.md
+        - file: workshop1/matrixmethod/constrainer.md
     - file: lecture2.md
     - file: workshop2.md
     - file: additional.md
