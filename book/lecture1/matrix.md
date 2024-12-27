@@ -1,4 +1,4 @@
-# Local and global matrix formulation
+# Combine elements using matrix formulation
 
 In the previous [chapter](./combine.md) you've seen how to combine multiple elements to arrive to a linear system of equation to solve the nodal displacements. However, the nodal displacements were part of $\mathbf{f}^e$, which doesn't allow us to solve the vector formulation directly.
 
