@@ -238,14 +238,19 @@ However, the implementation is incomplete:
 
 +++
 
-> ### 3.1
-> Add the missing pieces to the code, before you perform the check below
+```{exercise} 3.1
+:label: exercise3.1
+:nonumber: true
 
-+++
+Add the missing pieces to the code, before you perform the check below
+```
 
-> ### 3.2
-> 
-> Take the inclined element of exercise 2.5 and a bending stiffness of $1$. What happens if you invert $\mathbf{K}$? Now fix all degrees of freedom of the first node. What happens when you invert your 'constrained' $\mathbf{K}$? Are the dimensions of the 'constrained' $\mathbf{K}$ correct?
+```{exercise-start} 3.2
+:label: exercise3.2
+:nonumber: true
+
+Take the inclined element of exercise 2.5 and a bending stiffness of $1$. What happens if you invert $\mathbf{K}$? Now fix all degrees of freedom of the first node. What happens when you invert your 'constrained' $\mathbf{K}$? Are the dimensions of the 'constrained' $\mathbf{K}$ correct?
+```
 
 ```{code-cell} ipython3
 #YOUR CODE HERE
@@ -257,6 +262,9 @@ con = mm.Constrainer()
 f = np.zeros (6) #empty load vector
 Kff, Fff = con.constrain( K, F )
 print(np.shape(np.linalg.inv(Kff)))
+```
+
+```{exercise-end}
 ```
 
 ## 4. Full implementation extension bar
