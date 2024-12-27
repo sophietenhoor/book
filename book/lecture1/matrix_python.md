@@ -42,7 +42,7 @@ The global stiffness matrix, nodal displacement vector and nodal force vector ar
 +++
 
 ## Setting up global equations with python package
-The steps provide in the [previous page](./matrix.md) can be implemented using the matrix method package as follows:
+The steps provide in the [previous page](./directly.md) can be implemented using the matrix method package as follows:
 
 ### 1. Identify degrees of freedom
 The `Node` class automatically keeps track of the amount of degrees of freedom based on the amount of instances created with that class. For every node it will count 3 degrees of freedom. So far you've only seen one degree of freedom per node, but soon more will follow!

@@ -19,6 +19,7 @@ parts:
       - file: lecture1/single_element.md
       - file: lecture1/combine.md
       - file: lecture1/matrix.md
+      - file: lecture1/directly.md
       - file: lecture1/matrix_python.md
       - file: lecture1/other_elements.ipynb
       - file: lecture1/transformations.md
