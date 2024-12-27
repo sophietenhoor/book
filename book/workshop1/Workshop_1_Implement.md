@@ -106,9 +106,11 @@ However, the implementation is incomplete:
 - We keep the functions which add a distributed load and compute the moments / displacements untouched for this week. Next week we'll implement those as well.
 
 
-> ### Task 2.1
->
-> Add the missing pieces to the code in `./matrixmethod/elements.py`, before you perform the checks below. Do you specify your stiffness matrix in the global or local coordinate system?
+```{exercise} Task 2.1
+:label: exercise2.1
+
+Add the missing pieces to the code in `./matrixmethod/elements.py`, before you perform the checks below. Do you specify your stiffness matrix in the global or local coordinate system?
+```
 
 +++
 
