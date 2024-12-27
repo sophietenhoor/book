@@ -52,6 +52,7 @@ The purpose of this class is to store node information and keep track of the tot
 
 ```{exercise-start} Task 1.1
 :label: exercise1.1
+:nonumber: true
 To test whether you understand how the class works, create two nodes on coordinates ($0$,$0$) and ($3$,$4$) and print the string representation of both nodes. The `clear` function is called to restart the node and DOF counters. Make sure this is done whenever you start solving a new problem.
 ```
 
