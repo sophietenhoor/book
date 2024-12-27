@@ -387,45 +387,6 @@ mm.Node.clear()
 mm.Element.clear()
 ```
 
-> ### 5.1: Create nodes
-
-```{code-cell} ipython3
-#YOUR CODE HERE
-```
-
-> ### 5.2: Create element
-
-```{code-cell} ipython3
-#YOUR CODE HERE
-```
-
-> ### 5.3: Set boundary conditions
-
-```{code-cell} ipython3
-#YOUR CODE HERE
-```
-
-> ### 5.4: Assemble the system of equations
-
-```{code-cell} ipython3
-#YOUR CODE HERE
-```
-
-> ### 5.5: Constrain the problem and solve for nodal displacements
-
-```{code-cell} ipython3
-#YOUR CODE HERE
-```
-
-> ### 5.6: Check with the analytical solution
-> 
-> Did your solutions match? If so, your implementation is correct!
-
-```{code-cell} ipython3
-mm.Node.clear()
-mm.Element.clear()
-```
-
 ```{exercise-start} 5.1
 :nonumber: true
 
