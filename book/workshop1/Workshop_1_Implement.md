@@ -381,7 +381,7 @@ In the first example above we tested our model under extension. But that does no
 
 ```{figure} https://raw.githubusercontent.com/ibcmrocha/public/main/cantilever.png
 :align: center
-:width: 400
+:width: 200
 ```
 
 Choose appropriate values yourself
