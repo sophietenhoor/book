@@ -273,9 +273,10 @@ Having made our implementations, we now check them with two simple examples that
 
 +++
 
-<center><figure>
-  <IMG SRC="https://raw.githubusercontent.com/ibcmrocha/public/main/extpointload.png" WIDTH=200 ALIGN="center">
-      </figure></center>
+```{figure} https://raw.githubusercontent.com/ibcmrocha/public/main/extpointload.png
+:align: center
+:width: 200
+```
 
 With $EA = 1000$, $F = 100$ and $L = 1$.
 
@@ -288,62 +289,94 @@ mm.Node.clear()
 mm.Element.clear()
 ```
 
-> ### 4.1: 
-> 
-> Create two nodes here. You can store them on a `list` or simply create them as two separate objects (*e.g.* `node1` and `node2`).
+```{exercise-start} 4.1
+:nonumber: true
+
+Create two nodes here. You can store them on a `list` or simply create them as two separate objects (*e.g.* `node1` and `node2`).
+```
 
 ```{code-cell} ipython3
 #YOUR CODE HERE
 ```
 
-> ### 4.2
-> 
-> Here we only have a single element, so there is no need to store it in a `list` yet. You are also going to need a `dict` defining the cross-section of the element.
+```{exercise-end}
+```
+
+```{exercise-start} 4.2
+:nonumber: true
+
+Here we only have a single element, so there is no need to store it in a `list` yet. You are also going to need a `dict` defining the cross-section of the element.
+```
 
 ```{code-cell} ipython3
 #YOUR CODE HERE
 ```
 
-> ### 4.3
-> 
-> Let's define the boundary conditions. We create an instance of the `Constrainer` class to deal with prescribed displacements. Take a look at its functions and inform if Node 1 is fully fixed.
-> You also need to pass the load $F$ on to Node 2. Check the member functions of `Node` to infer how that should be done.
+```{exercise-end}
+```
+
+```{exercise-start} 4.3
+:nonumber: true
+
+Let's define the boundary conditions. We create an instance of the `Constrainer` class to deal with prescribed displacements. Take a look at its functions and inform if Node 1 is fully fixed.
+
+You also need to pass the load $F$ on to Node 2. Check the member functions of `Node` to infer how that should be done.
+```
 
 ```{code-cell} ipython3
 #YOUR CODE HERE
 ```
 
-> ### 4.4
-> 
-> Now assemble the global stiffness matrix and force vector. Since we only have one element, there is no real assembly to be performed other than getting the stiffness matrix of the single element and storing the load at Node 2 in the correct positions of $\mathbf{f}$.
+```{exercise-end}
+```
+
+```{exercise-start} 4.4
+:nonumber: true
+
+Now assemble the global stiffness matrix and force vector. Since we only have one element, there is no real assembly to be performed other than getting the stiffness matrix of the single element and storing the load at Node 2 in the correct positions of $\mathbf{f}$.
+```
 
 ```{code-cell} ipython3
 #YOUR CODE HERE
 ```
 
-> ### 4.5
-> 
-> Constrain the problem and solve for nodal displacements
+```{exercise-end}
+```
+
+```{exercise-start} 4.5
+:nonumber: true
+
+Constrain the problem and solve for nodal displacements.
+```
 
 ```{code-cell} ipython3
 #YOUR CODE HERE
 ```
 
-> ### 4.6
-> 
-> Finally, compare the displacement at the end of the bar with the one coming from the ODE solution. Note that since our element is already suitable for frames combining extension and bending, $\mathbf{u}$ has three entries. Which one is the entry that matters to us here? Did your solutions match? If so, that is a sign your implementation is correct. Can you use the function `full_disp` to obtain a vector of all displacements?
+```{exercise-end}
+```
+
+```{exercise-start} 4.6
+:nonumber: true
+
+Finally, compare the displacement at the end of the bar with the one coming from the ODE solution. Note that since our element is already suitable for frames combining extension and bending, $\mathbf{u}$ has three entries. Which one is the entry that matters to us here? Did your solutions match? If so, that is a sign your implementation is correct. Can you use the function `full_disp` to obtain a vector of all displacements?
+```
 
 ```{code-cell} ipython3
-# EVENTUALLY YOUR CODE HERE
+#EVENTUALLY YOUR CODE HERE
+```
+
+```{exercise-end}
 ```
 
 ## 5: Full implementation bending beam
 
 In the first example above we tested our model under extension. But that does not really guarantee it will behave correctly in bending. That is the goal of this second sanity check. Let's solve the following problem:
 
-<center><figure>
-  <IMG SRC="https://raw.githubusercontent.com/ibcmrocha/public/main/cantilever.png" WIDTH=200 ALIGN="center">
-      </figure></center>
+```{figure} https://raw.githubusercontent.com/ibcmrocha/public/main/cantilever.png
+:align: center
+:width: 400
+```
 
 Choose appropriate values yourself
 
@@ -387,3 +420,88 @@ mm.Element.clear()
 > ### 5.6: Check with the analytical solution
 > 
 > Did your solutions match? If so, your implementation is correct!
+
+```{code-cell} ipython3
+mm.Node.clear()
+mm.Element.clear()
+```
+
+```{exercise-start} 5.1
+:nonumber: true
+
+Create nodes
+```
+
+```{code-cell} ipython3
+#YOUR CODE HERE
+```
+
+```{exercise-end}
+```
+
+```{exercise-start} 5.2
+:nonumber: true
+
+Create element
+```
+
+```{code-cell} ipython3
+#YOUR CODE HERE
+```
+
+```{exercise-end}
+```
+
+```{exercise-start} 5.3
+:nonumber: true
+
+Set boundary conditions
+```
+
+```{code-cell} ipython3
+#YOUR CODE HERE
+```
+
+```{exercise-end}
+```
+
+```{exercise-start} 5.4
+:nonumber: true
+
+Assemble the system of equations.
+```
+
+```{code-cell} ipython3
+#YOUR CODE HERE
+```
+
+```{exercise-end}
+```
+
+```{exercise-start} 5.5
+:nonumber: true
+
+Constrain the problem and solve for nodal displacements
+```
+
+```{code-cell} ipython3
+#YOUR CODE HERE
+```
+
+```{exercise-end}
+```
+
+```{exercise-start} 5.6
+:nonumber: true
+
+Check with the analytical solution
+
+Did your solutions match? If so, your implementation is correct!
+```
+
+```{code-cell} ipython3
+#EVENTUALLY YOUR CODE HERE
+```
+
+```{exercise-end}
+```
