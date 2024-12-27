@@ -18,7 +18,7 @@ This submodule is taught by Tom van Woudenberg and Iuri Rocha. Please contact hi
 - 015-2781458
 - I.Rocha@tudelft.nl
 
-```{figure} figures/Iuri.jpg
+```{figure} figures/Iuri.png
 :width: 300px
 :align: center
 :class: dark-light
