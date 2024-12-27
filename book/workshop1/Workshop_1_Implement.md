@@ -123,11 +123,13 @@ Whenever you make changes to your code in the `./matrixmethod/` folder, you need
 %autoreload 2
 ```
 
-> ### Task 2.2
-> 
->First, let's check the stiffness matrix for a beam which doesn't require rotation. Create a horizontal element with length $2$ and $EI=4$ and print both the transformation matrix and the stiffness matrix.
->
-> Do the matrices match with what you'd expect?
+```{exercise-start} Task 2.2
+:label: exercise2.2
+
+First, let's check the stiffness matrix for a beam which doesn't require rotation. Create a horizontal element with length $2$ and $EI=4$ and print both the transformation matrix and the stiffness matrix.
+
+Do the matrices match with what you'd expect?
+```
 
 ```{code-cell} ipython3
 mm.Node.clear()
@@ -147,43 +149,63 @@ print(elem.T)
 print(elem.stiffness())
 ```
 
-> ### Task 2.3
-> Now, create a vertical element with length $2$ and $EI=4$ and print the transformation and stiffness matrix.
-> 
-> Do the matrices match with what you'd expect?
+```{exercise-end}
+```
+
+```{exercise-start} Task 2.3
+:label: exercise2.3
+Now, create a vertical element with length $2$ and $EI=4$ and print the transformation and stiffness matrix.
+
+Do the matrices match with what you'd expect?
+```
 
 ```{code-cell} ipython3
 #YOUR CODE HERE
 ```
 
-> ### Task 2.4
->
->Now, create an element rotated in $120 \degree$ with length $2$ and print the transformation matrix.
->
->Does it match with what you'd expect?
+```{exercise-end}
+```
+
+```{exercise-start} Task 2.4
+:label: exercise2.4
+Now, create an element rotated in $120 \degree$ with length $2$ and print the transformation matrix.
+
+Do the matrices match with what you'd expect?
+```
 
 ```{code-cell} ipython3
 #YOUR CODE HERE
 ```
 
-> ### Task 2.5
->
->Now, create an element rotated in $60 \degree$ with length $2$ and print the transformation matrix.
->
->Does it match with what you'd expect?
+```{exercise-end}
+```
+
+```{exercise-start} Task 2.5
+:label: exercise2.5
+Now, create an element rotated in $60 \degree$ with length $2$ and print the transformation matrix.
+
+Do the matrices match with what you'd expect?
+```
 
 ```{code-cell} ipython3
 #YOUR CODE HERE
 ```
 
-> ### Task 2.6
-> 
-> We're going to apply the transformation matrix to the vector $[0,0,0,\sqrt{3},1,0]$ defined in global coordinates. What would be vector in the local coordinate system of the previous element?
->
-> Check your answer using pen and paper. Tip: make a drawing instead of doing all the algebra.
+```{exercise-end}
+```
+
+```{exercise-start} Task 2.6
+:label: exercise2.6
+We're going to apply the transformation matrix to the vector $[0,0,0,\sqrt{3},1,0]$ defined in global coordinates. What would be vector in the local coordinate system of the previous element?
+
+Check your answer using pen and paper. Tip: make a drawing instead of doing all the algebra.
+```
 
 ```{code-cell} ipython3
 print(np.matmul(elem.T,np.array([0,0,0,np.sqrt(3),1,0])))
+```
+
+```{exercise-end}
 ```
 
 ## 3. The Constrainer class
