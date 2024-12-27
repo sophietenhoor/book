@@ -82,6 +82,8 @@ Investigate how the two models compare for different values of $EA$, ranging fro
 ```
 
 ```{code-cell} ipython3
+:tags: [thebe-remove-input-init]
+
 import matplotlib as plt
 import numpy as np
 sys.path.insert(1, '/matrixmethod_solution')
