@@ -168,7 +168,7 @@ Do the matrices match with what you'd expect?
 
 ```{exercise-start} Task 2.4
 :label: exercise2.4
-Now, create an element rotated in $120 \degree$ with length $2$ and print the transformation matrix.
+Now, create an element rotated in $120 ^{\circ}$ with length $2$ and print the transformation matrix.
 
 Do the matrices match with what you'd expect?
 ```
@@ -182,7 +182,7 @@ Do the matrices match with what you'd expect?
 
 ```{exercise-start} Task 2.5
 :label: exercise2.5
-Now, create an element rotated in $60 \degree$ with length $2$ and print the transformation matrix.
+Now, create an element rotated in $60 ^{\circ}$ with length $2$ and print the transformation matrix.
 
 Do the matrices match with what you'd expect?
 ```
