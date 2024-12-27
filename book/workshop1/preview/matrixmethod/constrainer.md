@@ -18,6 +18,11 @@ kernelspec:
 :replace_default: "False"
 ```
 
+```{custom_download_link} https://github.com/CIEM5000-2025/practice-assignments
+:text: "All files practice assignments"
+:replace_default: "False"
+```
+
 ```{code-cell} ipython3
 import numpy as np
 ```
