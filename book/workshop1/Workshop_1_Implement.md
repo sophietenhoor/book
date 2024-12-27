@@ -28,7 +28,7 @@ Our matrix method implementation is now completely stored in a local package, co
 :replace_default: "True"
 ```
 
-```{custom_download_link} ./Workshop_1_Implement_stripped.md
+```{custom_download_link} ./Workshop_1_Implement.md
 :text: ".md:myst"
 :replace_default: "False"
 ```
@@ -117,6 +117,7 @@ However, the implementation is incomplete:
 
 ```{exercise} Task 2.1
 :label: exercise2.1
+:nonumber: true
 
 Add the missing pieces to the code in `./matrixmethod/elements.py`, before you perform the checks below. Do you specify your stiffness matrix in the global or local coordinate system?
 ```
@@ -132,6 +133,7 @@ Whenever you make changes to your code in the `./matrixmethod/` folder, you need
 
 ```{exercise-start} Task 2.2
 :label: exercise2.2
+:nonumber: true
 
 First, let's check the stiffness matrix for a beam which doesn't require rotation. Create a horizontal element with length $2$ and $EI=4$ and print both the transformation matrix and the stiffness matrix.
 
@@ -161,6 +163,8 @@ print(elem.stiffness())
 
 ```{exercise-start} Task 2.3
 :label: exercise2.3
+:nonumber: true
+
 Now, create a vertical element with length $2$ and $EI=4$ and print the transformation and stiffness matrix.
 
 Do the matrices match with what you'd expect?
@@ -175,6 +179,8 @@ Do the matrices match with what you'd expect?
 
 ```{exercise-start} Task 2.4
 :label: exercise2.4
+:nonumber: true
+
 Now, create an element rotated in $120 ^{\circ}$ with length $2$ and print the transformation matrix.
 
 Do the matrices match with what you'd expect?
@@ -189,6 +195,8 @@ Do the matrices match with what you'd expect?
 
 ```{exercise-start} Task 2.5
 :label: exercise2.5
+:nonumber: true
+
 Now, create an element rotated in $60 ^{\circ}$ with length $2$ and print the transformation matrix.
 
 Do the matrices match with what you'd expect?
@@ -203,6 +211,8 @@ Do the matrices match with what you'd expect?
 
 ```{exercise-start} Task 2.6
 :label: exercise2.6
+:nonumber: true
+
 We're going to apply the transformation matrix to the vector $[0,0,0,\sqrt{3},1,0]$ defined in global coordinates. What would be vector in the local coordinate system of the previous element?
 
 Check your answer using pen and paper. Tip: make a drawing instead of doing all the algebra.
