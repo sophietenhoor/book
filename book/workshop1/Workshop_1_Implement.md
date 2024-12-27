@@ -48,7 +48,7 @@ This class is stored in `./matrixmethod/node.py`
 
 The purpose of this class is to store node information and keep track of the total number of DOFs of the problem. Note the automatic bookkeeping we introduce in `__init__`. This simple but efficient way of keeping track of which DOFs belong to which nodes will make life much easier when we need to assemble matrices from multiple elements. The Node class doesn't need any modification.
 
-```{exercise-start} Tasks 1.1
+```{exercise-start} Task 1.1
 :label: exercise1.1
 To test whether you understand how the class works, create two nodes on coordinates ($0$,$0$) and ($3$,$4$) and print the string representation of both nodes. The `clear` function is called to restart the node and DOF counters. Make sure this is done whenever you start solving a new problem.
 ```
@@ -237,7 +237,7 @@ mm.Element.clear()
 
 > ### Task 4.1: 
 > 
-> Create two nodes here. You can store them on a `list` or simply create them as two separate objects (*e.g.* `node1` and `node2`). 
+> Create two nodes here. You can store them on a `list` or simply create them as two separate objects (*e.g.* `node1` and `node2`).
 
 ```{code-cell} ipython3
 #YOUR CODE HERE
