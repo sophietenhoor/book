@@ -14,7 +14,7 @@ kernelspec:
 # `elements.py`
 
 ```{custom_download_link} elements.py
-:text: "py"
+:text: ".py"
 :replace_default: "False"
 ```
 

@@ -14,7 +14,7 @@ kernelspec:
 # `constrainer.py`
 
 ```{custom_download_link} constrainer.py
-:text: "py"
+:text: ".py"
 :replace_default: "False"
 ```
 

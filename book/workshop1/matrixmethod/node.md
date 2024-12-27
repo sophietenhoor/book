@@ -14,7 +14,7 @@ kernelspec:
 # `node.py`
 
 ```{custom_download_link} node.py
-:text: "py"
+:text: ".py"
 :replace_default: "False"
 ```
 
