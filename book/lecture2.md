@@ -1,4 +1,4 @@
-# Lecture 1
+# Lecture 2
 During today's lesson we'll work on:
 - Reap differential equations for structures
 - Degrees of freedom at nodes
