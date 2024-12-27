@@ -112,8 +112,8 @@ Apart from bookkeeping element data, the other main task of this class is to pro
 Here the class describes an element combining extension and Euler-Bernoulli bending. A similar (or inherited) class could also be implemented for different element types (*e.g.* shear beam, Timoshenko beam, cable elements, etc). Here we also keep it simple by assuming elements are all arranged in a 2D plane.
 
 However, the implementation is incomplete:
-- The transformation matrix is missing in `__init__`, which is given in the [online book](https://ciem5000-2025.github.io/book/lecture1/transformations.html). Make sure you take into account that a positive $\Delta z$ with a positive $\Delta x$ gives a negative angle $\alpha$. Make use of `numpy.arctan2` to return the angle between $-\pi$ and $\pi$, `numpy.arctan` returns an angle between $-\cfrac{\pi}{2}$ and $-\cfrac{\pi}{2}$, and therefore cannot distinguish between all four quadrants.
-- The correct stiffness matrix for this extension-bending element coordinate system is missing in `stiffness`. You can derive the stiffness matrix yourself using pen and paper, SymPy or Maple, or copy the given stiffness matrix from the [online book](https://ciem5000-2025.github.io/book/lecture1/other_elements.html).
+- The transformation matrix is missing in `__init__`, which is given in [](../lecture1/transformations.md). Make sure you take into account that a positive $\Delta z$ with a positive $\Delta x$ gives a negative angle $\alpha$. Make use of `numpy.arctan2` to return the angle between $-\pi$ and $\pi$, `numpy.arctan` returns an angle between $-\cfrac{\pi}{2}$ and $-\cfrac{\pi}{2}$, and therefore cannot distinguish between all four quadrants.
+- The correct stiffness matrix for this extension-bending element coordinate system is missing in `stiffness`. You can derive the stiffness matrix yourself using pen and paper, SymPy or Maple, or copy the given stiffness matrix from [](../lecture1/other_elements.ipynb).
 - We keep the functions which add a distributed load and compute the moments / displacements untouched for this week. Next week we'll implement those as well.
 
 
