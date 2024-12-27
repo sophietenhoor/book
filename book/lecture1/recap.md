@@ -14,7 +14,7 @@ kernelspec:
 # Recap differential equations for structures
 
 ```{custom_download_link} recap.md
-:text: "md:myst"
+:text: ".md:myst"
 :replace_default: "False"
 ```
 
