@@ -40,21 +40,7 @@ Our matrix method implementation is now completely stored in a local package, co
 :replace_default: "False"
 ```
 
-```{code-cell} ipython3
-:tags: [thebe-remove-input-init]
-
-import matplotlib as plt
-import numpy as np
-sys.path.insert(1, '/matrixmethod_solution')
-import matrixmethod_solution as mm
-%config InlineBackend.figure_formats = ['svg']
-```
-
-```{code-cell} ipython3
-import numpy as np
-import matrixmethod as mm
-%config InlineBackend.figure_formats = ['svg']
-```
++++
 
 ## Vierendeel frame
 
@@ -93,6 +79,20 @@ Note that the checks only had a single element. For this model you need to obtai
 Once you have a solution, use SymPy / Maple / pen and paper to solve a shear beam problem with the equivalent stiffness given above (It is very similar to the simple extension problem above) and compare the horizontal displacement at the point of application of $H$ for the two models.
 
 Investigate how the two models compare for different values of $EA$, ranging from very small (*e.g.* $1\cdot 10^{-5}$) to very large (*e.g.* $1\cdot10^{10}$). What explains the behavior you observe?
+```
+
+```{code-cell} ipython3
+import matplotlib as plt
+import numpy as np
+sys.path.insert(1, '/matrixmethod_solution')
+import matrixmethod_solution as mm
+%config InlineBackend.figure_formats = ['svg']
+```
+
+```{code-cell} ipython3
+import numpy as np
+import matrixmethod as mm
+%config InlineBackend.figure_formats = ['svg']
 ```
 
 ```{code-cell} ipython3
