@@ -79,7 +79,7 @@ $$
       }
       {\cB\color{cB}
       \begin{bmatrix}
-	v_{\overbar{x}} \\ v_{\overbar{z}}
+	v_{\bar{x}} \\ v_{\bar{z}}
       \end{bmatrix}
       }
 $$
