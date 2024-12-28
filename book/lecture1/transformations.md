@@ -33,7 +33,7 @@ Leading to:
 
 $$
 {\cB\color{cB}v_{\bar{x}}} = {\cA\color{cA}v_x} \cos\alpha - {\cA\color{cA}v_z} \sin \alpha \\
-{\cB\color{CB}v_{\bar{z}}} = {\cA\color{cA}v_x} \sin\alpha + {\cA\color{cA}v_z} \cos \alpha
+{\cB\color{cB}v_{\bar{z}}} = {\cA\color{cA}v_x} \sin\alpha + {\cA\color{cA}v_z} \cos \alpha
 $$
 
 This can be rewwritten in matrix form as:
