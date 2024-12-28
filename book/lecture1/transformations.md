@@ -43,7 +43,7 @@ $$ {\cB\color{cB}
 	v_{\bar{x}} \\ v_{\bar{z}}
       \end{bmatrix}
       }
-      {\color{black}
+      {
       =
       \underbrace
       {
@@ -67,7 +67,7 @@ $$
 	v_x \\ v_z
       \end{bmatrix}
       }
-      {\color{black}
+      {
       =
       \underbrace
       {
