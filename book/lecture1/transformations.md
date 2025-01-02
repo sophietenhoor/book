@@ -32,13 +32,13 @@ The relations between the components can be found using geometry:
 Leading to:
 
 $$
-{\cB\color{cB}v_{\bar{x}}} = {\cA\color{cA}v_x} \cos\alpha - {\cA\color{cA}v_z} \sin \alpha \\
-{\cB\color{cB}v_{\bar{z}}} = {\cA\color{cA}v_x} \sin\alpha + {\cA\color{cA}v_z} \cos \alpha
+\class{cB}{v_{\bar{x}}} = \class{cA}{v_x} \cos\alpha - \class{cA}{v_z} \sin \alpha \\
+\class{cB}{v_{\bar{z}}} = \class{cA}{v_x} \sin\alpha + \class{cA}{v_z} \cos \alpha
 $$
 
 This can be rewwritten in matrix form as:
 
-$$ {\cB\color{cB}
+$$ \class{cB}{
       \begin{bmatrix}
 	v_{\bar{x}} \\ v_{\bar{z}}
       \end{bmatrix}
@@ -53,7 +53,7 @@ $$ {\cB\color{cB}
       }
       _\mathbf{R}
       }
-      {\cA\color{cA}
+      \class{cA}{
       \begin{bmatrix}
 	v_x \\ v_z
       \end{bmatrix}
@@ -62,7 +62,7 @@ $$ {\cB\color{cB}
 And the inverse relation:
 
 $$
-{ \cA\color{cA}
+\class{cA}{
       \begin{bmatrix}
 	v_x \\ v_z
       \end{bmatrix}
@@ -77,7 +77,7 @@ $$
       }
       _{\mathbf{R}^\mrm{T}}
       }
-      {\cB\color{cB}
+      \class{cB}{
       \begin{bmatrix}
 	v_{\bar{x}} \\ v_{\bar{z}}
       \end{bmatrix}

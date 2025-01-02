@@ -25,13 +25,13 @@ $\mathbf{K}^{(e)}$ is known as the local stiffness matrix, $\mathbf{u}^{(e)}$ th
 ## Global stiffness matrix, displacement vector and force vector
 Now let's see how to combine multiple elements using our new matrix formulation. In [](./combine.md) you've derived the following three equation relating the nodal displacements with external forces:
 
-- $\sum F_1 = 0 \Rightarrow {\cA\color{cA}-\cfrac{EA_1}{\ell_1}}u_1 {\cA\color{cA} + \cfrac{EA_1}{\ell_1}}u_2 + H=0$
-- $\sum F_2 = 0 \Rightarrow {\cA\color{cA}\cfrac{EA_1}{\ell_1}}u_1 {\cA\color{cA} - \cfrac{EA_1}{\ell_1}}u_2 {\cB\color{cB} -\cfrac{EA_2}{\ell_2}}u_2 {\cB\color{cB} + \cfrac{EA_2}{\ell_2}}u_3 =0$
-- $\sum F_3 = 0 \Rightarrow {\cB\color{cB}\cfrac{EA_2}{\ell_2}}u_2 {\cB\color{cB} - \cfrac{EA_2}{\ell_2}}u_3 + F=0$ 
+- $\sum F_1 = 0 \Rightarrow \class{cA}{-\cfrac{EA_1}{\ell_1}}u_1 \class{cA}{ + \cfrac{EA_1}{\ell_1}}u_2 + H=0$
+- $\sum F_2 = 0 \Rightarrow \class{cA}{\cfrac{EA_1}{\ell_1}}u_1 \class{cA}{ - \cfrac{EA_1}{\ell_1}}u_2 \class{cB}{ -\cfrac{EA_2}{\ell_2}}u_2 \class{cB}{ + \cfrac{EA_2}{\ell_2}}u_3 =0$
+- $\sum F_3 = 0 \Rightarrow \class{cB}{\cfrac{EA_2}{\ell_2}}u_2 \class{cB}{ - \cfrac{EA_2}{\ell_2}}u_3 + F=0$ 
 
 These equation can be represented in a matrix formulation:
 
-$$\begin{bmatrix}{\cA\color{cA}\cfrac{EA_1}{\ell_1}}&{\cA\color{cA}-\cfrac{EA_1}{\ell_1}}&0\\{\cA\color{cA}-\cfrac{EA_1}{\ell_1}}&{\cA\color{cA}\cfrac{EA_1}{\ell_1}}+{\cB\color{cB}\cfrac{EA_2}{\ell_2}}&{\cB\color{cB}-\cfrac{EA_2}{\ell_2}}\\0&{\cB\color{cB}-\cfrac{EA_2}{\ell_2}}&{\cB\color{cB}\cfrac{EA_2}{\ell_2}}\end{bmatrix}\begin{bmatrix}u_1\\[12pt]u_2\\[12pt]u_3\end{bmatrix}=\begin{bmatrix}H\\[12pt]0\\[12pt]F\end{bmatrix} $$
+$$\begin{bmatrix}\class{cA}{\cfrac{EA_1}{\ell_1}}&\class{cA}{-\cfrac{EA_1}{\ell_1}}&0\\\class{cA}{-\cfrac{EA_1}{\ell_1}}&\class{cA}{\cfrac{EA_1}{\ell_1}}+\class{cB}{\cfrac{EA_2}{\ell_2}}&\class{cB}{-\cfrac{EA_2}{\ell_2}}\\0&\class{cB}{-\cfrac{EA_2}{\ell_2}}&\class{cB}{\cfrac{EA_2}{\ell_2}}\end{bmatrix}\begin{bmatrix}u_1\\[12pt]u_2\\[12pt]u_3\end{bmatrix}=\begin{bmatrix}H\\[12pt]0\\[12pt]F\end{bmatrix} $$
 
 This can represented as follows too:
 
