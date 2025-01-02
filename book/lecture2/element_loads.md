@@ -18,12 +18,12 @@ Single extension element with distributed load $q$
 
 The same approach is used as in [](../lecture1/recap.ipynb). This results in:
 
-- $C_1 = \class{cA}{\cfrac{q\ell}{2EA}}+\cfrac{u_2-u_1}{\ell}$
+- $C_1 = \class{cB}{\cfrac{q\ell}{2EA}}+\cfrac{u_2-u_1}{\ell}$
 - $C_2 = u_1$
 
 The continuous distributions for the displacement and section force can be evaluated too:
-- $u(x) = \class{cA}{\cfrac{q}{2EA}\left(\ell x - x^2\right)} + u_1\left(1-\cfrac{x}{\ell}\right) + u_2\cfrac{x}{\ell}$
-- $N(x) = \class{cA}{\cfrac{q}{2}\left(\ell-2x \right)} -\cfrac{EA}{\ell}u_1+\cfrac{EA}{\ell}u_2$
+- $u(x) = \class{cB}{\cfrac{q}{2EA}\left(\ell x - x^2\right)} + u_1\left(1-\cfrac{x}{\ell}\right) + u_2\cfrac{x}{\ell}$
+- $N(x) = \class{cB}{\cfrac{q}{2}\left(\ell-2x \right)} -\cfrac{EA}{\ell}u_1+\cfrac{EA}{\ell}u_2$
 
 These are extended results in comparison to [before](../lecture1/single_element.md)
 
@@ -31,12 +31,12 @@ These are extended results in comparison to [before](../lecture1/single_element.
 As before, we can glue elements together by applying nodal equilibrium:
 
 This leads to:
-- $ F_1 = - N = \cfrac{EA}{\ell}u_1-\cfrac{EA}{\ell}u_2 \class{cA}{ -\cfrac{q\ell}{2}}$
-- $ F_2 = N = -\cfrac{EA}{\ell}u_1+\cfrac{EA}{\ell} u_2 \class{cA}{-\cfrac{q\ell}{2}}$
+- $ F_1 = - N = \cfrac{EA}{\ell}u_1-\cfrac{EA}{\ell}u_2 \class{cB}{ -\cfrac{q\ell}{2}}$
+- $ F_2 = N = -\cfrac{EA}{\ell}u_1+\cfrac{EA}{\ell} u_2 \class{cB}{-\cfrac{q\ell}{2}}$
 
 or in matrix notation:
 
-$$\cfrac{EA}{\ell}\begin{bmatrix} 1&-1\\-1&1 \end{bmatrix}\begin{bmatrix}u_1\\u_2\end{bmatrix} \class{cA}{- \begin{bmatrix} \cfrac{q\ell}{2}\\ \cfrac{q\ell}{2}\end{bmatrix}}= \begin{bmatrix}F_1\\F_2\end{bmatrix}$$
+$$\cfrac{EA}{\ell}\begin{bmatrix} 1&-1\\-1&1 \end{bmatrix}\begin{bmatrix}u_1\\u_2\end{bmatrix} \class{cB}{- \begin{bmatrix} \cfrac{q\ell}{2}\\ \cfrac{q\ell}{2}\end{bmatrix}}= \begin{bmatrix}F_1\\F_2\end{bmatrix}$$
 
 Effectively, we converted the continuous load to an equivalent nodal load.
 
