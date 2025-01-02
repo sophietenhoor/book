@@ -33,4 +33,4 @@ This leads to:
 
 or in matrix notation:
 
-$$\cfrac{EA}{\ell}\begin{bmatrix} 1&-1\\-1&1 \end{bmatrix}\begin{bmatrix}u_1\\u_2\end{bmatrix} + \color{cB}{-\mymat{\myfrac{q\ell}{2}\\\myfrac{q\ell}{2}}}= \begin{bmatrix}F_1\\F_2\end{bmatrix}$$
+$$\cfrac{EA}{\ell}\begin{bmatrix} 1&-1\\-1&1 \end{bmatrix}\begin{bmatrix}u_1\\u_2\end{bmatrix} \color{cB}{- \mymat{\cfrac{q\ell}{2}\\\cfrac{q\ell}{2}}}= \begin{bmatrix}F_1\\F_2\end{bmatrix}$$
