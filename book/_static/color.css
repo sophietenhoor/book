@@ -1,0 +1,15 @@
+:root {
+    --cA: rgb(1,113,136);
+    --cB: rgb(195,49,47);
+}
+
+.cA {color: var(--cA);}
+.cB {color: var(--cB);}
+
+html[data-theme="dark"] .cA {
+  filter:  invert(1) hue-rotate(180deg) saturate(1.5);
+}
+
+html[data-theme="dark"] .cB {
+    filter:  invert(1) hue-rotate(180deg) saturate(1.5);
+  }

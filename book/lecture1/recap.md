@@ -142,7 +142,7 @@ As this structure is loaded along its axis, the differential equation for extens
 
 For the first field this gives:
 
-- ${\cA\color{cA}EA_1\cfrac{\mrm{d}^2u_1}{\mrm{d}x^2}=0}$
+- $\class{newcolor}{EA_1\cfrac{\mrm{d}^2u_1}{\mrm{d}x^2}=0}$
 - ${\cA\color{cA}N_1 = C_1}$
 - ${\cA\color{cA}u_1(x) = \cfrac{C_1}{EA}x + C_2}$
 - Boundary conditions: ${\cA\color{cA}u_1(0) = 0}$
@@ -190,5 +190,3 @@ The similarities and differences are shown in the table below.
 |Solve for integration constants $C_1, C_2, ...$|Solve nodal displacements $u_1, u_2, ...$|
 
 :::
-
-+++
