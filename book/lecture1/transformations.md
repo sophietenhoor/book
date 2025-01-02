@@ -25,7 +25,7 @@ For an arbitrary vector $v$ with two components, the transformation matrix can b
 The relations between the components can be found using geometry:
 
 ```{figure} transform_2.svg
-:name: transform_1
+:name: transform_2
 :align: center
 ```
 
