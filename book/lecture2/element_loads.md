@@ -3,10 +3,10 @@
 As the matrix method is a discrete approach, nodal loads were treated with ease. However, what to do with continuous loads or loads which are not applied at the nodes?
 
 ::::::{topic} Learning objective
-You'll look into how to model element loads using differential equations and work.
+You'll look into how to model element loads using differential equations and conservation of work and how these are combined in the matrix formulation.
 ::::::
 
-## Differential equations
+## Force-displacement relations using differential equations
 As [before](../lecture1/single_element.md), we can derive the force-displacement relations of a single extension element. However, now let's include the loads, for example a continuous load $q$
 
 ```{figure} extensionelementq.svg
@@ -18,19 +18,34 @@ Single extension element with distributed load $q$
 
 The same approach is used as in [](./recap.ipynb). This results in:
 
-- $C_1 = \cfrac{q\ell}{2EA}+\cfrac{u_2-u_1}{\ell}$
+- $C_1 = \class{cB}{\cfrac{q\ell}{2EA}}+\cfrac{u_2-u_1}{\ell}$
 - $C_2 = u_1$
 
 The continuous distributions for the displacement and section force can be evaluated too:
-- $u(x) = \cfrac{q}{2EA}\left(\ell x - x^2\right) + u_1\left(1-\cfrac{x}{\ell}\right) + u_2\cfrac{x}{\ell}$
-- $N(x) = \cfrac{q}{2}\left(\ell-2x \right) -\cfrac{EA}{\ell}u_1+\cfrac{EA}{\ell}u_2$
+- $u(x) = \class{cB}{\cfrac{q}{2EA}\left(\ell x - x^2\right)} + u_1\left(1-\cfrac{x}{\ell}\right) + u_2\cfrac{x}{\ell}$
+- $N(x) = \class{cB}{\cfrac{q}{2}\left(\ell-2x \right)} -\cfrac{EA}{\ell}u_1+\cfrac{EA}{\ell}u_2$
 
-Applying nodal equilibrium gives:
+This are extended results in comparison to [before](../lecture1/single_element.md)
+
+## Combine elements
+As before, we can glue elements together by applying nodal equilibrium:
 
 This leads to:
-- $ F_1 = - N = \cfrac{EA}{\ell}u_1-\cfrac{EA}{\ell}u_2 -\cfrac{q\ell}{2}$
-- $ F_2 = N = -\cfrac{EA}{\ell}u_1+\cfrac{EA}{\ell} u_2 -\cfrac{q\ell}{2}$
+- $ F_1 = - N = \cfrac{EA}{\ell}u_1-\cfrac{EA}{\ell}u_2 \class{cB}{ -\cfrac{q\ell}{2}}$
+- $ F_2 = N = -\cfrac{EA}{\ell}u_1+\cfrac{EA}{\ell} u_2 \class{cB}{-\cfrac{q\ell}{2}}$
 
 or in matrix notation:
 
-$$\cfrac{EA}{\ell}\begin{bmatrix} 1&-1\\-1&1 \end{bmatrix}\begin{bmatrix}u_1\\u_2\end{bmatrix} \color{cB}{- \mymat{\cfrac{q\ell}{2}\\\cfrac{q\ell}{2}}}= \begin{bmatrix}F_1\\F_2\end{bmatrix}$$
+$$\cfrac{EA}{\ell}\begin{bmatrix} 1&-1\\-1&1 \end{bmatrix}\begin{bmatrix}u_1\\u_2\end{bmatrix} \class{cB}{- \begin{bmatrix} \cfrac{q\ell}{2}\\ \cfrac{q\ell}{2}\end{bmatrix}}= \begin{bmatrix}F_1\\F_2\end{bmatrix}$$
+
+Effectively, we converted the continuous load to an equivalent nodal load.
+
+This influences the nodal equilibrium too:
+
+$$\begin{align} -\sum_e\mathbf{f}^e + \mathbf{f}_\text{nodal}& = \mathbf{0}\\
+-\sum_e\left(\mathbf{K}^e\mathbf{u}^e \class{cB}{-\mathbf{f}_\mathrm{eq}^e}\right) + \mathbf{f}_\mathrm{nodal}& = \mathbf{0}\\
+\sum_e\mathbf{f}^e& = \mathbf{f}_\text{nodal} + \class{cB}{\sum_e\mathbf{f}_\mathrm{eq}^e} \end{align}$$
+
+This means that we can calculate all the equivalent nodal loads separately and add them to the nodal loads. Please note that all these forces should be in the global coordinate system: $\class{cA}{\mathbf{f}_\mathrm{eq}} = \mathbf{T}^\mathrm{T}\class{cB}{\bar{\mathbf{f}}_\mathrm{eq}}$
+
+## Force-displacement relations using conservation of work
