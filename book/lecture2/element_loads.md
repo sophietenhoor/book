@@ -49,3 +49,24 @@ $$\begin{align} -\sum_e\mathbf{f}^e + \mathbf{f}_\text{nodal}& = \mathbf{0}\\
 This means that we can calculate all the equivalent nodal loads separately and add them to the nodal loads. Please note that all these forces should be in the global coordinate system: $\class{cA}{\mathbf{f}_\mathrm{eq}} = \mathbf{T}^\mathrm{T}\class{cB}{\bar{\mathbf{f}}_\mathrm{eq}}$
 
 ## Force-displacement relations using conservation of work
+Let's consider another example in which the application of the differential equations are not trivial: we'll introduce a discontinuous force in the form of a point load halfway the element. We'll compare this with the same element loaded by vertical forces and bending moments at the ends:
+
+```{figure} eqwork3.svg
+:name: eqwork3
+:align: center
+
+Single extension element with point load $P$ halfway in comparison to element loaded by vertical forces and bending moments at the ends 
+```
+
+The conservation of work states that the work done by the force $P$ should be equal to the force done by the forces $\class{cA}{F_1^{eq}}$, $\class{cE}{F_2^{eq}}$, $\class{cB}{T_1^{eq}}$ and $\class{cI}{T_2^{eq}}$: $W_P$ = $W_{eq}$
+
+To ease the calculation, we'll split the displacement in four cubic shape functions. Each shape function will have a displacement of $1$ in direction of each of the four edge forces ($\class{cA}{w_1}$, $\class{cE}{\varphi_1}$, $\class{cB}{w_2}$ and $\class{cI}{\varphi_2}$):
+
+```{figure} shape_functions.svg
+:name: shape_functions
+:align: center
+
+Four shape functions
+```
+
+Consequently, the work $W_{eq}$ can be splitted in four independent terms easing the calculation.

@@ -1,15 +1,18 @@
 :root {
-    --cA: rgb(1,113,136);
-    --cB: rgb(195,49,47);
+  --cA: rgb(1,113,136);
+  --cB: rgb(195,49,47);
+  --cE: rgb(0,163,144);
+  --cI: rgb(235,114,70);
 }
 
 .cA {color: var(--cA);}
 .cB {color: var(--cB);}
+.cE {color: var(--cE);}
+.cI {color: var(--cI);}
 
-html[data-theme="dark"] .cA {
-  filter:  invert(1) hue-rotate(180deg) saturate(1.5);
+html[data-theme="dark"] .cA,
+html[data-theme="dark"] .cB,
+html[data-theme="dark"] .cE,
+html[data-theme="dark"] .cI {
+  filter: invert(1) hue-rotate(180deg) saturate(1.5);
 }
-
-html[data-theme="dark"] .cB {
-    filter:  invert(1) hue-rotate(180deg) saturate(1.5);
-  }
