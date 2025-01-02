@@ -49,6 +49,8 @@ $$\begin{align} -\sum_e\mathbf{f}^e + \mathbf{f}_\text{nodal}& = \mathbf{0}\\
 This means that we can calculate all the equivalent nodal loads separately and add them to the nodal loads. Please note that all these forces should be in the global coordinate system: $\class{cA}{\mathbf{f}_\mathrm{eq}} = \mathbf{T}^\mathrm{T}\class{cB}{\bar{\mathbf{f}}_\mathrm{eq}}$
 
 ## Force-displacement relations using conservation of work
+
+### Point load
 Let's consider another example in which the application of the differential equations are not trivial: we'll introduce a discontinuous force in the form of a point load halfway the element. We'll compare this with the same element loaded by vertical forces and bending moments at the ends:
 
 ```{figure} eqwork3.svg
@@ -69,4 +71,43 @@ To ease the calculation, we'll split the displacement in four cubic shape functi
 Four shape functions
 ```
 
-Consequently, the work $W_{eq}$ can be splitted in four independent terms easing the calculation.
+Consequently, the work $W_{eq}$ can be splitted in four independent terms easing the calculation, which can be compared to the same terms in $W_P$.
+
+The work performed by the edge forces equals:
+
+$$ W_F = 
+	    \class{cA}{F^\mrm{eq}_1w_1} +
+	    \class{cE}{T^\mrm{eq}_1\varphi_1} +
+	    \class{cB}{F^\mrm{eq}_2w_2} + 
+	    \class{cI}{T^\mrm{eq}_2\varphi_2}$$
+
+The work performed by $P$ (under the same displacement) is:
+
+$$W_q = P\ w\left(\frac{\ell}{2}\right) = 
+	  \class{cA}{\left(P\ s_1\left(\frac{\ell}{2}\right)\right)w_1} +
+	  \class{cE}{\left(P\ s_2\left(\frac{\ell}{2}\right)\right)\varphi_1} +
+	  \class{cB}{\left(P\ s_3\left(\frac{\ell}{2}\right) \right)w_2} +
+	  \class{cI}{\left(P\ s_4\left(\frac{\ell}{2}\right)\right)\varphi_2}$$
+
+Enforcing $W_F = W_q$ and isolating terms gives:
+
+$$
+\mathbf{f}_\mrm{eq}
+	    =
+	    \begin{bmatrix}
+	      \class{cA}{F^\mrm{eq}_1}\\[12pt]
+	      \class{cE}{T^\mrm{eq}_1}\\[12pt]
+	      \class{cB}{F^\mrm{eq}_2}\\[12pt]
+	      \class{cI}{T^\mrm{eq}_2}\\
+	    \end{bmatrix}
+	    =
+	    \begin{bmatrix}
+	      \class{cA}{\cfrac{P}{2}}     \\
+	      \class{cE}{-\cfrac{P\ell}{8}}\\
+	      \class{cB}{\cfrac{P}{2}}     \\
+	      \class{cI}{\cfrac{P\ell}{8}} \\
+	    \end{bmatrix}
+$$
+
+### Distributed load
+The same can be done for a distributed load
