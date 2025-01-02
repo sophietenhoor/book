@@ -48,9 +48,13 @@ These relations can be rewritten as $F_1$ and $F_2$ in terms of $u_2$ so that th
 
 Using $F^{(1)} = F^{(2)}$ the displacement $u_2$ can now be solved for:
 
-$$ \cfrac{EA_1}{\ell_1} u_2 - \cfrac{\ell_1^2}{2EA_1}q = -\cfrac{EA_2}{\ell_2} u_2 - \cfrac{\ell_2^2}{2EA_2}q \\
-\left(\cfrac{EA_1}{\ell_1} + \cfrac{EA_2}{\ell_2}\right) u_2 = \cfrac{\ell_1^2}{2EA_1}q - \cfrac{\ell_2^2}{2EA_2}q \\
-u_2 = \cfrac{\cfrac{\ell_1^2}{2EA_1}q - \cfrac{\ell_2^2}{2EA_2}q }{\cfrac{EA_1}{\ell_1} + \cfrac{EA_2}{\ell_2}}$$
+$$
+\begin{align}
+\cfrac{EA_1}{\ell_1} u_2 - \cfrac{\ell_1^2}{2EA_1}q& = -\cfrac{EA_2}{\ell_2} u_2 - \cfrac{\ell_2^2}{2EA_2}q \\
+\left(\cfrac{EA_1}{\ell_1} + \cfrac{EA_2}{\ell_2}\right) u_2& = \cfrac{\ell_1^2}{2EA_1}q - \cfrac{\ell_2^2}{2EA_2}q \\
+u_2& = \cfrac{\cfrac{\ell_1^2}{2EA_1}q - \cfrac{\ell_2^2}{2EA_2}q }{\cfrac{EA_1}{\ell_1} + \cfrac{EA_2}{\ell_2}}
+\end{align}
+$$
 
 ## Equivalence with matrix method
 

@@ -128,10 +128,10 @@ Using the known transformation for the first-order tensors $\mathbf{u}$ and $\ma
 
 $$
 \begin{align}
-\class{cB}{\bar {\mathbf{K}}} {\class{cB}{\bar{\mathbf{u}}}} = {\class{cB}{\bar{\mathbf{f}}}} \\
-\class{cB}{\bar{\mathbf{K}}} \mathbf{T}{\class{cA}{\mathbf{u}}} = \mathbf{T}{\class{cA}{\mathbf{f}}} \\
-\mathbf{T}^\mrm{T}\class{cB}{\bar{\mathbf{K}}} \mathbf{T}{\class{cA}{\mathbf{u}}} = \mathbf{T}^\mrm{T}\mathbf{T}{\class{cA}{\mathbf{f}}} \\
-\class{cA}{\bar{\mathbf{K}}}{\class{cA}{\mathbf{u}}} = {\class{cA}{\mathbf{f}}} 
+\class{cB}{\bar {\mathbf{K}}} {\class{cB}{\bar{\mathbf{u}}}}& = {\class{cB}{\bar{\mathbf{f}}}} \\
+\class{cB}{\bar{\mathbf{K}}} \mathbf{T}{\class{cA}{\mathbf{u}}}& = \mathbf{T}{\class{cA}{\mathbf{f}}} \\
+\mathbf{T}^\mrm{T}\class{cB}{\bar{\mathbf{K}}} \mathbf{T}{\class{cA}{\mathbf{u}}}& = \mathbf{T}^\mrm{T}\mathbf{T}{\class{cA}{\mathbf{f}}} \\
+\class{cA}{\bar{\mathbf{K}}}{\class{cA}{\mathbf{u}}}& = {\class{cA}{\mathbf{f}}} 
 \end{align}
 $$
 
