@@ -131,8 +131,8 @@ $$
 \class{cB}{\bar {\mathbf{K}}} {\class{cB}{\bar{\mathbf{u}}}}& = {\class{cB}{\bar{\mathbf{f}}}} \\
 \class{cB}{\bar{\mathbf{K}}} \mathbf{T}{\class{cA}{\mathbf{u}}}& = \mathbf{T}{\class{cA}{\mathbf{f}}} \\
 \mathbf{T}^\mrm{T}\class{cB}{\bar{\mathbf{K}}} \mathbf{T}{\class{cA}{\mathbf{u}}}& = \mathbf{T}^\mrm{T}\mathbf{T}{\class{cA}{\mathbf{f}}} \\
-\class{cA}{\bar{\mathbf{K}}}{\class{cA}{\mathbf{u}}}& = {\class{cA}{\mathbf{f}}} 
+\class{cA}{\mathbf{K}}{\class{cA}{\mathbf{u}}}& = {\class{cA}{\mathbf{f}}} 
 \end{align}
 $$
 
-So $\class{cB}{\bar{\mathbf{K}}} = \mathbf{T}^\mrm{T} \class{cB}{\bar {\mathbf{K}}} \mathbf{T}$
+So $\class{cA}{\mathbf{K}} = \mathbf{T}^\mrm{T} \class{cB}{\bar {\mathbf{K}}} \mathbf{T}$
