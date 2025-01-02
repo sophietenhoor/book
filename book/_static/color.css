@@ -1,13 +1,13 @@
 :root {
     --newcolor: rgb(111, 29, 119);
-    --cA2: rgb(1,113,136);
+    --cX: rgb(1,113,136);
     --cB: rgb(195,49,47);
 }
 
-.cA {color: var(--cA2);}
+.cA {color: var(--cX);}
 .cB {color: var(--cB);}
 
-html[data-theme="dark"] .cA2 {
+html[data-theme="dark"] .cX {
   filter:  invert(1) hue-rotate(180deg) saturate(1.5);
 }
 

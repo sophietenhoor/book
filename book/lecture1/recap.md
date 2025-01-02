@@ -153,7 +153,7 @@ $$\class{newcolor}{\LaTeX}$$
 $\class{newcolor}{EA_1\cfrac{\mrm{d}^2u_1}{\mrm{d}x^2}=0}$
 
 
-$\class{cA2}{EA_1\cfrac{\mrm{d}^2u_1}{\mrm{d}x^2}=0}$
+$\class{cX}{EA_1\cfrac{\mrm{d}^2u_1}{\mrm{d}x^2}=0}$
 
 - $\class{cA2}{EA_1\cfrac{\mrm{d}^2u_1}{\mrm{d}x^2}=0}$
 - ${\cA\color{cA}N_1 = C_1}$
