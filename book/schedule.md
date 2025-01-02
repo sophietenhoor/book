@@ -16,10 +16,10 @@ See the schedule below for the different weeks. Clicking the links will take you
 :widths: auto
 :align: center
 
-||Monday|Tuesday|Wednesday|Thursday|Friday|After ...|
+||Monday|Tuesday|Wednesday|Thursday|Friday|
 |:-:|:-:|:-:|:-:|:--:|:-:|
-|Class activities| [](lecture2.md) | [](workshop2.md)||||[](additional.md)|
-|Additional homework| [](lecture2.md) | [](workshop2.md)||||[](additional.md)|
+|Class activities| [](lecture2.md) | [](workshop2.md)||||
+|Additional homework||Following workshop 2: [](additional.md)|
 :::
 
 :::{table} Schedule week 3
@@ -82,5 +82,5 @@ See the schedule below for the different weeks. Clicking the links will take you
 
 ||Monday|Tuesday|Wednesday|Thursday|Friday|
 |:-:|:-:|:-:|:-:|:--:|:-:|
-|Deadlines|Hand in report|
+|Deadline|Hand in report|
 :::
