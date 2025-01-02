@@ -83,3 +83,58 @@ $$
       \end{bmatrix}
       }
 $$
+
+## Transformation for a complete element
+
+To transform a complete element, the displacements of both endpoints have to be transformed, while the rotations are independent of the element orientation:
+
+$$
+\[
+      {
+	\class{cB}
+	\begin{bmatrix}
+	  \overbar{u}_1\\\overbar{w}_1\\\overbar{\varphi}_1\\
+	  \overbar{u}_2\\\overbar{w}_2\\\overbar{\varphi}_2\\
+	\end{bmatrix}
+      }
+      =
+      \underbrace
+      {
+	\begin{bmatrix}
+	  \cos\alpha & -\sin\alpha & 0 & 0 & 0 & 0\\
+	  \sin\alpha &  \cos\alpha & 0 & 0 & 0 & 0\\
+	  0 & 0 & 1 & 0 & 0 & 0\\
+	  0 & 0 & 0 & \cos\alpha & -\sin\alpha & 0\\
+	  0 & 0 & 0 & \sin\alpha &  \cos\alpha & 0\\
+	  0 & 0 & 0 & 0 & 0 & 1\\
+	\end{bmatrix}
+      }_\mathbf{T}
+      {
+	\class{cA}
+	\begin{bmatrix}
+	  {u}_1\\{w}_1\\{\varphi}_1\\
+	  {u}_2\\{w}_2\\{\varphi}_2\\
+	\end{bmatrix}
+      }
+    \]
+$$
+
+Resulting in:
+
+- ${\class{cB}\overline{\mathbf{u}}} = \mathbf{T}{\class{cA}\mathbf{u}}$
+- ${\class{cB}\overline{\mathbf{f}}} = \mathbf{T}{\class{cA}\mathbf{f}}$
+- ${\class{cA}{\mathbf{u}}} = \mathbf{T}^\mrm{T}{\class{cB}\overbar{\mathbf{u}}}$
+- ${\class{cA}{\mathbf{f}}} = \mathbf{T}^\mrm{T}{\class{cB}\overline{\mathbf{f}}}$
+
+## Transformation for stiffness matrix
+
+Using the known transformation for the first-order tensors $\mathbf{u}$ and $\mathbf{f}$ the transformation matrix for the second-order tensor $\mathbf{K}$ can be derived:
+
+$$
+\class{cB}{\overbar{\mathbf{K}}} {\class{cB}\overline{\mathbf{u}}} = {\class{cB}\overline{\mathbf{f}}} \\
+\class{cB}{\overbar{\mathbf{K}}} \mathbf{T}{\class{cA}\mathbf{u}} = \mathbf{T}{\class{cA}\mathbf{f}} \\
+\mathbf{T}^\mrm{T}\class{cB}{\overbar{\mathbf{K}}} \mathbf{T}{\class{cA}\mathbf{u}} = \mathbf{T}^\mrm{T}\mathbf{T}{\class{cA}\mathbf{f}} 
+\class{cA}{\overbar{\mathbf{K}}}{\class{cA}\mathbf{u}} = {\class{cA}\mathbf{f}} 
+$$
+
+So $\class{cB}{\overbar{\mathbf{K}}} = \mathbf{T}^\mrm{T}\class{cB}{\overbar{\mathbf{K}}} \mathbf{T}$
