@@ -133,4 +133,4 @@ $$
 \class{cA}{\bar\mathbf{K}}{\class{cA}{\mathbf{u}}} = {\class{cA}{\mathbf{f}}} 
 $$
 
-So $\class{cB}{\bar \mathbf{K}} = \mathbf{T}^\mrm{T}\class{cB}{\bar \mathbf{K}} \mathbf{T}$
+So $\class{cB}{\bar{\mathbf{K}}} = \mathbf{T}^\mrm{T} \class{cB}{\bar {\mathbf{K}}} \mathbf{T}$
