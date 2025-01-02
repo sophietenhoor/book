@@ -34,6 +34,8 @@ parts:
         - file: workshop1/matrixmethod/elements.md
         - file: workshop1/matrixmethod/constrainer.md
     - file: lecture2.md
+      sections:
+      - file: lecture2/element_loads.md
     - file: workshop2.md
     - file: additional.md
     - file: assignment.md
