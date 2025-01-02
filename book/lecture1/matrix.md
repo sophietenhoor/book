@@ -2,7 +2,9 @@
 
 In the previous [chapter](./combine.md) you've seen how to combine multiple elements to arrive to a linear system of equation to solve the nodal displacements. However, the nodal displacements were part of $\mathbf{f}^e$, which doesn't allow us to solve the vector formulation directly.
 
-> You'll look how to define local and global matrices and vectors of separately: unknown displacements vector, external force vector and elements stiffness matrices.
+::::::{topic} Learning objective
+You'll look how to define local and global matrices and vectors of separately: unknown displacements vector, external force vector and elements stiffness matrices.
+::::::
 
 ## Local stiffness matrix, displacement vector and force vector
 In [](./single_element.md) you've derived the following two equations relating the nodal forces and displacements:

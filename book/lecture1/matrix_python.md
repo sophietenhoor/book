@@ -2,7 +2,9 @@
 
 The matrix method is implemented in an (incomplete) python package which you'll extend in the workshops and graded assignments. 
 
-> You'll look into the structure of the matrix method python package.
+::::::{topic} Learning objective
+You'll look into the structure of the matrix method python package.
+::::::
 
 The method is broken down as follows:
 - A list of nodes floating in space with loads and DOFs associated to them

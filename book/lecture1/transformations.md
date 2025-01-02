@@ -2,7 +2,9 @@
 
 Up until now we didn't care about the orientation of elements. Actually, all elements had exactly the same orientation. But how do deal with elements in a different orientation?
 
-> You'll look into how to transform elements from a local to global orientation
+::::::{topic} Learning objective
+You'll look into how to transform elements from a local to global orientation
+::::::
 
 The stiffness matrix is defined in a local coordinate system following an element's orientation. This is useful because it allows us to reuse that same stiffness matrix  and  again without the need to rederive it. However, during assembly, when combining multiple elements, it would be useful to have them all in the same coordinate system, the global one. After solving for displacements in the global coordinate system, it might be needed to transform back to the local coordinate system to get expression for continuous displacements and section forces.
 

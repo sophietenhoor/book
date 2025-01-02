@@ -1,7 +1,9 @@
 # Setting up global equations directly
 Now that you've seen the final matrix formulation, let's set up a procedure to find it directly!
 
-> You'll look into how to setup the global formulation directly
+::::::{topic} Learning objective
+You'll look into how to setup the global formulation directly
+::::::
 
 We'll do that for the same structure as before:
 

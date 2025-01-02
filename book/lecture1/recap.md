@@ -20,7 +20,9 @@ kernelspec:
 
 Let's recap how to solve a structure using differential equations.
 
-> We'll investigate the differences between solving structures with differential equations and the matrix method. Furthermore, you'll need differential equations in the matrix method itself to define some default elements. 
+::::::{topic} Learning objective
+We'll investigate the differences between solving structures with differential equations and the matrix method. Furthermore, you'll need differential equations in the matrix method itself to define some default elements. 
+::::::
 
 Given is a cantilever beam with a distributed load:
 

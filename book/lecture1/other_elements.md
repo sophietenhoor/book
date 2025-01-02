@@ -22,7 +22,10 @@ kernelspec:
 
 In [](./single_element.md) and [](./matrix.md) you've seen how to derive the local stiffness matrix for a simple extension element. But can you do the same for other elements?
 
-> You'll look into deriving the local stiffness matrix for the Euler-Bernoulli element.
+
+::::::{topic} Learning objective
+You'll look into deriving the local stiffness matrix for the Euler-Bernoulli element.
+::::::
 
 Previously, the local stiffness matrix for a simple extension element was found as:
 

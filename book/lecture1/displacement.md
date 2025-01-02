@@ -11,7 +11,9 @@ jupytext:
 
 In the previous [chapter](./recap.ipynb) you've seen how solving for integration constants because a labour-intensive process for more complicated structures. A way of circumventing that is solving for nodal displacements! You might have seen that before when solving statically indeterminate structures using the displacement method!
 
-> We'll investigate the equivalence between solving structures with the displacement method and the matrix method.
+::::::{topic} Learning objective
+We'll investigate the equivalence between solving structures with the displacement method and the matrix method.
+::::::
 
 The displacement method for statically indeterminate structures works by defining a single nodal displacement of the equivalent statically determinate structure which defines the displacement of the full structure. The nodal displacement can be solved for by equilibrium relations of the external forces and the force corresponding to the displacement. Solving this equation allows you to find the full displacement- and force distribution.
 
