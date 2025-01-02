@@ -16,7 +16,7 @@ As [before](../lecture1/single_element.md), we can derive the force-displacement
 Single extension element with distributed load $q$
 ```
 
-The same approach is used as in [](./recap.ipynb). This results in:
+The same approach is used as in [](../lecture1/recap.ipynb). This results in:
 
 - $C_1 = \class{cB}{\cfrac{q\ell}{2EA}}+\cfrac{u_2-u_1}{\ell}$
 - $C_2 = u_1$
@@ -25,7 +25,7 @@ The continuous distributions for the displacement and section force can be evalu
 - $u(x) = \class{cB}{\cfrac{q}{2EA}\left(\ell x - x^2\right)} + u_1\left(1-\cfrac{x}{\ell}\right) + u_2\cfrac{x}{\ell}$
 - $N(x) = \class{cB}{\cfrac{q}{2}\left(\ell-2x \right)} -\cfrac{EA}{\ell}u_1+\cfrac{EA}{\ell}u_2$
 
-This are extended results in comparison to [before](../lecture1/single_element.md)
+These are extended results in comparison to [before](../lecture1/single_element.md)
 
 ## Combine elements
 As before, we can glue elements together by applying nodal equilibrium:
