@@ -62,7 +62,7 @@ $$ \class{cB}{
 And the inverse relation:
 
 $$
-{ \cA\color{cA}
+\class{cA}{
       \begin{bmatrix}
 	v_x \\ v_z
       \end{bmatrix}
