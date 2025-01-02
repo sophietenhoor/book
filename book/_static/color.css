@@ -1,22 +1,15 @@
 :root {
-    --newcolor: rgb(111, 29, 119);
-    --cX: rgb(1,113,136);
+    --cA: rgb(1,113,136);
     --cB: rgb(195,49,47);
 }
 
-.cX {color: var(--cX);}
+.cA {color: var(--cA);}
 .cB {color: var(--cB);}
 
-html[data-theme="dark"] .cX {
+html[data-theme="dark"] .cA {
   filter:  invert(1) hue-rotate(180deg) saturate(1.5);
 }
 
 html[data-theme="dark"] .cB {
     filter:  invert(1) hue-rotate(180deg) saturate(1.5);
   }
-
-.newcolor {color: var(--newcolor);}
-
-html[data-theme="dark"] .newcolor {
-  filter:  invert(1) hue-rotate(180deg) saturate(1.5);
-}

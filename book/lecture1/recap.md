@@ -141,23 +141,10 @@ Extension bar with nodal load
 As this structure is loaded along its axis, the differential equation for extension is used.
 
 For the first field this gives:
-:::{math}
-\class{newcolor}{\LaTeX}
-:::
 
-$\class{newcolor}{\LaTeX}$
-
-$$\class{newcolor}{\LaTeX}$$
-
-
-$\class{newcolor}{EA_1\cfrac{\mrm{d}^2u_1}{\mrm{d}x^2}=0}$
-
-
-$\class{cX}{EA_1\cfrac{\mrm{d}^2u_1}{\mrm{d}x^2}=0}$
-
-- $\class{cA2}{EA_1\cfrac{\mrm{d}^2u_1}{\mrm{d}x^2}=0}$
-- ${\cA\color{cA}N_1 = C_1}$
-- ${\cA\color{cA}u_1(x) = \cfrac{C_1}{EA}x + C_2}$
+- $\class{cA}{EA_1\cfrac{\mrm{d}^2u_1}{\mrm{d}x^2}=0}$
+- $\class{cA}{N_1 = C_1}$
+- $\class{cA}{u_1(x) = \cfrac{C_1}{EA}x + C_2}$
 - Boundary conditions: ${\cA\color{cA}u_1(0) = 0}$
 
 For the second field it gives:
