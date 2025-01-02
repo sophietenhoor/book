@@ -4,14 +4,14 @@ Up until now we didn't care about the orientation of elements. Actually, all ele
 
 > You'll look into how to transform elements from a local to global orientation
 
-The stiffness matrix is defined in a local coordinate system following an element's orientation. This is useful because it allows us to reuse that same stiffness matrix over and over again without the need to rederive it. However, during assembly, when combining multiple elements, it would be useful to have them all in the same coordinate system, the global one. After solving for displacements in the global coordinate system, it might be needed to transform back to the local coordinate system to get expression for continuous displacements and section forces.
+The stiffness matrix is defined in a local coordinate system following an element's orientation. This is useful because it allows us to reuse that same stiffness matrix  and  again without the need to rederive it. However, during assembly, when combining multiple elements, it would be useful to have them all in the same coordinate system, the global one. After solving for displacements in the global coordinate system, it might be needed to transform back to the local coordinate system to get expression for continuous displacements and section forces.
 
 ```{figure} transformations.svg
 :name: transformations
 :align: center
 ```
 
-We'll be using a $x-z$-coordinate system as the differential equations are derived using those axes. This is different than in most finite-element-implementations and in most cases not in line with international standards.
+We'll be using a $x-z$-coordinate system as the differential equations are derived using those axes. This is different than in most finite-element-implementations and in most cases not in bar with international standards.
 
 # Transformation for an arbitrary vector
 
@@ -89,12 +89,10 @@ $$
 To transform a complete element, the displacements of both endpoints have to be transformed, while the rotations are independent of the element orientation:
 
 $$
-\[
-      {
-	\class{cB}
+      \class{cB}{
 	\begin{bmatrix}
-	  \overbar{u}_1\\\overbar{w}_1\\\overbar{\varphi}_1\\
-	  \overbar{u}_2\\\overbar{w}_2\\\overbar{\varphi}_2\\
+	  \bar{u}_1\\\bar{w}_1\\\bar{\varphi}_1\\
+	  \bar{u}_2\\\bar{w}_2\\\bar{\varphi}_2\\
 	\end{bmatrix}
       }
       =
@@ -109,32 +107,30 @@ $$
 	  0 & 0 & 0 & 0 & 0 & 1\\
 	\end{bmatrix}
       }_\mathbf{T}
-      {
-	\class{cA}
+      \class{cA}{
 	\begin{bmatrix}
 	  {u}_1\\{w}_1\\{\varphi}_1\\
 	  {u}_2\\{w}_2\\{\varphi}_2\\
 	\end{bmatrix}
       }
-    \]
 $$
 
 Resulting in:
 
-- ${\class{cB}\overline{\mathbf{u}}} = \mathbf{T}{\class{cA}\mathbf{u}}$
-- ${\class{cB}\overline{\mathbf{f}}} = \mathbf{T}{\class{cA}\mathbf{f}}$
-- ${\class{cA}{\mathbf{u}}} = \mathbf{T}^\mrm{T}{\class{cB}\overbar{\mathbf{u}}}$
-- ${\class{cA}{\mathbf{f}}} = \mathbf{T}^\mrm{T}{\class{cB}\overline{\mathbf{f}}}$
+- ${\class{cB}\bar{\mathbf{u}}} = \mathbf{T}{\class{cA}\mathbf{u}}$
+- ${\class{cB}\bar{\mathbf{f}}} = \mathbf{T}{\class{cA}\mathbf{f}}$
+- ${\class{cA}{\mathbf{u}}} = \mathbf{T}^\mrm{T}{\class{cB}\bar{\mathbf{u}}}$
+- ${\class{cA}{\mathbf{f}}} = \mathbf{T}^\mrm{T}{\class{cB}\bar{\mathbf{f}}}$
 
 ## Transformation for stiffness matrix
 
 Using the known transformation for the first-order tensors $\mathbf{u}$ and $\mathbf{f}$ the transformation matrix for the second-order tensor $\mathbf{K}$ can be derived:
 
 $$
-\class{cB}{\overbar{\mathbf{K}}} {\class{cB}\overline{\mathbf{u}}} = {\class{cB}\overline{\mathbf{f}}} \\
-\class{cB}{\overbar{\mathbf{K}}} \mathbf{T}{\class{cA}\mathbf{u}} = \mathbf{T}{\class{cA}\mathbf{f}} \\
-\mathbf{T}^\mrm{T}\class{cB}{\overbar{\mathbf{K}}} \mathbf{T}{\class{cA}\mathbf{u}} = \mathbf{T}^\mrm{T}\mathbf{T}{\class{cA}\mathbf{f}} 
-\class{cA}{\overbar{\mathbf{K}}}{\class{cA}\mathbf{u}} = {\class{cA}\mathbf{f}} 
+\class{cB}{\bar{\mathbf{K}}} {\class{cB}\bar{\mathbf{u}}} = {\class{cB}\bar{\mathbf{f}}} \\
+\class{cB}{\bar{\mathbf{K}}} \mathbf{T}{\class{cA}\mathbf{u}} = \mathbf{T}{\class{cA}\mathbf{f}} \\
+\mathbf{T}^\mrm{T}\class{cB}{\bar{\mathbf{K}}} \mathbf{T}{\class{cA}\mathbf{u}} = \mathbf{T}^\mrm{T}\mathbf{T}{\class{cA}\mathbf{f}} 
+\class{cA}{\bar{\mathbf{K}}}{\class{cA}\mathbf{u}} = {\class{cA}\mathbf{f}} 
 $$
 
-So $\class{cB}{\overbar{\mathbf{K}}} = \mathbf{T}^\mrm{T}\class{cB}{\overbar{\mathbf{K}}} \mathbf{T}$
+So $\class{cB}{\bar{\mathbf{K}}} = \mathbf{T}^\mrm{T}\class{cB}{\bar{\mathbf{K}}} \mathbf{T}$
