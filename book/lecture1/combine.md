@@ -36,11 +36,8 @@ The algoritmic approach should become visible now!
 
 These equations could also be regarding in a vector formulation. If $\mathbf{f}^e$ represents a vector with all the forces acting on each of the nodes coming from a single element and $\mathbf{f}_\text{nodal}$ represents a vector of all the nodal forces not coming from the elements (the reaction force $H$ and external force $F$), these equations can be simplified as:
 
-$$ -\sum_e\mathbf{f}^e + \mathbf{f}_\text{nodal} = \mathbf{0} $$
-
-or:
-
-$$\sum_e\mathbf{f}^e = \mathbf{f}_\text{nodal} $$
+$$\begin{align} -\sum_e\mathbf{f}^e + \mathbf{f}_\text{nodal}& = \mathbf{0}\\
+\sum_e\mathbf{f}^e& = \mathbf{f}_\text{nodal} \end{align}$$
 
 All that's needed now is to solve our linear set of equations for our unknown nodal displacements. Luckily the amount of equations equals the amount of unknowns, so you should have no problem solving this! Take into account that one displacement is already known: $u_1 = 0$. Without this, the matrix is singular.
 
