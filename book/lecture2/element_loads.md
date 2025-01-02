@@ -119,6 +119,8 @@ $$
 	    \end{bmatrix}
 $$
 
+In the local coordinate system.
+
 ### Distributed load
 The same can be done for a distributed load:
 
