@@ -117,7 +117,7 @@ Now, the external loads can be applied. These external loads are called Neumann 
 The Neumann boundary condition causes a prescribed displacement $u_1 = 0$
 
 ```{figure} assembly5.svg
-:name: assembly52
+:name: assembly5
 :align: center
 ```
 
