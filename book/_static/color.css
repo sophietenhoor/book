@@ -4,7 +4,7 @@
     --cB: rgb(195,49,47);
 }
 
-.cA {color: var(--cX);}
+.cX {color: var(--cX);}
 .cB {color: var(--cB);}
 
 html[data-theme="dark"] .cX {
