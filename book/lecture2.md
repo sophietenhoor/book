@@ -1,7 +1,4 @@
 # Lecture 2
-During today's lesson we'll work on:
-- Reap differential equations for structures
-- Degrees of freedom at nodes
-- Local and global stiffness matrix
-- Neumann and Dirichlet boundary conditions
-- Local-global transformations
+During today's lesson we'll extend the matrix method.
+
+This book shows the full content of the first lecture. The slides of the lecture have the same content and are available [here](./Lecture2.pdf)
