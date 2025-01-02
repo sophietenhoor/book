@@ -145,6 +145,11 @@ For the first field this gives:
 \class{newcolor}{\LaTeX}
 :::
 
+$\class{newcolor}{\LaTeX}$
+
+$$\class{newcolor}{\LaTeX}$$
+
+
 $\class{newcolor}{EA_1\cfrac{\mrm{d}^2u_1}{\mrm{d}x^2}=0}$
 
 
