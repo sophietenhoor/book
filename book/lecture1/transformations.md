@@ -117,8 +117,8 @@ $$
 
 Resulting in:
 
-- $\class{cB}\bar\mathbf{u} = \mathbf{T}\class{cA}{\mathbf{u}}$
-- ${\class{cB}\bar\mathbf{f}} = \mathbf{T}{\class{cA}\mathbf{f}}$
+- $\class{cB}{\bar\mathbf{u}} = \mathbf{T}\class{cA}{\mathbf{u}}$
+- $\class{cB}{\bar\mathbf{f}} = \mathbf{T}\class{cA}{\mathbf{f}}$
 - ${\class{cA}{\mathbf{u}}} = \mathbf{T}^\mrm{T}{\class{cB}\bar\mathbf{u}}$
 - ${\class{cA}{\mathbf{f}}} = \mathbf{T}^\mrm{T}{\class{cB}\bar\mathbf{f}}$
 
