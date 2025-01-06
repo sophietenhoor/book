@@ -85,7 +85,7 @@ $$
 \end{array}
 \right]
 \begin{bmatrix}
-u_2\\[12pt] \hline \\ 0 \\[12pt] \bar u
+u_2\\[6pt] \hline \\ 0 \\[12pt] \bar u
 \end{bmatrix}
 =
 \begin{bmatrix}
