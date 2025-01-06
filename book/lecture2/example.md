@@ -1,4 +1,4 @@
-# Example 
+#    Example 
 
 Let us use what we have just learned about [element loads](./element_loads.md) and [non-zero boundary conditions](./direchlet.md) on a simple example:
 
@@ -85,7 +85,7 @@ $$
 \end{array}
 \right]
 \begin{bmatrix}
-u_2\\[6pt] \hline \\ 0 \\[12pt] \bar u
+u_2\\[12pt] \hline  0 \\[12pt] \bar u
 \end{bmatrix}
 =
 \begin{bmatrix}
@@ -101,3 +101,7 @@ with:
 - $\mathbf{K}_\mrm{fc} =  \begin{bmatrix} \class{cA}{-\cfrac{EA_1}{\ell_1}}  & \class{cB}{-\cfrac{EA_2}{\ell_2}} \end{bmatrix}$
 - $\mathbf{K}_\mrm{cf} =  \begin{bmatrix} \class{cA}{-\cfrac{EA_1}{\ell_1}} \\ \class{cB}{-\cfrac{EA_2}{\ell_2}} \end{bmatrix}$
 - $\mathbf{K}_\mrm{cc} =  \begin{bmatrix}\class{cA}{\cfrac{EA_1}{\ell_1}} & 0\\  0 & \class{cB}{\cfrac{EA_2}{\ell_2}}\\ \end{bmatrix}$
+
+Now, the unknown $\mathbf{u}_\mrm{f}$ / $u_2$ can be solved for.
+
+### Size-preserving approach
