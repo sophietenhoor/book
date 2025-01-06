@@ -105,3 +105,41 @@ with:
 Now, the unknown $\mathbf{u}_\mrm{f}$ / $u_2$ can be solved for.
 
 ### Size-preserving approach
+
+Now let's apply the alternative approach. First, let's set the $u_1 = 0$:
+
+$$
+      \begin{bmatrix}
+	1 & 0 & 0\\
+	0 & \class{cA}{\cfrac{EA_1}{\ell_1}} + \class{cB}{\cfrac{EA_2}{\ell_2}} & \class{cB}{-\cfrac{EA_2}{\ell_2}}\\
+	0 & \class{cB}{-\cfrac{EA_2}{\ell_2}} & \class{cB}{\cfrac{EA_2}{\ell_2}}\\
+      \end{bmatrix}
+      \begin{bmatrix}
+	u_1\\[12pt]u_2\\[12pt]u_3
+      \end{bmatrix}
+      =
+      \begin{bmatrix}
+	0 \\ \class{cA}{\cfrac{q\ell_1}{2}} \class{cB}{+ \cfrac{q\ell_2}{2}}\\H_3 \class{cB}{ + \cfrac{q\ell_2}{2}}
+      \end{bmatrix}
+      $$
+
+No terms are added to the force vector as this enforced displacement is $0$.
+
+Let's continue with the displacement $u_3 = \bar u$:
+
+$$
+      \begin{bmatrix}
+	1 & 0 & 0\\
+	0 & \class{cA}{\cfrac{EA_1}{\ell_1}} + \class{cB}{\cfrac{EA_2}{\ell_2}} & 0\\
+	0 & 0 & 1 \\
+      \end{bmatrix}
+      \begin{bmatrix}
+	u_1\\[12pt]u_2\\[12pt]u_3
+      \end{bmatrix}
+      =
+      \begin{bmatrix}
+	0 \\ \class{cA}{\cfrac{q\ell_1}{2}} \class{cB}{+ \cfrac{q\ell_2}{2}} - \class{cB}{-\cfrac{EA_2}{\ell_2}} \bar u\\ 0
+      \end{bmatrix}
+      $$
+
+Now, a term is added to the force vector, as $\mathbf{K}_{23}$ wasn't equal to 0 (and now it is).
