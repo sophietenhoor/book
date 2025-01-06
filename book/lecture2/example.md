@@ -77,7 +77,7 @@ Partitioning the stiffness matrix leads to:
 
 $$
 \left[
-\begin{array}{c|c}
+\begin{array}{c|cc}
 \class{cA}{\cfrac{EA_1}{\ell_1}} + \class{cB}{\cfrac{EA_2}{\ell_2}} &  \class{cA}{-\cfrac{EA_1}{\ell_1}}  & \class{cB}{-\cfrac{EA_2}{\ell_2}}\\
 \hline
 \class{cA}{-\cfrac{EA_1}{\ell_1}} & \class{cA}{\cfrac{EA_1}{\ell_1}} & 0\\
