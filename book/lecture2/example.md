@@ -1,4 +1,4 @@
-## Example 
+# Example 
 
 Let us use what we have just learned about [element loads](./element_loads.md) and [non-zero boundary conditions](./direchlet.md) on a simple example:
 
