@@ -102,7 +102,7 @@ with:
 - $\mathbf{K}_\mrm{cf} =  \begin{bmatrix} \class{cA}{-\cfrac{EA_1}{\ell_1}} \\ \class{cB}{-\cfrac{EA_2}{\ell_2}} \end{bmatrix}$
 - $\mathbf{K}_\mrm{cc} =  \begin{bmatrix}\class{cA}{\cfrac{EA_1}{\ell_1}} & 0\\  0 & \class{cB}{\cfrac{EA_2}{\ell_2}}\\ \end{bmatrix}$
 
-Now, the unknown $\mathbf{u}_\mrm{f}$ (including only $u_2$) can be solved for.
+Now, the unknown $\mathbf{u}_\mrm{f}$ (including only $u_2$) can be solved for using the equations provided in [](static-condensation).
 
 ### Size-preserving approach
 
@@ -138,8 +138,10 @@ $$
       \end{bmatrix}
       =
       \begin{bmatrix}
-	0 \\ \class{cA}{\cfrac{q\ell_1}{2}} \class{cB}{+ \cfrac{q\ell_2}{2}} - \class{cB}{\cfrac{EA_2}{\ell_2}} \bar u\\ 0
+	0 \\ \class{cA}{\cfrac{q\ell_1}{2}} \class{cB}{+ \cfrac{q\ell_2}{2}} - \class{cB}{\cfrac{EA_2}{\ell_2}} \bar u\\ \bar u
       \end{bmatrix}
       $$
 
 Now, a term is added to the force vector, as $\mathbf{K}_{23}$ wasn't equal to 0 (and now it is).
+
+This matrix equation can now be solved for $\mathbf{u}$.

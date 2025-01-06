@@ -6,7 +6,7 @@ In [](../lecture1/directly.md) we defined how to handle Dirichlet boundary condi
 You'll look into how to model non-zero Dirichlet boundary conditions using static condensation and a size-preserving approach
 ::::::
 
-
+(static-condensation)=
 ## Static condensation
 To apply nonzero constraints we can partition the system:
 
