@@ -86,9 +86,9 @@ Which can be further simplified to:
 
 $$
 	\begin{bmatrix}
-	  K_{11} & 1 & K_{13}\\
+	  K_{11} & 0 & K_{13}\\
 	  0 & 1 & 0\\
-	  K_{31} & 1 & K_{33}\\
+	  K_{31} & 0 & K_{33}\\
 	\end{bmatrix}
 	\begin{bmatrix}
 	  u_1\\u_2\\u_3
