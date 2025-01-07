@@ -61,18 +61,22 @@ Add the missing pieces to the code, before you perform the checks below.
 
 +++
 
-> ### Task 2.2
->
-> Having made your implementations, it is now time to verify the first addition of your code with a simple sanity check. We would like to solve the following simply-supported beam:
-> <center>
->  <figure>
->    <IMG SRC="https://raw.githubusercontent.com/ibcmrocha/public/main/ssbeam.png" WIDTH=200>
->  </figure>
-></center>
->
-> Choose appropriate values yourself.
->
-> Use the code blocks below to set up this problem. After you've added the load, print the element using `print(YOUR ELEMENT)`. Do the shown values for the nodal loads correspond with what you'd expect?
+Having made your implementations, it is now time to verify the first addition of your code with a simple sanity check. We would like to solve the following simply-supported beam:
+
+```{figure} https://raw.githubusercontent.com/ibcmrocha/public/main/ssbeam.png
+:align: center
+:width: 200
+```
+
+Choose appropriate values yourself.
+
+```{exercise-start} 2.2
+:label: 2_exercise2.2
+:nonumber: true
+:class: exercise
+```
+
+Use the code blocks below to set up this problem. After you've added the load, print the element using `print(YOUR ELEMENT)`. Do the shown values for the nodal loads correspond with what you'd expect?
 
 ```{code-cell} ipython3
 #YOUR CODE HERE
@@ -82,26 +86,53 @@ Add the missing pieces to the code, before you perform the checks below.
 print(#YOUR ELEMENT HERE
 ```
 
-> ### Task 2.3
->  Now solve the nodal displacements. Once you are done, compare the rotation at the right end of the beam. Does it match the solution you already know?
+```{exercise-end}
+```
+
+```{exercise-start} 2.3
+:label: 2_exercise2.3
+:nonumber: true
+:class: exercise
+```
+
+Now solve the nodal displacements. Once you are done, compare the rotation at the right end of the beam. Does it match a solution you already know?
 
 ```{code-cell} ipython3
 #YOUR CODE HERE
 ```
 
-> ### Task 2.4
-> Calculate the bending moment at midspan and plot the moment distribution using `plot_moment_diagram`. Do the values and shape match with what you'd expect?
+```{exercise-end}
+```
+
+```{exercise-start} 2.4
+:label: 2_exercise2.4
+:nonumber: true
+:class: exercise
+```
+
+Calculate the bending moment at midspan and plot the moment distribution using `plot_moment_diagram`. Do the values and shape match with what you'd expect?
 
 ```{code-cell} ipython3
 u_elem = con.full_disp(#YOUR CODE HERE)
 #YOUR CODE HERE
 ```
 
-> ### Task 2.5
-> Calculate the deflection at midspan and plot the deflected structure using `plot_displaced`. Do the values and shape match with what you'd expect?
+```{exercise-end}
+```
+
+```{exercise-start} 2.5
+:label: 2_exercise2.5
+:nonumber: true
+:class: exercise
+```
+
+Calculate the deflection at midspan and plot the deflected structure using `plot_displaced`. Do the values and shape match with what you'd expect?
 
 ```{code-cell} ipython3
 #YOUR CODE HERE
+```
+
+```{exercise-end}
 ```
 
 ## 3. The Constrainer class
