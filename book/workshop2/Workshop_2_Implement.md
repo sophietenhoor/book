@@ -52,7 +52,7 @@ Check whether your implementation of last week was correct using the provided so
 
 import matplotlib as plt
 import numpy as np
-sys.path.insert(1, '/matrixmethod')
+sys.path.insert(1, '/matrixmethod_solution')
 import matrixmethod as mm
 %config InlineBackend.figure_formats = ['svg']
 ```
@@ -62,7 +62,7 @@ import matrixmethod as mm
 
 import matplotlib as plt
 import numpy as np
-import matrixmethod as mm
+import matrixmethod_solution as mm
 %config InlineBackend.figure_formats = ['svg']
 ```
 
