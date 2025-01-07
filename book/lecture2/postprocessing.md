@@ -28,7 +28,8 @@ If you want to create a figure which combines the internal forces / displacement
 
 import matplotlib as plt
 import numpy as np
-sys.path.insert(1, '../workshop2/matrixmethod_solution')
+sys.path.insert(1, '/matrixmethod_solution')
+import matrixmethod_solution as mm
 %config InlineBackend.figure_formats = ['svg']
 ```
 
@@ -38,13 +39,12 @@ sys.path.insert(1, '../workshop2/matrixmethod_solution')
 import matplotlib as plt
 import numpy as np
 import sys
-sys.path.append('../workshop2')
 import matrixmethod_solution as mm
 %config InlineBackend.figure_formats = ['svg']
 ```
 
 ```{code-cell} ipython3
-:tags: [thebe-init, hide-input]
+:tags: [hide-input, disable-execution-cell]
 
 import numpy as np
 import matplotlib as plt
