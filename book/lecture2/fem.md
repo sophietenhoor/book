@@ -242,6 +242,4 @@ u_free = np.matmul ( np.linalg.inv(Kff), Ff )
 print(u_free[0])
 ```
 
-```{code-cell} ipython3
-
-```
+Which is the same result (not true in general).
