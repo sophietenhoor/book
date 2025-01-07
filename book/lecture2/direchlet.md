@@ -121,9 +121,9 @@ $$
 	  \end{bmatrix}
 	  =
 	  \begin{bmatrix}
-	H_1\\[12pt]0\\[12pt]H_3
+	H_1 \class{cA}{ + \cfrac{q\ell_1}{2}}\\ \class{cA}{\cfrac{q\ell_1}{2}} \class{cB}{+ \cfrac{q\ell_2}{2}}\\H_3 \class{cB}{ + \cfrac{q\ell_2}{2}}
 	  \end{bmatrix}
-	  $$
+$$
 
 ### Static condensation
 

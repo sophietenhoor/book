@@ -150,7 +150,7 @@ $$
 	    \end{bmatrix}
 $$
 
-##
+## Example
 
 Let us use what we have just learned on a simple example:
 
