@@ -38,13 +38,13 @@ Equivalent statically determinate extension bar if $F^{(1)} = F^{(2)}$
 ## Displacements of all parts statically equivalent structure
 Due to the nodal load, a constant section force is present in both fields. Using the constitutive equations $\Delta \ell = \cfrac{N \ell}{EA}$, the corresponding displacement $u_2$ can be found. For the load $q$, the displacement can be calculated using the kinematic, constitutive and kinematic relations. This leads to $u_2$ as a function of $F_1$ and $F_2$:
 
-- $u_2 = \cfrac{\ell_1}{EA_1}F^{(1)}  + \cfrac{\ell_1^2}{2EA_1}q$
-- $u_2 = -\cfrac{\ell_2}{EA_1}F^{(2)}  + \cfrac{\ell_2^2}{2EA_2}q$
+- $u_2 = \cfrac{\ell_1}{EA_1}F^{(1)}  + \cfrac{\ell_1^2 q}{2EA_1}$
+- $u_2 = -\cfrac{\ell_2}{EA_1}F^{(2)}  + \cfrac{\ell_2^2 q}{2EA_2}$
 
 These relations can be rewritten as $F_1$ and $F_2$ in terms of $u_2$ so that the force equilibrium can be solved for:
 
-- $F^{(1)} = \cfrac{EA_1}{\ell_1} u_2 - \cfrac{\ell_1^2}{2EA_1}q$
-- $F^{(2)} = -\cfrac{EA_2}{\ell_2} u_2 - \cfrac{\ell_2^2}{2EA_2}q$
+- $F^{(1)} = \cfrac{EA_1}{\ell_1} u_2 - \cfrac{\ell_1 q}{2}$
+- $F^{(2)} = -\cfrac{EA_2}{\ell_2} u_2 + \cfrac{\ell_2 q}{2}$
 
 ## Solve for displacements
 
@@ -52,9 +52,9 @@ Using $F^{(1)} = F^{(2)}$ the displacement $u_2$ can now be solved for:
 
 $$
 \begin{align}
-\cfrac{EA_1}{\ell_1} u_2 - \cfrac{\ell_1^2}{2EA_1}q& = -\cfrac{EA_2}{\ell_2} u_2 - \cfrac{\ell_2^2}{2EA_2}q \\
-\left(\cfrac{EA_1}{\ell_1} + \cfrac{EA_2}{\ell_2}\right) u_2& = \cfrac{\ell_1^2}{2EA_1}q - \cfrac{\ell_2^2}{2EA_2}q \\
-u_2& = \cfrac{\cfrac{\ell_1^2}{2EA_1}q - \cfrac{\ell_2^2}{2EA_2}q }{\cfrac{EA_1}{\ell_1} + \cfrac{EA_2}{\ell_2}}
+\cfrac{EA_1}{\ell_1} u_2 - \cfrac{\ell_1 q}{2}& = -\cfrac{EA_2}{\ell_2} u_2 + \cfrac{\ell_2 q}{2} \\
+\left(\cfrac{EA_1}{\ell_1} + \cfrac{EA_2}{\ell_2}\right) u_2& = \cfrac{\ell_1 q}{2} + \cfrac{\ell_2 q}{2} \\
+u_2& = \cfrac{\cfrac{\ell_1 q}{2} + \cfrac{\ell_2 q}{2}}{\cfrac{EA_1}{\ell_1} + \cfrac{EA_2}{\ell_2}}
 \end{align}
 $$
 
@@ -76,6 +76,6 @@ The similarities and differences are shown in the table below.
 |:-:|:-:|
 |Convert structure in statically determinate parts|Convert structure in mostly identical elements|
 |Evaluate one or a few nodal displacements for each parts|Evaluate all nodal displacement for default elements a priori|
-|Solve nodal equilibrium $\left(\cfrac{EA_1}{\ell_1} + \cfrac{EA_2}{\ell_2}\right) u_2 = \cfrac{\ell_1^2}{2EA_1}q - \cfrac{\ell_2^2}{2EA_2}q $|Solve nodal equilibrium in matrix form $\mathbf{K}\mathbf{u}=\mathbf{f}$|
+|Solve nodal equilibrium $ u_2 = \cfrac{\cfrac{\ell_1 q}{2} + \cfrac{\ell_2 q}{2}}{\cfrac{EA_1}{\ell_1} + \cfrac{EA_2}{\ell_2}} $|Solve nodal equilibrium in matrix form $\mathbf{K}\mathbf{u}=\mathbf{f}$|
 
 :::
