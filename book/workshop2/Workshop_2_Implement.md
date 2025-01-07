@@ -23,6 +23,22 @@ In this notebook you will continue to implement the matrix method and check it w
 
 +++
 
+```{custom_download_link} ./Workshop_2_Implement_stripped.ipynb
+:text: ".ipynb"
+:replace_default: "True"
+```
+
+```{custom_download_link} ./Workshop_2_Implement.md
+:text: ".md:myst"
+:replace_default: "False"
+```
+
+```{custom_download_link} https://github.com/CIEM5000-2025/practice-assignments
+:text: "All files practice assignments"
+:replace_default: "False"
+```
+
+
 ```{exercise} 0
 :label: exercise0
 :nonumber: true
@@ -32,7 +48,29 @@ Check whether your implementation of last week was correct using the provided so
 ```
 
 ```{code-cell} ipython3
+:tags: [thebe-remove-input-init]
+
+import matplotlib as plt
 import numpy as np
+sys.path.insert(1, '/matrixmethod')
+import matrixmethod as mm
+%config InlineBackend.figure_formats = ['svg']
+```
+
+```{code-cell} ipython3
+:tags: [remove-cell]
+
+import matplotlib as plt
+import numpy as np
+import matrixmethod as mm
+%config InlineBackend.figure_formats = ['svg']
+```
+
+```{code-cell} ipython3
+:tags: [disable-execution-cell]
+
+import numpy as np
+import matplotlib as plt
 import matrixmethod as mm
 %config InlineBackend.figure_formats = ['svg']
 
