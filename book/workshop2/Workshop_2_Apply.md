@@ -68,6 +68,7 @@ The final example for the workshops is the two-element frame above. Here you sho
 - Set up the problem and compute a solution for `u_free`. Remember to consider the prescribed horizontal displacement $\bar{u}$ at the right end of the structure.
 - Compute and plot bending moment lines for both elements (in the local and global coordinate systems)
 - Compute reactions at both supports
+```
 
 ```{code-cell} ipython3
 :tags: [thebe-remove-input-init]
