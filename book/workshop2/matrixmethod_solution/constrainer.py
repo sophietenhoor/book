@@ -37,7 +37,6 @@ class Constrainer:
             value (float, optional): The value to fix the degree of freedom at. Defaults to 0.
         """
         self.cons_dofs.append(node.dofs[dof])
-        assert value == 0, "Only zero values are supported for now."
         self.cons_vals.append(value)
  
     def fix_node (self, node):
