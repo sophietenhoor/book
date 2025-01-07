@@ -41,7 +41,7 @@ With:
 - $EI = 8000$
 
 
-```{exercise-start}
+```{exercise-start} Hinged beam
 :label: exercise_hinged_beam
 ```
 
