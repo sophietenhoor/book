@@ -97,6 +97,15 @@ With $\varphi$ being specifically $\varphi_y$.
 
 ## Assemble stiffness, element by element
 
+As all elements use the same orientation for the degrees of freedom, no transformation are required. Note that this requires:
+
+- Defining element $(1)$ from $1$ to $2$
+- Defining element $(2)$ from $2$ to $3$
+- Defining element $(3)$ from $2$ to $4$
+- Defining element $(4)$ from $3$ to $5$
+
+Or all the other way around. Otherwise, the rotations at node $2$ and $3$ do not match.
+
 ### Element $(1)$
 The first element links the first and second nodal displacement with the first and second nodal forces:
 
@@ -152,6 +161,7 @@ $$\mathbf{K} =
 
 ## Apply external loads
 
+### Nodal loads
 Now, let's add the external loads, starting with the nodal load at $2$:
 
 $$
@@ -166,7 +176,8 @@ $$
       \end{bmatrix}
 $$
 
-Let's add the equivalent nodal loads too:
+### Equivalent nodal loads
+Let's add the equivalent nodal loads from the continuous elements loads too:
 
 $$
 \mathbf{f}
@@ -180,6 +191,7 @@ $$
       \end{bmatrix}
 $$
 
+### Boundary loads
 And finally, let's add the forces from the Neumann boundary conditions:
 
 $$
