@@ -15,7 +15,7 @@ kernelspec:
 
 ```{custom_download_link} __init__.py
 :text: ".py"
-:replace_default: "False"
+:replace_default: "True"
 ```
 
 ```{custom_download_link} https://github.com/CIEM5000-2025/practice-assignments
