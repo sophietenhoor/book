@@ -181,7 +181,7 @@ Use the code blocks below to set up and solve this problem and check the require
 
 Again, we're going to verify our implementation. Therefore, we're going solve a beam, with a load $F$ and support displacement $\bar w$ for the right support.
 
-```{figure}https://raw.githubusercontent.com/ibcmrocha/public/main/sanitycheck_3.3_new.png
+```{figure} https://raw.githubusercontent.com/ibcmrocha/public/main/sanitycheck_3.3_new.png
 :align: center
 :width: 200
 ```
