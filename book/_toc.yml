@@ -56,6 +56,12 @@ parts:
       - file: additional/beam_kinked.ipynb
       - file: additional/frame.ipynb
       - file: additional/hinged_beam.ipynb
+      - file: additional/matrixmethod.md
+        sections:
+        - file: additional/matrixmethod/__init__.md
+        - file: additional/matrixmethod/node.md
+        - file: additional/matrixmethod/elements.md
+        - file: additional/matrixmethod/constrainer.md
     - file: assignment.md
   - caption: Miscellaneous
     chapters:
