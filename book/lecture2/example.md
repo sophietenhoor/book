@@ -134,7 +134,7 @@ $$
 	0 & 0 & 1 \\
       \end{bmatrix}
       \begin{bmatrix}
-	u_1\\[12pt]u_2\\[12pt]u_3
+	u_1\\[6pt]u_2\\[6pt]u_3
       \end{bmatrix}
       =
       \begin{bmatrix}
