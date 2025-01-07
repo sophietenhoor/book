@@ -61,14 +61,14 @@ Statically indeterminate extension bar
 We'll apply the finite element method by using the matrix implementation from [MUDE](https://mude.citg.tudelft.nl/2024/book/fem/matrix.html) {cite:p}`MUDE`. We use linear shape functions: $ N_a(x) = \cfrac{x_b-x}{x_b-x_a}=\cfrac{x_b-x}{\Delta x}$ and $N_b(x)=\cfrac{x-x_a}{x_b-x_a}=\cfrac{x-x_a}{\Delta x}$. For this specific example, this matches the linear normal force distribution, leading to similar results:
 
 ```{code-cell} ipython3
-:tags: [hide-cell]
+:tags: [hide-cell, thebe-init]
 
 import numpy as np
 import matplotlib.pyplot as plt
 ```
 
 ```{code-cell} ipython3
-:tags: [hide-cell]
+:tags: [hide-cell, thebe-init]
 
 # Returns the evaluated N matrix
 # - The local coordinate of evaluation "x_local"
@@ -158,6 +158,8 @@ def assemble_global_f(rod_length, n_el, q):
 ```
 
 ```{code-cell} ipython3
+:tags: [thebe-init]
+
 def simulate(n_element):
     length = 3              # Length
     EA = 1e3                # Stiffness EA
@@ -186,6 +188,8 @@ def simulate(n_element):
 ```
 
 ```{code-cell} ipython3
+:tags: [thebe-init]
+
 x, u = simulate(2)
 print(u[1])
 ```
@@ -223,6 +227,8 @@ import matrixmethod as mm
 ```
 
 ```{code-cell} ipython3
+:tags: [thebe-init]
+
 mm.Node.clear()
 mm.Element.clear()
 
@@ -263,6 +269,8 @@ u_free = np.matmul ( np.linalg.inv(Kff), Ff )
 ```
 
 ```{code-cell} ipython3
+:tags: [thebe-init]
+
 print(u_free[0])
 ```
 
