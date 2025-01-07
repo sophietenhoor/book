@@ -47,7 +47,7 @@ With:
 - $F = 40$
 
 ```{exercise-start}
-:label: exercise_beam
+:label: exercise_beam_kinked
 :nonumber: true
 ```
 

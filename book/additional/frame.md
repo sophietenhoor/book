@@ -44,7 +44,7 @@ With:
 
 
 ```{exercise-start}
-:label: exercise_beam
+:label: exercise_frame
 :nonumber: true
 ```
 

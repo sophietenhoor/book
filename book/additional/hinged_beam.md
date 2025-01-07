@@ -42,7 +42,7 @@ With:
 
 
 ```{exercise-start}
-:label: exercise_beam
+:label: exercise_hinged_beam
 :nonumber: true
 ```
 
