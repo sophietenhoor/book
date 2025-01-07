@@ -30,4 +30,60 @@ After the second workshop, the solution will be added to this preview and to the
 :replace_default: "False"
 ```
 
-+++
+Given is the following beam:
+
+```{figure} https://raw.githubusercontent.com/ibcmrocha/public/main/beam.png
+:align: center
+:width: 400
+```
+
+With:
+- $l_1 = 5.5$
+- $l_2 = 5.0$
+- $EI_1 = 5000$
+- $EI_2 = 8000$
+- $q = 6$
+- $F = 40$
+- $T = 50$
+
+```{exercise-start}
+:label: exercise_beam
+:nonumber: true
+```
+
+Solve this problem.
+
+```{code-cell}
+:tags: [thebe-remove-input-init]
+
+import matplotlib as plt
+import numpy as np
+sys.path.insert(1, '/matrixmethod_solution')
+import matrixmethod_solution as mm
+%config InlineBackend.figure_formats = ['svg']
+```
+
+```{code-cell}
+:tags: [remove-cell]
+
+import matplotlib as plt
+import numpy as np
+import matrixmethod_solution as mm
+%config InlineBackend.figure_formats = ['svg']
+```
+
+```{code-cell}
+:tags: [disable-execution-cell]
+
+import numpy as np
+import matplotlib as plt
+import matrixmethod as mm
+%config InlineBackend.figure_formats = ['svg']
+```
+
+```{code-cell}
+#YOUR_CODE_HERE
+```
+
+```{exercise-end}
+```

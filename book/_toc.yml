@@ -51,6 +51,8 @@ parts:
         - file: workshop2/matrixmethod/elements.md
         - file: workshop2/matrixmethod/constrainer.md
     - file: additional.md
+      sections:
+      - file: additional/beam.ipynb
     - file: assignment.md
   - caption: Miscellaneous
     chapters:
