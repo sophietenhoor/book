@@ -46,7 +46,7 @@ With:
 - $F = 40$
 - $T = 50$
 
-```{exercise-start}
+```{exercise-start} Beam
 :label: exercise_beam
 :nonumber: true
 ```
