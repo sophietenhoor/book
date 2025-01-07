@@ -53,7 +53,7 @@ Check whether your implementation of last week was correct using the provided so
 import matplotlib as plt
 import numpy as np
 sys.path.insert(1, '/matrixmethod_solution')
-import matrixmethod as mm
+import matrixmethod_solution as mm
 %config InlineBackend.figure_formats = ['svg']
 ```
 

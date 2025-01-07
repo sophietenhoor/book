@@ -48,7 +48,7 @@ Our matrix method implementation is now completely stored in a local package, co
 import matplotlib as plt
 import numpy as np
 sys.path.insert(1, '/matrixmethod_solution')
-import matrixmethod as mm
+import matrixmethod_solution as mm
 %config InlineBackend.figure_formats = ['svg']
 ```
 
