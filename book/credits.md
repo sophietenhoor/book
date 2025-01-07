@@ -17,4 +17,8 @@ We anticipate that the content of this book will change significantly. Therefore
 
 This book is created using open source tools: it is a JupyterBook that is written using Markdown and Jupyter notebooks. Additional tooling is used from the [TeachBooks initiative](https://teachbooks.io/) to enhance the editing and reading experience. The files are stored on a [public GitHub repository](https://github.com/CIEM5000-2025/book). The website can be viewed at https://ciem5000-2025.github.io/book/credits.html. View the repository README file or contact the authors for additional information.
 
-### Acknowledgements
+(external_resources)=
+## External resources
+
+Parts of this book are taken from other external resources and reused in various ways. If an author is not listed on a particular page, it is by the Authors. The following pages contain content written by others, part of has been reused and/or modified by the authors::
+- Pages [](./lecture2/fem.ipynb) includes code from {cite:t}`MUDE`. Original content licensed under CC BY. 

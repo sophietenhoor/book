@@ -13,6 +13,8 @@ kernelspec:
 
 # Finite element method vs. Matrix Method
 
+> This page reuses <license> content from {cite:t}`MUDE`. {fa}`quote-left`{ref}`Find out more here.<link to external resources section on credits and license page>`
+
 You've seen the finite element method before, which could be used to solve similar problems. But what are the differences?
 
 ::::::{topic} Learning objective
