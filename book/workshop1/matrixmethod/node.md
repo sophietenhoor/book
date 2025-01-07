@@ -15,7 +15,7 @@ kernelspec:
 
 ```{custom_download_link} node.py
 :text: ".py"
-:replace_default: "True"
+:replace_default: "False"
 ```
 
 ```{custom_download_link} https://github.com/CIEM5000-2025/practice-assignments
