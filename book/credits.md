@@ -3,15 +3,13 @@
 
 You can refer to this book as:
 
-> Tom van Woudenberg and Iuri Rocha (2025) _Matrix method in statics_. https://ciem5000-2025.github.io/book
+> Tom van Woudenberg and Iuri Rocha (2025) _Matrix method in statics_. https://ciem5000-2025.github.io/book. Source files at https://github.com/CIEM5000-2025/book
 
 You can refer to individual chapters or pages within this book as:
 
-> `<Primary Author>` (`<date>`) `<Title of Chapter or Page>`. In `<editors>` (Ed.), _`<title>`_. `<url to github repo>`
+> `<Title of Chapter or Page>`. In Tom van Woudenberg and Iuri Rocha (2025) _Matrix method in statics_. https://ciem5000-2025.github.io/book/<relative link to page>. Source files at  https://github.com/CIEM5000-2025/book: `./book/<path to file(s)>` chapter, accessed `date`.
 
-We anticipate that the content of this book will change significantly. Therefore, we recommend using the source code directly with the citation above that refers to the GitHub repository and lists the date and name of the file. Although content will be added over time, chapter titles and URL's in this book are expected to remain relatively static. However, we make no guarantee, so if it is important for you to reference a specific location within the book. For example:
-
-> Tom van Woudenberg and Iuri Rocha (2025) `<title of chapter or page>`. In Tom van Woudenberg and Iuri Rocha (Ed.),   _Matrix method in statics_. https://github.com/CIEM5000-2025/book (`./book/<path to file(s)>` chapter, accessed `date`).
+We anticipate that the content of this book will change significantly. Therefore, we recommend using the source code directly with the citation above that refers to the GitHub repository and lists the date and name of the file. Although content will be added over time, chapter titles and URL's in this book are expected to remain relatively static. However, we make no guarantee, so if it is important for you to reference a specific location/commit within the book.
 
 ## How the book is made
 
