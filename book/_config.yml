@@ -38,11 +38,6 @@ sphinx:
         macros:
           "mrm": "\\mathrm"
           "mymat[1]": "\\left[ \\begin{matrix} #1 \\end{matrix} \\right]"
-    bibtex_default_style: myapastyle
-    bibtex_reference_style: author_year_round
-  local_extensions:
-    apastyle: _ext/
-    bracket_citation_style: _ext/
           
   extra_extensions:
     - sphinx.ext.imgconverter
