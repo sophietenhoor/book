@@ -23,11 +23,13 @@ In this notebook you will continue to implement the matrix method and check it w
 
 +++
 
-You're given an updated version of the matrixmethod package, although still incomplete.
+```{exercise} 0
+:label: exercise0
+:nonumber: true
+:class: exercise
 
-> ### Task 0
->
-> Check whether your implementation of last week was correct using the provided solution
+Check whether your implementation of last week was correct using the provided solution
+```
 
 ```{code-cell} ipython3
 import numpy as np
@@ -49,9 +51,13 @@ The implementation is incomplete:
 - The function `add_distributed_load` should compute the equivalent load vector for a constant load $q$ and moves those loads to the nodes belonging to the element. Remember to use the `add_load` function of the `Node` class to store the equivalent loads (remember we have two nodes per element). Also keep local/global transformations in mind and store `self.q = q` for later use;
 - The function `bending_moments` receives the nodal displacements of the element in the global coordinate system (`u_global`) and uses it to compute the value of the bending moment at `num_points` equally-spaced points along the element length. Keep local/global transformations in mind and use the ODE approach in SymPy / Maple / pen and paper to compute an expression for $M$. Do the same for for $w$ in the function `full_displacement`.
 
-> ### Task 2.1
->
-> Add the missing pieces to the code, before you perform the checks below.
+```{exercise-start} 2.1
+:label: 2_exercise2.1
+:nonumber: true
+:class: exercise
+
+Add the missing pieces to the code, before you perform the checks below.
+```
 
 +++
 
