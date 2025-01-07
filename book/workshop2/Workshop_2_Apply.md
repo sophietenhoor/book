@@ -11,7 +11,7 @@ kernelspec:
   name: python3
 ---
 
-#Apply
+# Apply
 
 ::::::{attention}
 This page shows a preview of the assignment. Please fork and clone the assignment to work on it locally from [GitHub](https://github.com/CIEM5000-2025/practice-assignments)
@@ -46,9 +46,11 @@ Our matrix method implementation is now completely stored in a local package, co
 
 +++
 
-<figure>
-  <IMG SRC="https://raw.githubusercontent.com/ibcmrocha/public/main/twoelemframe.png" WIDTH=300 ALIGN="center">
-</figure>
+```{figure} https://raw.githubusercontent.com/ibcmrocha/public/main/twoelemframe.png
+:align: center
+:width: 400
+```
+
 
 With:
 - $EI = 1500$
@@ -68,7 +70,29 @@ The final example for the workshops is the two-element frame above. Here you sho
 - Compute reactions at both supports
 
 ```{code-cell} ipython3
+:tags: [thebe-remove-input-init]
+
+import matplotlib as plt
 import numpy as np
+sys.path.insert(1, '/matrixmethod_solution')
+import matrixmethod_solution as mm
+%config InlineBackend.figure_formats = ['svg']
+```
+
+```{code-cell} ipython3
+:tags: [remove-cell]
+
+import matplotlib as plt
+import numpy as np
+import matrixmethod_solution as mm
+%config InlineBackend.figure_formats = ['svg']
+```
+
+```{code-cell} ipython3
+:tags: [disable-execution-cell]
+
+import numpy as np
+import matplotlib as plt
 import matrixmethod as mm
 %config InlineBackend.figure_formats = ['svg']
 ```

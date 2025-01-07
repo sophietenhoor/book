@@ -45,7 +45,6 @@ import matrixmethod_solution as mm
 
 import matplotlib as plt
 import numpy as np
-import sys
 import matrixmethod_solution as mm
 %config InlineBackend.figure_formats = ['svg']
 ```

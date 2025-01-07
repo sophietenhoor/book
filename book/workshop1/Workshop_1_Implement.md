@@ -46,11 +46,26 @@ Our matrix method implementation is now completely stored in a local package, co
 :tags: [thebe-remove-input-init]
 
 import matplotlib as plt
+import numpy as np
 sys.path.insert(1, '/matrixmethod')
+import matrixmethod as mm
+%config InlineBackend.figure_formats = ['svg']
 ```
 
 ```{code-cell} ipython3
+:tags: [remove-cell]
+
+import matplotlib as plt
 import numpy as np
+import matrixmethod as mm
+%config InlineBackend.figure_formats = ['svg']
+```
+
+```{code-cell} ipython3
+:tags: [disable-execution-cell]
+
+import numpy as np
+import matplotlib as plt
 import matrixmethod as mm
 %config InlineBackend.figure_formats = ['svg']
 ```

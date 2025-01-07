@@ -94,7 +94,19 @@ import matrixmethod_solution as mm
 ```
 
 ```{code-cell} ipython3
+:tags: [remove-cell]
+
+import matplotlib as plt
 import numpy as np
+import matrixmethod_solution as mm
+%config InlineBackend.figure_formats = ['svg']
+```
+
+```{code-cell} ipython3
+:tags: [disable-execution-cell]
+
+import numpy as np
+import matplotlib as plt
 import matrixmethod as mm
 %config InlineBackend.figure_formats = ['svg']
 ```
