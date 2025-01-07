@@ -34,26 +34,6 @@ These relations can be combined into one fourth order differential equation:
 
 $$ GI_t\frac{\mrm{d}^4 \varphi_x}{\mrm{d}x^4}=-m $$
 
-This differential equations can be solved by integrating:
-
-- $M_t(x) = -m x + \bar C_{1}$
-- $\theta (x) = -\cfrac{m \ x}{GI_t} + \tilde C_1$
-- $\varphi_x(x) = \cfrac{m \ x^2}{2 GI_t}+ C_1 x^2 + C_2 x$
-
- However, the boundary conditions now are defined in terms of unknown nodal displacements:
-
-- $u(0) = \varphi_1$
-- $u(\ell)= \varphi_2$
-
-This results in:
-
-- $C_1 = \cfrac{m \ \ell}{GI_t} + \cfrac{\varphi_2-\varphi_1}{\ell}$
-- $C_2 = \varphi_1$
-
-The continuous distributions for the displacement and section force can be evaluated too:
-- $\varphi(x) = \cfrac{m}{2GI_t}\left(\ell x - x^2\right) + \varphi_1\left(1-\cfrac{x}{\ell}\right) + \varphi_2\cfrac{x}{\ell}$
-- $M_t(x) = \cfrac{m}{2}\left(\ell-2x \right) -\cfrac{GI_t}{\ell}\varphi_1+\cfrac{GI_t}{\ell}\varphi_2$
-
 This looks identical (with $m$ for $q$, $GI_t$ for $EA$ and $\varphi$ for $u$) to our results from the [extension element](./element_loads.md), therefore, we can directly write down the stiffness matrix and (equivalent) force vector directly:
 
 $$\cfrac{GI_t}{\ell}\begin{bmatrix} 1&-1\\-1&1 \end{bmatrix}\begin{bmatrix}\varphi_1\\\varphi_2\end{bmatrix} = \begin{bmatrix}T_1\\T_2\end{bmatrix} + {\begin{bmatrix} \cfrac{m \ \ell}{2}\\ \cfrac{m \ \ell}{2}\end{bmatrix}}$$
@@ -64,6 +44,7 @@ $$
 	\mathbf{K}^{(3)} = \mathbf{K}^{(4)} = \begin{bmatrix} 400&-400\\-400&400 \end{bmatrix}$$
 
 And for element $(4)$ an additional equivalent force vector due to the element load:
+
 $$
 \mathbf{f}_{\mrm{eq}}^{(4)}
 	    =
@@ -112,7 +93,7 @@ $$
 \end{bmatrix} 
 $$
 
-With $\varphi$ specically $\varphi_y$
+With $\varphi$ being specifically $\varphi_y$.
 
 ## Assemble stiffness, element by element
 
@@ -178,10 +159,10 @@ $$
 	    =
 	    \begin{bmatrix}
       0  \\
-      2  \\
       4  \\
       0  \\
-      2  \\
+      0  \\
+      0  \\
       \end{bmatrix}
 $$
 
@@ -192,10 +173,10 @@ $$
 	    =
 	    \begin{bmatrix}
       0  \\
+      2  \\
       4  \\
       0  \\
-      0  \\
-      0  \\
+      2  \\
       \end{bmatrix}
 $$
 
@@ -252,8 +233,8 @@ $$\left[ \begin{matrix}
 
 Solving this system of equations gives:
 
-$$\varphi_2 \approx 1 \cdot 10^{-4} \\
-\varphi_3 \approx 1.6 \cdot 10^{-3}$$
+- $\varphi_2 \approx 1 \cdot 10^{-4}$
+- $\varphi_3 \approx 1.6 \cdot 10^{-3}$
 
 The support reactions can be found by inserting these into our original system of equations and solving for the rows containing the support reactions:
 
@@ -277,9 +258,9 @@ $$\left[ \begin{matrix}
 Note that to calculate $M_{t,4}$ the element load should be taken into account!
 This gives:
 
-$$M_1 \approx 0.1 \text{ kNm} \\
-M_{t,4} \approx -0.033 \text{ kNm} \\
-M_{t,5} \approx -2.7 \text{ kNm}$$
+- $M_1 \approx 0.1 \text{ kNm}$
+- $M_{t,4} \approx -0.033 \text{ kNm}$
+- $M_{t,5} \approx -2.7 \text{ kNm}$
 
 ## Postprocessing moments element $\left(1\right)$
 
@@ -295,7 +276,7 @@ M \left(x\right) = EI \kappa=EI\left( \cfrac{6x}{\ell^2} - \cfrac{2}{\ell} \righ
 
 This is a linear distribution, with values at $x=0$ and $x=\ell$:
 
-$$M \left(0\right) \approx -0.1 \text{ kNm} \\
-M \left(2\right) \approx 0.2 { kNm} $$
+- $M \left(0\right) \approx -0.1 \text{ kNm}$
+- $M \left(2\right) \approx 0.2 { kNm} $
 
 The value at $x=0$ has indeed the same absolute value as the support reactions. The sign is different because $M_1$ is defined in the global coordinate system and $M \left(0\right)$ is defined from our agreements on positive internal moments (leading to positive stresses at the positive $z$-side.)
