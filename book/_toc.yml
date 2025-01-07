@@ -55,6 +55,7 @@ parts:
       - file: additional/beam.ipynb
       - file: additional/beam_kinked.ipynb
       - file: additional/frame.ipynb
+      - file: additional/hinged_beam.ipynb
     - file: assignment.md
   - caption: Miscellaneous
     chapters:

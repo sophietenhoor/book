@@ -7,7 +7,7 @@ jupytext:
     jupytext_version: 1.16.2
 ---
 
-# Frame
+# Hinged beam
 
 ::::::{attention}
 This page shows a preview of the assignment. Please fork and clone the assignment to work on it locally from [GitHub](https://github.com/CIEM5000-2025/practice-assignments)
@@ -15,12 +15,12 @@ This page shows a preview of the assignment. Please fork and clone the assignmen
 After the second workshop, the solution will be added to this preview and to the [GitHub-repository](https://github.com/CIEM5000-2025/practice-assignments)
 ::::::
 
-```{custom_download_link} ./frame_stripped.ipynb
+```{custom_download_link} ./hinged_beam_stripped.ipynb
 :text: ".ipynb"
 :replace_default: "True"
 ```
 
-```{custom_download_link} ./frame.md
+```{custom_download_link} ./hinged_beam.md
 :text: ".md:myst"
 :replace_default: "False"
 ```
@@ -32,15 +32,13 @@ After the second workshop, the solution will be added to this preview and to the
 
 Given is the following beam {cite:p}`additional_Hans`:
 
-```{figure} https://raw.githubusercontent.com/ibcmrocha/public/main/framesimpler.png
+```{figure} https://raw.githubusercontent.com/ibcmrocha/public/main/hingedbeam.png
 :align: center
 :width: 400
 ```
 
 With:
-- $EI = 3000$
-- $q = 12$
-- $EA = \infty$
+- $EI = 8000$
 
 
 ```{exercise-start}
@@ -48,7 +46,7 @@ With:
 :nonumber: true
 ```
 
-Solve this problem by simplifying the stiffness matrix first.
+Solve this problem. How do you deal with the hinges?
 
 ```{code-cell}
 :tags: [thebe-remove-input-init]
