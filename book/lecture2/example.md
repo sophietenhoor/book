@@ -51,8 +51,8 @@ This results in:
 - $C_2 = \varphi_1$
 
 The continuous distributions for the displacement and section force can be evaluated too:
-- $u(x) = \cfrac{m}{2GI_t}\left(\ell x - x^2\right) + \varphi_1\left(1-\cfrac{x}{\ell}\right) + \varphi_2\cfrac{x}{\ell}$
-- $N(x) = \cfrac{m}{2}\left(\ell-2x \right) -\cfrac{GI_t}{\ell}\varphi_1+\cfrac{GI_t}{\ell}\varphi_2$
+- $\varphi(x) = \cfrac{m}{2GI_t}\left(\ell x - x^2\right) + \varphi_1\left(1-\cfrac{x}{\ell}\right) + \varphi_2\cfrac{x}{\ell}$
+- $M_t(x) = \cfrac{m}{2}\left(\ell-2x \right) -\cfrac{GI_t}{\ell}\varphi_1+\cfrac{GI_t}{\ell}\varphi_2$
 
 This looks identical (with $m$ for $q$, $GI_t$ for $EA$ and $\varphi$ for $u$) to our results from the [extension element](./element_loads.md), therefore, we can directly write down the stiffness matrix and (equivalent) force vector directly:
 
@@ -255,7 +255,7 @@ Solving this system of equations gives:
 $$\varphi_2 \approx 1 \cdot 10^{-4} \\
 \varphi_3 \approx 1.6 \cdot 10^{-3}$$
 
-The support reactions can be found by inserting these into our original system of equations:
+The support reactions can be found by inserting these into our original system of equations and solving for the rows containing the support reactions:
 
 $$\left[ \begin{matrix}
    2000 & 1000 & 0 & 0 & 0  \\
