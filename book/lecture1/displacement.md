@@ -74,8 +74,8 @@ The similarities and differences are shown in the table below.
 
 |Displacement method|Matrix method|
 |:-:|:-:|
-|Convert structure in statically determinate parts|Convert structure in mostly identical elements|
-|Evaluate one or a few nodal displacements for each parts|Evaluate all nodal displacement for default elements a priori|
-|Solve nodal equilibrium $ u_2 = \cfrac{\cfrac{\ell_1 q}{2} + \cfrac{\ell_2 q}{2}}{\cfrac{EA_1}{\ell_1} + \cfrac{EA_2}{\ell_2}} $|Solve nodal equilibrium in matrix form $\mathbf{K}\mathbf{u}=\mathbf{f}$|
+|Convert structure in two statically determinate parts|Convert structure in mostly identical elements|
+|Evaluate one nodal displacements for each parts|Evaluate all nodal displacement for default elements a priori|
+|Solve nodal equilibrium where the two statically determinate parts are connected|Solve nodal equilibrium in matrix form $\mathbf{K}\mathbf{u}=\mathbf{f}$|
 
 :::
