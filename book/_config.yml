@@ -15,7 +15,7 @@ sphinx:
     - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
     thebe_config:
       use_thebe_lite: true
-      exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb", "**/*.pdf", "**/*.svg", "**/*.jpg"]
+      exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb", "**/*.pdf", "**/*.svg", "**/*.jpg", "**/*.png", "**/*.vsdx", "**/*.bib"]
     html_theme_options:
       logo:
         text: Matrix Method in statics
@@ -38,6 +38,11 @@ sphinx:
         macros:
           "mrm": "\\mathrm"
           "mymat[1]": "\\left[ \\begin{matrix} #1 \\end{matrix} \\right]"
+    bibtex_default_style: myapastyle
+    bibtex_reference_style: author_year_round
+  local_extensions:
+    apastyle: _ext/
+    bracket_citation_style: _ext/
           
   extra_extensions:
     - sphinx.ext.imgconverter
