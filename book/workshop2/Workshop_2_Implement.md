@@ -141,43 +141,64 @@ We're going to expand our Constrainer class, but the implementation is incomplet
 - The constrainer class should be able to handle non-zero boundary conditions too. `constrain` should be adapted to do so + the docstring of the class itself. Furthermore, the assert statement of `fix_dof` should be removed.
 - The function `support_reactions` is incomplete. Since the constrainer is always first going to get `constrain` called, here we already have access to `self.free_dofs`. Together with `self.cons_dofs`, you should have all you need to compute reactions. Note that `f` is also passed as argument. Make sure you take into account the contribution of equivalent element loads that go directly into the supports without deforming the structure.
 
-> ### Task 3.1
->
-> Add the missing pieces to the code and docstring, before you perform the checks below.
+```{exercise} 3.1
+:label: 2_exercise3.1
+:nonumber: true
+:class: exercise
+
+Add the missing pieces to the code and docstring, before you perform the checks below.
+
+```
 
 +++
 
-> ### Task 3.2
->
-> We're going to verify our implementation. Therefore, we're going to solve an extension bar, supported at both ends, with a load $q$.
-> <center>
->  <figure>
->    <IMG SRC="https://raw.githubusercontent.com/ibcmrocha/public/main/sanitycheck_3.2.png" WIDTH=200>
->  </figure>
-></center>
->
-> Choose appropriate values yourself.
->
-> Can you say on beforehand what will be the displacements? And what will be the support reactions?
-> Use the code blocks below to set up and solve this problem and check the required quantities to make sure your implementation is correct.
+We're going to verify our implementation. Therefore, we're going to solve an extension bar, supported at both ends, with a load $q$.
+
+```{figure} https://raw.githubusercontent.com/ibcmrocha/public/main/sanitycheck_3.2.png
+:align: center
+:width: 200
+```
+
+Choose appropriate values yourself.
+
+
+```{exercise-start} 3.2
+:label: 2_exercise3.2
+:nonumber: true
+:class: exercise
+```
+
+Can you say on beforehand what will be the displacements? And what will be the support reactions?
+
+Use the code blocks below to set up and solve this problem and check the required quantities to make sure your implementation is correct.
 
 ```{code-cell} ipython3
 #YOUR CODE HERE
 ```
 
-> ### Task 3.3
->
-> Again, we're going to verify our implementation. Therefore, we're going solve a beam, with a load $F$ and support displacement $\bar w$ for the right support.
-> <center>
->  <figure>
->    <IMG SRC="https://raw.githubusercontent.com/ibcmrocha/public/main/sanitycheck_3.3_new.png" WIDTH=200>
->  </figure>
-></center>
->
-> Choose appropriate values yourself.
->
-> Use the code blocks below to set up and solve this problem and check the required quantities to make sure your implementation is correct.
+```{exercise-end}
+```
+
+Again, we're going to verify our implementation. Therefore, we're going solve a beam, with a load $F$ and support displacement $\bar w$ for the right support.
+
+```{figure}https://raw.githubusercontent.com/ibcmrocha/public/main/sanitycheck_3.3_new.png
+:align: center
+:width: 200
+```
+
+Choose appropriate values yourself.
+
+```{exercise-start} 3.3
+:label: 2_exercise3.3
+:nonumber: true
+:class: exercise
+```
+
+Use the code blocks below to set up and solve this problem and check the required quantities to make sure your implementation is correct.
 
 ```{code-cell} ipython3
 #YOUR CODE HERE
+```
+
+```{exercise-end}
 ```
