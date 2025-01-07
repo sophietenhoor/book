@@ -232,6 +232,9 @@ class Element:
             plt.ylabel ( "M" )
         if not plt.gca().yaxis_inverted():
             plt.gca().invert_yaxis()
+        plt.gcf().patch.set_alpha(0.0)
+        plt.gca().patch.set_alpha(0.0)
+        plt.gca().patch.set_alpha(0.0)
         plt.title('Moment line')
 
     def plot_displaced(self, u_elem, num_points=10, global_c=False, scale=1.0):
@@ -268,6 +271,9 @@ class Element:
             plt.plot((0, self.L), (0, 0), color=p[0].get_color(),alpha=0.3)
         if not plt.gca().yaxis_inverted():
             plt.gca().invert_yaxis()
+        plt.gcf().patch.set_alpha(0.0)
+        plt.gca().patch.set_alpha(0.0)
+        plt.gca().patch.set_alpha(0.0)
         plt.title('Displaced structure')
 
     def plot_numbered_structure(self,beam_number):
@@ -293,6 +299,9 @@ class Element:
             plt.gca().invert_yaxis()
         plt.axis('off')
         plt.axis('equal')
+        plt.gcf().patch.set_alpha(0.0)
+        plt.gca().patch.set_alpha(0.0)
+        plt.gca().patch.set_alpha(0.0)
 
 
     def __str__(self):
