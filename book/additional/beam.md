@@ -30,7 +30,7 @@ After the second workshop, the solution will be added to this preview and to the
 :replace_default: "False"
 ```
 
-Given is the following beam:
+Given is the following beam {cite:t}`additional_Hans`:
 
 ```{figure} https://raw.githubusercontent.com/ibcmrocha/public/main/beam.png
 :align: center
