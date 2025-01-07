@@ -42,8 +42,8 @@ parts:
       - file: lecture2/example.md
     - file: workshop2.md
       sections:
-      - file: workshop2/Workshop_1_Implement.ipynb
-      - file: workshop2/Workshop_1_Apply.ipynb
+      - file: workshop2/Workshop_2_Implement.ipynb
+      - file: workshop2/Workshop_2_Apply.ipynb
       - file: workshop2/matrixmethod.md
         sections:
         - file: workshop2/matrixmethod/__init__.md
