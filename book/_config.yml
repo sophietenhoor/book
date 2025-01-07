@@ -38,6 +38,7 @@ sphinx:
         macros:
           "mrm": "\\mathrm"
           "mymat[1]": "\\left[ \\begin{matrix} #1 \\end{matrix} \\right]"
+    bibtex_reference_style: label
           
   extra_extensions:
     - sphinx.ext.imgconverter
