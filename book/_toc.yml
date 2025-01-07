@@ -39,6 +39,7 @@ parts:
       - file: lecture2/direchlet.md
       - file: lecture2/postprocessing.ipynb
       - file: lecture2/fem.ipynb
+      - file: lecture2/example.md
     - file: workshop2.md
     - file: additional.md
     - file: assignment.md
