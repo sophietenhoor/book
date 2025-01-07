@@ -38,6 +38,7 @@ parts:
       - file: lecture2/element_loads.md
       - file: lecture2/direchlet.md
       - file: lecture2/example.md
+      - file: lecture2/postprocessing.md
     - file: workshop2.md
     - file: additional.md
     - file: assignment.md
