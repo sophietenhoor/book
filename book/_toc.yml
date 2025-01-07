@@ -41,6 +41,15 @@ parts:
       - file: lecture2/fem.ipynb
       - file: lecture2/example.md
     - file: workshop2.md
+      sections:
+      - file: workshop2/Workshop_1_Implement.ipynb
+      - file: workshop2/Workshop_1_Apply.ipynb
+      - file: workshop2/matrixmethod.md
+        sections:
+        - file: workshop2/matrixmethod/__init__.md
+        - file: workshop2/matrixmethod/node.md
+        - file: workshop2/matrixmethod/elements.md
+        - file: workshop2/matrixmethod/constrainer.md
     - file: additional.md
     - file: assignment.md
   - caption: Miscellaneous
