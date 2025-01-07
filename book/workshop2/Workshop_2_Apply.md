@@ -126,16 +126,15 @@ $$
 You should also get the following moment lines for the two elements:
 
 - in local coordinate system:
-![](https://raw.githubusercontent.com/ibcmrocha/public/main/moments_local.png)
+![](https://raw.githubusercontent.com/ibcmrocha/public/main/moments_local.svg)
 
 - in global coordinate system:
-![](https://raw.githubusercontent.com/ibcmrocha/public/main/moments_global.png)
+![](https://raw.githubusercontent.com/ibcmrocha/public/main/moments_global.svg)
 
 And the following displacements:
 - in local coordinate system:
-![](https://raw.githubusercontent.com/ibcmrocha/public/main/displacements_local.png)
+![](https://raw.githubusercontent.com/ibcmrocha/public/main/displacements_local.svg)
 
 - in global coordinate system:
-![](https://raw.githubusercontent.com/ibcmrocha/public/main/displacements_global.png)
-
+![](https://raw.githubusercontent.com/ibcmrocha/public/main/displacements_global.svg)
 ::::::
