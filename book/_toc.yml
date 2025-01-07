@@ -53,7 +53,7 @@ parts:
     - file: additional.md
       sections:
       - file: additional/beam.ipynb
-      - file: additional/kinked_beam.ipynb
+      - file: additional/beam_kinked.ipynb
       - file: additional/frame.ipynb
     - file: assignment.md
   - caption: Miscellaneous
