@@ -13,7 +13,7 @@ kernelspec:
 
 # Finite element method vs. Matrix Method
 
-> This page reuses <license> content from {cite:t}`MUDE`. {fa}`quote-left`{ref}`Find out more here.<link to external resources section on credits and license page>`
+> This page reuses <license> content from {cite:t}`MUDE`. {fa}`quote-left`{ref}`Find out more here.<external_resources>`
 
 You've seen the finite element method before, which could be used to solve similar problems. But what are the differences?
 
@@ -28,7 +28,7 @@ We'll investigate the differences and equivalence between solving structures wit
 Let's consider the examples from [](../lecture1/displacement.md):
 
 ```{figure} ../lecture1/extension2fieldsdisp.svg
-:name: extension2fieldsq
+:name: extension2fieldsq2
 :align: center
 
 Statically indeterminate extension bar
