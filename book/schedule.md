@@ -13,3 +13,4 @@ See the schedule below for the different weeks. Clicking the links will take you
 |7|||| Question hour |
 |8|||| Question hour |
 |Final deadline to be determined|Hand in report: [](./assignment.md)|
+|Final deadline resit to be determined|Hand in report: [](./assignment.md)|
