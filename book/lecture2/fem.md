@@ -27,7 +27,7 @@ We'll investigate the differences and equivalence between solving structures wit
 
 Although the two method can give the same results, the methods are different.
 
-The matrix method solves the strong from of the differential equation, as derived in [](../lecture1/single_element.md). The finite element method solves the weak form by multiplying the strong form by a test function {cite:t}`MUDE2`. In doing so, the choice for the shape function of the test-functions and approximate solution matters. The two methods end up with the same solution if the "approximation" assumed by FEM (linear shape functions for extension, cubic for bending) turn out to be the exact ODE solution.
+The matrix method solves the strong from of the differential equation, as derived in [](../lecture1/single_element.md). The finite element method solves the weak form by multiplying the strong form by a test function {cite:p}`MUDE2`. In doing so, the choice for the shape function of the test-functions and approximate solution matters. The two methods end up with the same solution if the "approximation" assumed by FEM (linear shape functions for extension, cubic for bending) turn out to be the exact ODE solution.
 
 In terms of global and local coordinate systems, there's an additional difference. Where the matrix method solves the nodal displacements and support reactions globally, using locally derived force-displacement relations. On the contrary, the finite element method solves the weak form globally with shape functions defined globally.
 
