@@ -15,7 +15,7 @@ Next to that, you'll work on applying the content in two workshops. The assignme
 
 Additional assignment are available to work on, which you should be able to make after finishing the workshops. These are available in [](additional.md).
 
-On Thursdays there'll be question hours for the full CIEM5000 module. During these you'll have the opportunity to ask questions on this submodule too.
+On Thursdays in week 7 and 8 there'll be question hours for the full CIEM5000 module. During these you'll have the opportunity to ask questions on this submodule too.
 
 (exam-general)=
 ## Assessment
