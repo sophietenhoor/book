@@ -17,6 +17,6 @@ First, analyse the model and the questions you're required to answer:
 
 Then, add new implementations to your code in `./matrixmethod/`, and provide sanity checks to your implementations `Graded_Implement.ipynb`. Then, solve and postprocess the problem in `Graded_Apply.ipynb`. Add a report in `.pdf` or `.md` format in which you included answers and reasoning for all the questions. Make sure all the values/figures you use in the report are solved/created with your code. Furthermore, you're expected to provide well-formatted figures and Markdown text, as well as logically organise any auxiliary files you may use.
 
-Commit your repository to the provided GitHub Classroom repository (to be provided) before the deadline to hand in your assignment. Your latest commit before the deadline in the `main` branch will be graded. Incomplete assignments will be graded with a 1. The full solution won't be provided.
+Commit your repository to the provided GitHub Classroom repository before April 18th 23:59 to hand in your assignment. Your latest commit before the deadline in the `main` branch will be graded. Incomplete assignments will be graded with a 1. The full solution won't be provided. If you'd like to make the resit, resubmit to the same repository before June 20th, 23:59.
 
 Feedback will be provided via Brightspace.
