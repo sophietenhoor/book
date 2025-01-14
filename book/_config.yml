@@ -38,6 +38,7 @@ sphinx:
         macros:
           "mrm": "\\mathrm"
           "mymat[1]": "\\left[ \\begin{matrix} #1 \\end{matrix} \\right]"
+    named_colors_custom_colors: {'cA':[1,113,136],'cB':[195,49,47],'cE':[0,163,144],'cI':[235,114,70]}
           
   extra_extensions:
     - sphinx.ext.imgconverter
@@ -47,6 +48,7 @@ sphinx:
     - sphinx_image_inverter
     - sphinx_exercise
     - sphinx_tudelft_theme
+    - sphinx_named_colors
 
 bibtex_bibfiles: 
   - references.bib
