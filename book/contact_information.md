@@ -1,6 +1,7 @@
 # Contact information 💬
 
-This submodule is taught by Tom van Woudenberg and Iuri Rocha. Please contact him if you've any questions, feedback or when you've personal circumstances which we should know.
+This submodule is taught by Tom van Woudenberg and Iuri Rocha. Please contact us if you've any questions, feedback or when you've personal circumstances which we should know.
+
 ```{figure} figures/Tom.jpg
 :width: 200px
 :align: right

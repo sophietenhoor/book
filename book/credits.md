@@ -13,7 +13,7 @@ We anticipate that the content of this book will change significantly. Therefore
 
 ## How the book is made
 
-This book is created using open source tools: it is a JupyterBook that is written using Markdown and Jupyter notebooks. Additional tooling is used from the [TeachBooks initiative](https://teachbooks.io/) to enhance the editing and reading experience. The files are stored on a [public GitHub repository](https://github.com/CIEM5000-2025/book). The website can be viewed at https://ciem5000-2025.github.io/book/credits.html. View the repository README file or contact the authors for additional information.
+This book is created using open source tools: it is a JupyterBook that is written using Markdown and Jupyter notebooks. Additional tooling is used from the [TeachBooks initiative](https://teachbooks.io/) to enhance the editing and reading experience. The files are stored on a [public GitHub repository](https://github.com/CIEM5000-2025/book). The website can be viewed at https://ciem5000-2025.github.io/book/. View the repository README file or contact the authors for additional information.
 
 (external_resources)=
 ## External resources
