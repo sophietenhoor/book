@@ -34,13 +34,13 @@ The relations between the components can be found using geometry:
 Leading to:
 
 $$
-\class{cB}{v_{\bar{x}}} = \class{cA}{v_x} \cos\alpha - \class{cA}{v_z} \sin \alpha \\
-\class{cB}{v_{\bar{z}}} = \class{cA}{v_x} \sin\alpha + \class{cA}{v_z} \cos \alpha
+\cB{v_{\bar{x}}} = \cA{v_x} \cos\alpha - \cA{v_z} \sin \alpha \\
+\cB{v_{\bar{z}}} = \cA{v_x} \sin\alpha + \cA{v_z} \cos \alpha
 $$
 
 This can be rewwritten in matrix form as:
 
-$$ \class{cB}{
+$$ \cB{
       \begin{bmatrix}
 	v_{\bar{x}} \\ v_{\bar{z}}
       \end{bmatrix}
@@ -55,7 +55,7 @@ $$ \class{cB}{
       }
       _\mathbf{R}
       }
-      \class{cA}{
+      \cA{
       \begin{bmatrix}
 	v_x \\ v_z
       \end{bmatrix}
@@ -64,7 +64,7 @@ $$ \class{cB}{
 And the inverse relation:
 
 $$
-\class{cA}{
+\cA{
       \begin{bmatrix}
 	v_x \\ v_z
       \end{bmatrix}
@@ -79,7 +79,7 @@ $$
       }
       _{\mathbf{R}^\mrm{T}}
       }
-      \class{cB}{
+      \cB{
       \begin{bmatrix}
 	v_{\bar{x}} \\ v_{\bar{z}}
       \end{bmatrix}
@@ -91,7 +91,7 @@ $$
 To transform a complete element, the displacements of both endpoints have to be transformed, while the rotations are independent of the element orientation:
 
 $$
-      \class{cB}{
+      \cB{
 	\begin{bmatrix}
 	  \bar{u}_1\\\bar{w}_1\\\bar{\varphi}_1\\
 	  \bar{u}_2\\\bar{w}_2\\\bar{\varphi}_2\\
@@ -109,7 +109,7 @@ $$
 	  0 & 0 & 0 & 0 & 0 & 1\\
 	\end{bmatrix}
       }_\mathbf{T}
-      \class{cA}{
+      \cA{
 	\begin{bmatrix}
 	  {u}_1\\{w}_1\\{\varphi}_1\\
 	  {u}_2\\{w}_2\\{\varphi}_2\\
@@ -119,10 +119,10 @@ $$
 
 Resulting in:
 
-- $\class{cB}{\bar{\mathbf{u}}} = \mathbf{T} {\class{cA}{\mathbf{u}}}$
-- $\class{cB}{\bar{\mathbf{f}}} = \mathbf{T} {\class{cA}{\mathbf{f}}}$
-- $\class{cA}{\mathbf{u}} = \mathbf{T}^\mrm{T}{\class{cB}{\bar{\mathbf{u}}}}$
-- $\class{cA}{\mathbf{f}} = \mathbf{T}^\mrm{T}{\class{cB}{\bar{\mathbf{f}}}}$
+- $\cB{\bar{\mathbf{u}}} = \mathbf{T} {\cA{\mathbf{u}}}$
+- $\cB{\bar{\mathbf{f}}} = \mathbf{T} {\cA{\mathbf{f}}}$
+- $\cA{\mathbf{u}} = \mathbf{T}^\mrm{T}{\cB{\bar{\mathbf{u}}}}$
+- $\cA{\mathbf{f}} = \mathbf{T}^\mrm{T}{\cB{\bar{\mathbf{f}}}}$
 
 ## Transformation for stiffness matrix
 
@@ -130,11 +130,11 @@ Using the known transformation for the first-order tensors $\mathbf{u}$ and $\ma
 
 $$
 \begin{align}
-\class{cB}{\bar {\mathbf{K}}} {\class{cB}{\bar{\mathbf{u}}}}& = {\class{cB}{\bar{\mathbf{f}}}} \\
-\class{cB}{\bar{\mathbf{K}}} \mathbf{T}{\class{cA}{\mathbf{u}}}& = \mathbf{T}{\class{cA}{\mathbf{f}}} \\
-\mathbf{T}^\mrm{T}\class{cB}{\bar{\mathbf{K}}} \mathbf{T}{\class{cA}{\mathbf{u}}}& = \mathbf{T}^\mrm{T}\mathbf{T}{\class{cA}{\mathbf{f}}} \\
-\class{cA}{\mathbf{K}}{\class{cA}{\mathbf{u}}}& = {\class{cA}{\mathbf{f}}} 
+\cB{\bar {\mathbf{K}}} {\cB{\bar{\mathbf{u}}}}& = {\cB{\bar{\mathbf{f}}}} \\
+\cB{\bar{\mathbf{K}}} \mathbf{T}{\cA{\mathbf{u}}}& = \mathbf{T}{\cA{\mathbf{f}}} \\
+\mathbf{T}^\mrm{T}\cB{\bar{\mathbf{K}}} \mathbf{T}{\cA{\mathbf{u}}}& = \mathbf{T}^\mrm{T}\mathbf{T}{\cA{\mathbf{f}}} \\
+\cA{\mathbf{K}}{\cA{\mathbf{u}}}& = {\cA{\mathbf{f}}} 
 \end{align}
 $$
 
-So $\class{cA}{\mathbf{K}} = \mathbf{T}^\mrm{T} \class{cB}{\bar {\mathbf{K}}} \mathbf{T}$
+So $\cA{\mathbf{K}} = \mathbf{T}^\mrm{T} \cB{\bar {\mathbf{K}}} \mathbf{T}$

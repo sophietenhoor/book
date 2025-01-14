@@ -52,8 +52,8 @@ The first element links the first and second nodal displacement with the first a
 ```
 $$
       \begin{bmatrix}
-	\class{cA}{\cfrac{EA_1}{\ell_1}} & \class{cA}{-\cfrac{EA_1}{\ell_1}} & 0\\[12pt]
-	\class{cA}{-\cfrac{EA_1}{\ell_1}} & \class{cA}{\cfrac{EA_1}{\ell_1}} & 0\\[12pt]
+	\cA{\cfrac{EA_1}{\ell_1}} & \cA{-\cfrac{EA_1}{\ell_1}} & 0\\[12pt]
+	\cA{-\cfrac{EA_1}{\ell_1}} & \cA{\cfrac{EA_1}{\ell_1}} & 0\\[12pt]
 	0 & 0 & 0\\
       \end{bmatrix}
       \begin{bmatrix}
@@ -75,9 +75,9 @@ Now let's add the second element, linking the second and third nodal displacemen
 
 $$
       \begin{bmatrix}
-	\class{cA}{\cfrac{EA_1}{\ell_1}} & \class{cA}{-\cfrac{EA_1}{\ell_1}} & 0\\
-	\class{cA}{-\cfrac{EA_1}{\ell_1}} & \class{cA}{\cfrac{EA_1}{\ell_1}} + \class{cB}{\cfrac{EA_2}{\ell_2}} & \class{cB}{-\cfrac{EA_2}{\ell_2}}\\
-	0 & \class{cB}{-\cfrac{EA_2}{\ell_2}} & \class{cB}{\cfrac{EA_2}{\ell_2}}\\
+	\cA{\cfrac{EA_1}{\ell_1}} & \cA{-\cfrac{EA_1}{\ell_1}} & 0\\
+	\cA{-\cfrac{EA_1}{\ell_1}} & \cA{\cfrac{EA_1}{\ell_1}} + \cB{\cfrac{EA_2}{\ell_2}} & \cB{-\cfrac{EA_2}{\ell_2}}\\
+	0 & \cB{-\cfrac{EA_2}{\ell_2}} & \cB{\cfrac{EA_2}{\ell_2}}\\
       \end{bmatrix}
       \begin{bmatrix}
 	u_1\\[12pt]u_2\\[12pt]u_3
@@ -98,9 +98,9 @@ Now, the external loads can be applied. These external loads are called Neumann 
 
 $$
       \begin{bmatrix}
-	\class{cA}{\cfrac{EA_1}{\ell_1}} & \class{cA}{-\cfrac{EA_1}{\ell_1}} & 0\\
-	\class{cA}{-\cfrac{EA_1}{\ell_1}} & \class{cA}{\cfrac{EA_1}{\ell_1}} + \class{cB}{\cfrac{EA_2}{\ell_2}} & \class{cB}{-\cfrac{EA_2}{\ell_2}}\\
-	0 & \class{cB}{-\cfrac{EA_2}{\ell_2}} & \class{cB}{\cfrac{EA_2}{\ell_2}}\\
+	\cA{\cfrac{EA_1}{\ell_1}} & \cA{-\cfrac{EA_1}{\ell_1}} & 0\\
+	\cA{-\cfrac{EA_1}{\ell_1}} & \cA{\cfrac{EA_1}{\ell_1}} + \cB{\cfrac{EA_2}{\ell_2}} & \cB{-\cfrac{EA_2}{\ell_2}}\\
+	0 & \cB{-\cfrac{EA_2}{\ell_2}} & \cB{\cfrac{EA_2}{\ell_2}}\\
       \end{bmatrix}
       \begin{bmatrix}
 	u_1\\[12pt]u_2\\[12pt]u_3
@@ -123,9 +123,9 @@ The Neumann boundary condition causes a prescribed displacement $u_1 = 0$
 
 $$
       \begin{bmatrix}
-	\class{cA}{\cfrac{EA_1}{\ell_1}} & \class{cA}{-\cfrac{EA_1}{\ell_1}} & 0\\
-	\class{cA}{-\cfrac{EA_1}{\ell_1}} & \class{cA}{\cfrac{EA_1}{\ell_1}} + \class{cB}{\cfrac{EA_2}{\ell_2}} & \class{cB}{-\cfrac{EA_2}{\ell_2}}\\
-	0 & \class{cB}{-\cfrac{EA_2}{\ell_2}} & \class{cB}{\cfrac{EA_2}{\ell_2}}\\
+	\cA{\cfrac{EA_1}{\ell_1}} & \cA{-\cfrac{EA_1}{\ell_1}} & 0\\
+	\cA{-\cfrac{EA_1}{\ell_1}} & \cA{\cfrac{EA_1}{\ell_1}} + \cB{\cfrac{EA_2}{\ell_2}} & \cB{-\cfrac{EA_2}{\ell_2}}\\
+	0 & \cB{-\cfrac{EA_2}{\ell_2}} & \cB{\cfrac{EA_2}{\ell_2}}\\
       \end{bmatrix}
       \begin{bmatrix}
 	0\\[12pt]u_2\\[12pt]u_3
@@ -145,9 +145,9 @@ However, it also adds a force:
 
 $$
       \begin{bmatrix}
-	\class{cA}{\cfrac{EA_1}{\ell_1}} & \class{cA}{-\cfrac{EA_1}{\ell_1}} & 0\\
-	\class{cA}{-\cfrac{EA_1}{\ell_1}} & \class{cA}{\cfrac{EA_1}{\ell_1}} + \class{cB}{\cfrac{EA_2}{\ell_2}} & \class{cB}{-\cfrac{EA_2}{\ell_2}}\\
-	0 & \class{cB}{-\cfrac{EA_2}{\ell_2}} & \class{cB}{\cfrac{EA_2}{\ell_2}}\\
+	\cA{\cfrac{EA_1}{\ell_1}} & \cA{-\cfrac{EA_1}{\ell_1}} & 0\\
+	\cA{-\cfrac{EA_1}{\ell_1}} & \cA{\cfrac{EA_1}{\ell_1}} + \cB{\cfrac{EA_2}{\ell_2}} & \cB{-\cfrac{EA_2}{\ell_2}}\\
+	0 & \cB{-\cfrac{EA_2}{\ell_2}} & \cB{\cfrac{EA_2}{\ell_2}}\\
       \end{bmatrix}
       \begin{bmatrix}
 	0\\[12pt]u_2\\[12pt]u_3
@@ -163,8 +163,8 @@ Finally, we can solve for the unknown nodal displacements. For now, we can solve
 
 $$
 \begin{bmatrix}
-	    \class{cA}{\displaystyle\cfrac{EA_1}{\ell_1}} + \class{cB}{\displaystyle\cfrac{EA_2}{\ell_2}} & \class{cB}{-\displaystyle\cfrac{EA_2}{\ell_2}}\\
-	    \class{cB}{-\displaystyle\cfrac{EA_2}{\ell_2}} & \class{cB}{\displaystyle\cfrac{EA_2}{\ell_2}}\\
+	    \cA{\displaystyle\cfrac{EA_1}{\ell_1}} + \cB{\displaystyle\cfrac{EA_2}{\ell_2}} & \cB{-\displaystyle\cfrac{EA_2}{\ell_2}}\\
+	    \cB{-\displaystyle\cfrac{EA_2}{\ell_2}} & \cB{\displaystyle\cfrac{EA_2}{\ell_2}}\\
 	  \end{bmatrix}
 	  \begin{bmatrix}
 	    u_2\\[14pt]u_3
