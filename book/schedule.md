@@ -9,4 +9,4 @@ See the schedule below for the different weeks. Clicking the links will take you
 |7|||| Question hour of all parts of CIEM5000 |
 |8|||| Question hour of all parts of CIEM5000|
 |April 18th, 23:59|Hand in report: [](./assignment.md)|
-|June 20th, 23:59|Hand in report: [](./assignment.md)|
+|June 20th, 23:59|Hand in report for resit: [](./assignment.md)|
