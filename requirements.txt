@@ -5,7 +5,7 @@ sphinx-image-inverter
 download_link_replacer
 sphinx-tudelft-theme
 sphinx-exercise
-git+https://github.com/TeachBooks/Sphinx-Named-Colors.git
+sphinx-named-colors
 teachbooks-sphinx-tippy
 
 # now list the packages (and the respective url) you wish to download from the GitLab package registry
