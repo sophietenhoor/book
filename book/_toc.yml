@@ -67,3 +67,4 @@ parts:
     chapters:
     - file: references.md
     - file: credits.md
+    - file: changelog.md

@@ -1,4 +1,3 @@
 # Changelog
 
-## `<date>` [`<release name>`](<`link to release on GitHub>`)
-- `<Added/modified/deleted>` [](`<relative link to changed file>`)
+Nothing has changed in this book since the start of this course
