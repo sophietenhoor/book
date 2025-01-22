@@ -244,7 +244,7 @@ Check your answer using pen and paper. Tip: make a drawing instead of doing all 
 ```
 
 ```{code-cell} ipython3
-print(np.matmul(elem.T,np.array([0,0,0,np.sqrt(3),1,0])))
+#YOUR CODE HERE
 ```
 
 ```{exercise-end}
