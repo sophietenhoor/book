@@ -45,7 +45,7 @@ parts:
       - file: additional/frame.ipynb
       - file: additional/hinged_beam.ipynb
     - file: assignment.md
-  - caption: `matrixmethod`
+  - caption: matrixmethod package
     chapters:
     - file: matrixmethod/__init__.md
     - file: matrixmethod/node.md
