@@ -89,7 +89,7 @@ The implementation is incomplete:
 - The function `add_distributed_load` should compute the equivalent load vector for a constant load $q$ and moves those loads to the nodes belonging to the element. Remember to use the `add_load` function of the `Node` class to store the equivalent loads (remember we have two nodes per element). Also keep local/global transformations in mind and store `self.q = q` for later use;
 - The function `bending_moments` receives the nodal displacements of the element in the global coordinate system (`u_global`) and uses it to compute the value of the bending moment at `num_points` equally-spaced points along the element length. Keep local/global transformations in mind and use the ODE approach in SymPy / Maple / pen and paper to compute an expression for $M$. Do the same for for $w$ in the function `full_displacement`.
 
-```{exercise} 2.1
+```{exercise} Workshop 2 - 2.1
 :label: 2_exercise2.1
 :nonumber: true
 :class: exercise
@@ -108,7 +108,7 @@ Having made your implementations, it is now time to verify the first addition of
 
 Choose appropriate values yourself.
 
-```{exercise-start} 2.2
+```{exercise-start} Workshop 2 - 2.2
 :label: 2_exercise2.2
 :nonumber: true
 :class: exercise
@@ -127,7 +127,7 @@ print(#YOUR ELEMENT HERE
 ```{exercise-end}
 ```
 
-```{exercise-start} 2.3
+```{exercise-start} Workshop 2 - 2.3
 :label: 2_exercise2.3
 :nonumber: true
 :class: exercise
@@ -142,7 +142,7 @@ Now solve the nodal displacements. Once you are done, compare the rotation at th
 ```{exercise-end}
 ```
 
-```{exercise-start} 2.4
+```{exercise-start} Workshop 2 - 2.4
 :label: 2_exercise2.4
 :nonumber: true
 :class: exercise
@@ -158,7 +158,7 @@ u_elem = con.full_disp(#YOUR CODE HERE)
 ```{exercise-end}
 ```
 
-```{exercise-start} 2.5
+```{exercise-start} Workshop 2 - 2.5
 :label: 2_exercise2.5
 :nonumber: true
 :class: exercise
@@ -179,7 +179,7 @@ We're going to expand our Constrainer class, but the implementation is incomplet
 - The constrainer class should be able to handle non-zero boundary conditions too. `constrain` should be adapted to do so + the docstring of the class itself. Furthermore, the assert statement of `fix_dof` should be removed.
 - The function `support_reactions` is incomplete. Since the constrainer is always first going to get `constrain` called, here we already have access to `self.free_dofs`. Together with `self.cons_dofs`, you should have all you need to compute reactions. Note that `f` is also passed as argument. Make sure you take into account the contribution of equivalent element loads that go directly into the supports without deforming the structure.
 
-```{exercise} 3.1
+```{exercise} Workshop 2 - 3.1
 :label: 2_exercise3.1
 :nonumber: true
 :class: exercise
@@ -200,7 +200,7 @@ We're going to verify our implementation. Therefore, we're going to solve an ext
 Choose appropriate values yourself.
 
 
-```{exercise-start} 3.2
+```{exercise-start} Workshop 2 - 3.2
 :label: 2_exercise3.2
 :nonumber: true
 :class: exercise
@@ -226,7 +226,7 @@ Again, we're going to verify our implementation. Therefore, we're going solve a 
 
 Choose appropriate values yourself.
 
-```{exercise-start} 3.3
+```{exercise-start} Workshop 2 - 3.3
 :label: 2_exercise3.3
 :nonumber: true
 :class: exercise

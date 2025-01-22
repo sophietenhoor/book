@@ -59,7 +59,7 @@ With:
 - $L = 5$
 - $\bar\varphi = 0.15$
 
-```{exercise-start}
+```{exercise-start} Workshop 2 - Apply
 :label: exercise_ws_2
 :nonumber: true
 

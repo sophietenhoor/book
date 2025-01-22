@@ -75,7 +75,7 @@ This class is stored in `./matrixmethod/node.py`
 
 The purpose of this class is to store node information and keep track of the total number of DOFs of the problem. Note the automatic bookkeeping we introduce in `__init__`. This simple but efficient way of keeping track of which DOFs belong to which nodes will make life much easier when we need to assemble matrices from multiple elements. The Node class doesn't need any modification.
 
-```{exercise-start} 1.1
+```{exercise-start} Workshop 1 - 1.1
 :label: exercise1.1
 :nonumber: true
 :class: exercise
@@ -136,7 +136,7 @@ However, the implementation is incomplete:
 - We keep the functions which add a distributed load and compute the moments / displacements untouched for this week. Next week we'll implement those as well.
 
 
-```{exercise} 2.1
+```{exercise} Workshop 1 - 2.1
 :label: exercise2.1
 :nonumber: true
 
@@ -156,7 +156,7 @@ Whenever you make changes to your code in the `./matrixmethod/` folder, you need
 Note that in this online book, you cannot make changes to multiple files simultaneously. These instructions are only applicable when you're working on this assignment locally; please fork and clone the assignment to work on it locally from [GitHub](https://github.com/CIEM5000-2025/practice-assignments).
 ::::::
 
-```{exercise-start} 2.2
+```{exercise-start} Workshop 1 - 2.2
 :label: exercise2.2
 :nonumber: true
 
@@ -186,7 +186,7 @@ print(elem.stiffness())
 ```{exercise-end}
 ```
 
-```{exercise-start} 2.3
+```{exercise-start} Workshop 1 - 2.3
 :label: exercise2.3
 :nonumber: true
 
@@ -202,7 +202,7 @@ Do the matrices match with what you'd expect?
 ```{exercise-end}
 ```
 
-```{exercise-start} 2.4
+```{exercise-start} Workshop 1 - 2.4
 :label: exercise2.4
 :nonumber: true
 
@@ -218,7 +218,7 @@ Do the matrices match with what you'd expect?
 ```{exercise-end}
 ```
 
-```{exercise-start} 2.5
+```{exercise-start} Workshop 1 - 2.5
 :label: exercise2.5
 :nonumber: true
 
@@ -234,7 +234,7 @@ Do the matrices match with what you'd expect?
 ```{exercise-end}
 ```
 
-```{exercise-start} 2.6
+```{exercise-start} Workshop 1 - 2.6
 :label: exercise2.6
 :nonumber: true
 
@@ -261,14 +261,14 @@ However, the implementation is incomplete:
 
 +++
 
-```{exercise} 3.1
+```{exercise} Workshop 1 - 3.1
 :label: exercise3.1
 :nonumber: true
 
 Add the missing pieces to the code, before you perform the check below
 ```
 
-```{exercise-start} 3.2
+```{exercise-start} Workshop 1 - 3.2
 :label: exercise3.2
 :nonumber: true
 
@@ -312,7 +312,7 @@ mm.Node.clear()
 mm.Element.clear()
 ```
 
-```{exercise-start} 4.1
+```{exercise-start} Workshop 1 - 4.1
 :nonumber: true
 
 Create two nodes here. You can store them on a `list` or simply create them as two separate objects (*e.g.* `node1` and `node2`).
@@ -325,7 +325,7 @@ Create two nodes here. You can store them on a `list` or simply create them as t
 ```{exercise-end}
 ```
 
-```{exercise-start} 4.2
+```{exercise-start} Workshop 1 - 4.2
 :nonumber: true
 
 Here we only have a single element, so there is no need to store it in a `list` yet. You are also going to need a `dict` defining the cross-section of the element.
@@ -338,7 +338,7 @@ Here we only have a single element, so there is no need to store it in a `list` 
 ```{exercise-end}
 ```
 
-```{exercise-start} 4.3
+```{exercise-start} Workshop 1 - 4.3
 :nonumber: true
 
 Let's define the boundary conditions. We create an instance of the `Constrainer` class to deal with prescribed displacements. Take a look at its functions and inform if Node 1 is fully fixed.
@@ -353,7 +353,7 @@ You also need to pass the load $F$ on to Node 2. Check the member functions of `
 ```{exercise-end}
 ```
 
-```{exercise-start} 4.4
+```{exercise-start} Workshop 1 - 4.4
 :nonumber: true
 
 Now assemble the global stiffness matrix and force vector. Since we only have one element, there is no real assembly to be performed other than getting the stiffness matrix of the single element and storing the load at Node 2 in the correct positions of $\mathbf{f}$.
@@ -366,7 +366,7 @@ Now assemble the global stiffness matrix and force vector. Since we only have on
 ```{exercise-end}
 ```
 
-```{exercise-start} 4.5
+```{exercise-start} Workshop 1 - 4.5
 :nonumber: true
 
 Constrain the problem and solve for nodal displacements.
@@ -379,7 +379,7 @@ Constrain the problem and solve for nodal displacements.
 ```{exercise-end}
 ```
 
-```{exercise-start} 4.6
+```{exercise-start} Workshop 1 - 4.6
 :nonumber: true
 
 Finally, compare the displacement at the end of the bar with the one coming from the ODE solution. Note that since our element is already suitable for frames combining extension and bending, $\mathbf{u}$ has three entries. Which one is the entry that matters to us here? Did your solutions match? If so, that is a sign your implementation is correct. Can you use the function `full_disp` to obtain a vector of all displacements?
@@ -410,7 +410,7 @@ mm.Node.clear()
 mm.Element.clear()
 ```
 
-```{exercise-start} 5.1
+```{exercise-start} Workshop 1 - 5.1
 :label: exercise5.1
 :nonumber: true
 
@@ -424,7 +424,7 @@ Create nodes
 ```{exercise-end}
 ```
 
-```{exercise-start} 5.2
+```{exercise-start} Workshop 1 - 5.2
 :label: exercise5.2
 :nonumber: true
 
@@ -438,7 +438,7 @@ Create element
 ```{exercise-end}
 ```
 
-```{exercise-start} 5.3
+```{exercise-start} Workshop 1 - 5.3
 :label: exercise5.3
 :nonumber: true
 
@@ -452,7 +452,7 @@ Set boundary conditions
 ```{exercise-end}
 ```
 
-```{exercise-start} 5.4
+```{exercise-start} Workshop 1 - 5.4
 :label: exercise5.4
 :nonumber: true
 
@@ -466,7 +466,7 @@ Assemble the system of equations.
 ```{exercise-end}
 ```
 
-```{exercise-start} 5.5
+```{exercise-start} Workshop 1 - 5.5
 :label: exercise5.5
 :nonumber: true
 
@@ -480,7 +480,7 @@ Constrain the problem and solve for nodal displacements
 ```{exercise-end}
 ```
 
-```{exercise-start} 5.6
+```{exercise-start} Workshop 1 - 5.6
 :label: exercise5.6
 :nonumber: true
 
