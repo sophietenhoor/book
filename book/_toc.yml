@@ -27,12 +27,6 @@ parts:
       sections:
       - file: workshop1/Workshop_1_Implement.ipynb
       - file: workshop1/Workshop_1_Apply.ipynb
-      - file: workshop1/matrixmethod.md
-        sections:
-        - file: workshop1/matrixmethod/__init__.md
-        - file: workshop1/matrixmethod/node.md
-        - file: workshop1/matrixmethod/elements.md
-        - file: workshop1/matrixmethod/constrainer.md
     - file: lecture2.md
       sections:
       - file: lecture2/element_loads.md
@@ -44,25 +38,19 @@ parts:
       sections:
       - file: workshop2/Workshop_2_Implement.ipynb
       - file: workshop2/Workshop_2_Apply.ipynb
-      - file: workshop2/matrixmethod.md
-        sections:
-        - file: workshop2/matrixmethod/__init__.md
-        - file: workshop2/matrixmethod/node.md
-        - file: workshop2/matrixmethod/elements.md
-        - file: workshop2/matrixmethod/constrainer.md
     - file: additional.md
       sections:
       - file: additional/beam.ipynb
       - file: additional/beam_kinked.ipynb
       - file: additional/frame.ipynb
       - file: additional/hinged_beam.ipynb
-      - file: additional/matrixmethod.md
-        sections:
-        - file: additional/matrixmethod/__init__.md
-        - file: additional/matrixmethod/node.md
-        - file: additional/matrixmethod/elements.md
-        - file: additional/matrixmethod/constrainer.md
     - file: assignment.md
+  - caption: matrixmethod
+    chapters:
+    - file: matrixmethod/__init__.md
+    - file: matrixmethod/node.md
+    - file: matrixmethod/elements.md
+    - file: matrixmethod/constrainer.md
   - caption: Miscellaneous
     chapters:
     - file: references.md
