@@ -158,7 +158,7 @@ def assemble_global_f(rod_length, n_el, q):
 ```
 
 ```{code-cell} ipython3
-:tags: [thebe-init]
+:tags: [hide-input, thebe-init]
 
 def simulate(n_element):
     length = 3              # Length
@@ -227,7 +227,7 @@ import matrixmethod as mm
 ```
 
 ```{code-cell} ipython3
-:tags: [thebe-init]
+:tags: [hide-input, thebe-init]
 
 mm.Node.clear()
 mm.Element.clear()
