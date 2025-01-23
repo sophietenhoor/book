@@ -222,7 +222,7 @@ Do the matrices match with what you'd expect?
 :label: exercise2.5
 :nonumber: true
 
-Now, create an element rotated in $60 ^{\circ}$ with length $2$ and print the transformation matrix.
+Now, create an element rotated in $60^{\circ}$ with length $2$ and print the transformation matrix.
 
 Do the matrices match with what you'd expect?
 ```
