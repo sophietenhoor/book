@@ -238,7 +238,7 @@ Do the matrices match with what you'd expect?
 :label: exercise2.6
 :nonumber: true
 
-We're going to apply the transformation matrix to the vector $[0,0,0,\sqrt{3},1,0]$ defined in global coordinates. What would be vector in the local coordinate system of the previous element?
+For the previous element, a global displacement vector $\mathbf{u}^{(e)} = \begin{bmatrix} 0 \\0 \\ 0 \\ \sqrt{3} \\ 1 \\ 0 \end{bmatrix}$ is given. What would be displacement vector $\mathbf{u}^{(e)}$?
 
 Check your answer using pen and paper. Tip: make a drawing instead of doing all the algebra.
 ```
