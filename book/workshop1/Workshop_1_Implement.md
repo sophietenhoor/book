@@ -71,7 +71,7 @@ import matrixmethod as mm
 ```
 
 ## 1. The Node class
-This class is stored in `./matrixmethod/node.py`
+This class is stored in [`./matrixmethod/node.py`](../matrixmethod/node.md)
 
 The purpose of this class is to store node information and keep track of the total number of DOFs of the problem. Note the automatic bookkeeping we introduce in `__init__`. This simple but efficient way of keeping track of which DOFs belong to which nodes will make life much easier when we need to assemble matrices from multiple elements. The Node class doesn't need any modification.
 
@@ -119,7 +119,7 @@ This node has:
 +++
 
 ## 2. The Element class
-This class is stored in `./matrixmethod/elements.py`
+This class is stored in [`./matrixmethod/elements.py`](../matrixmethod/elements.md)
 
 This class keeps track of each element in the model, including:
 - Cross-section properties
@@ -251,7 +251,7 @@ Check your answer using pen and paper. Tip: make a drawing instead of doing all 
 ```
 
 ## 3. The Constrainer class
-This class is stored in `./matrixmethod/constrainer.py`
+This class is stored in [`./matrixmethod/constrainer.py`](../matrixmethod/constrainer.md)
 
 This small class keeps track of which DOFs have prescribed displacements and takes care of applying these constraints to the global $\mathbf{K}$ and $\mathbf{f}$. For now we keep it simple and assume all constraints fix the DOF values to zero. Next week we will deal with non-zero prescribed values. 
 
