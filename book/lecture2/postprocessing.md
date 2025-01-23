@@ -122,7 +122,7 @@ u_free = np.matmul ( np.linalg.inv(Kff), Ff )
 ```
 
 ```{code-cell} ipython3
-:tags: [thebe-init]
+:tags: [hide-input, thebe-init]
 
 for elem in elems:
     u_elem = con.full_disp(u_free)[elem.global_dofs()]
