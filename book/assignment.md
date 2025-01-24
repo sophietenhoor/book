@@ -1,4 +1,4 @@
-## Graded assignment
+# Graded assignment
 
 When you've finished the workshops, you can start with the graded assignment. The process is very similar to the workshops, but now there's a deadline and you're required to write a report. You're going to solve a to be provided structural model for displacements and internal forces using the Matrix Method.
 
