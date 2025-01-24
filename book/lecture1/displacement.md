@@ -75,7 +75,7 @@ The similarities and differences are shown in the table below.
 |Displacement method|Matrix method|
 |:-:|:-:|
 |Convert structure in two statically determinate parts|Convert structure in mostly identical elements|
-|Evaluate one nodal displacements for each parts|Evaluate all nodal displacement for default elements a priori|
+|Evaluate one nodal displacements for each parts|Evaluate all free nodal displacements using standard elements|
 |Solve nodal equilibrium where the two statically determinate parts are connected|Solve nodal equilibrium in matrix form $\mathbf{K}\mathbf{u}=\mathbf{f}$|
 
 :::
