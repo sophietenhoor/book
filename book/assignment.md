@@ -4,14 +4,12 @@ When you've finished the workshops, you can start with the graded assignment. Th
 
 ```{figure} figures/graded_assignment.svg
 ```
-![](graded_assignment.svg)
 
-This model is based on the bridge crossing the L 723 in Walldorf, Germany:
+This model is based on the bridge crossing the L723 in Walldorf, Germany:
 
-```{figure} figures/https://www.wiwa-lokal.de/wp-content/uploads/2017/11/Br%C3%BCcke.jpg
+```{figure} https://www.wiwa-lokal.de/wp-content/uploads/2017/11/Br%C3%BCcke.jpg
 ---
 width: 400px
-align: right
 class: dark-light
 ---
 {cite:ts}`bridge` (Foto: Pfeifer)
