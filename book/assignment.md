@@ -40,4 +40,4 @@ Then, add potential new implementations to your code in `./matrixmethod/`. Pleas
 
 The deadline of the assignment is April 18th, 23:59, although you’re encouraged to finish it directly after completing workshop 2. Doing so allows you to split the workload evenly. Commit your repository to the provided GitHub Classroom repository to hand in your assignment. Your latest commit before the deadline in the `main` branch will be graded. Incomplete assignments will be graded with a 1. The full solution won't be provided.
 
-You can take the resit of this assignment in Q4. If you choose to do so, you can improve your first submission by resubmitting to the same repository. The deadline of the resit is June 20th, 23:59. For more information, see [](./course_information.md)
+You can take the resit of this assignment in Q4. If you choose to do so, you can improve your first submission by resubmitting to the same repository. The deadline of the resit is June 20th, 23:59. For more information, see [](./course_information.md).
