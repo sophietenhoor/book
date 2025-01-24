@@ -33,15 +33,6 @@ Using our new formulation of unknown, the continuous distributions for the displ
 - $u(x) = u_1\left(1-\cfrac{x}{\ell}\right) + u_2\cfrac{x}{\ell}$
 - $N = -\cfrac{EA}{\ell}u_1+\cfrac{EA}{\ell}u_2$
 
-We'll combine elements using force equilibrium, therefore, the force at the ends of the elements are of interest too. The section force $N$ is derived above, which is not the same as the external force $F_1$ and $F_2$. These can be found using horizontal force equilibrium on the free body diagram of the ends of the elements:
-
-```{figure} nodalequilibrium.svg
-:name: nodalequilibrium
-:align: center
-
-Free body diagram of ends of elements
-```
-
-This leads to:
+We'll combine elements using force equilibrium, therefore, the force at the ends of the elements are of main interst. The section force $N$ is derived above, which is not the same as the force $F_1$ and $F_2$ defined as positive to the right. For the node on the right, the direction of $N$ coincides with the positive direction of $F_1$. However, on the left-hand-side, the sign flips. Leading to our force-displacement relation:
 - $ F_1 = - N = \cfrac{EA}{\ell}u_1-\cfrac{EA}{\ell}u_2$
 - $ F_2 = N = -\cfrac{EA}{\ell}u_1+\cfrac{EA}{\ell}u_2$
