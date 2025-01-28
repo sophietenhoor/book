@@ -18,8 +18,8 @@ sphinx:
       exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb", "**/*.pdf", "**/*.svg", "**/*.jpg", "**/*.png", "**/*.vsdx", "**/*.bib"]
     html_theme_options:
       logo:
-        text: Matrix Method in statics
-      repository_url: "https://github.com/CIEM5000-2025/book" #add your own repo URL here
+        text: CIEM5000 - Matrix Method in statics
+      repository_url: "https://github.com/CIEM5000-2025/book"
       path_to_docs: "book"
       repository_branch: "main"
       use_edit_page_button: true
