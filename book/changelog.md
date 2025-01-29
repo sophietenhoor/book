@@ -6,4 +6,5 @@ This changelog will include all changes, except for minor adjustments like typos
 - Converted material to interactive book
 - Separated [Activities - additional assignments](./additional.md)
 - Added [Activities - Lecture 1 - Recap displacement method](./lecture1/displacement.md)
+- New [graded assignment](./assignment.md)
 - Various improvements to student-experience
