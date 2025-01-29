@@ -1,5 +1,7 @@
 # Changelog
 
+This changelog will include all changes, except for minor adjustments like typos.
+
 ## v2025.0.0 Start course
 - Converted material to interactive book
 - Separated [Activities - additional assignments](./additional.md)
