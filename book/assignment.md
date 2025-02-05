@@ -1,6 +1,6 @@
 # Graded assignment
 
-When you've finished the workshops, you can start with the graded assignment. The process is very similar to the workshops, but now there's a deadline and you're required to write a report. You're going to solve a to be provided structural model for displacements and internal forces using the Matrix Method.
+When you've finished the workshops, you can start with the graded assignment. The process is very similar to the workshops, but now there's a deadline and you're required to write a report. You're going to solve the follwing model for displacements and internal forces using the Matrix Method.
 
 ```{figure} figures/graded_assignment.svg
 ```
@@ -15,7 +15,7 @@ class: dark-light
 {cite:ts}`bridge` (Foto: Pfeifer)
 ```
 
-Please open the assignment from GitHub Classroom (to be provided too) to work on it locally. The solution won't be provided.
+Please open the assignment from GitHub Classroom (to be provided) to work on it locally. The solution won't be provided.
 
 First, analyse the model and the questions you're required to answer:
 1. Explain what effect hinges have on the matrix method. The following questions might help you:
