@@ -19,13 +19,13 @@ Please open the assignment from GitHub Classroom (to be provided) to work on it 
 
 First, analyse the model and the questions you're required to answer:
 1. Explain what effect hinges have on the matrix method. The following questions might help you:
-   - Which deformations would you expect for an element with hinges on both ends?
-   - Which internal forces would you expect for an element with hinges on both ends? How do those forces related to forces in the global coordinate system?
+   - Which deformations would you expect for an element with hinges on both ends? How about an element with a hinge on one end? What would you expect for $w(x)$
+   - Which internal forces would you expect for an element with hinges on both ends? And how do those forces relate to forces in the global coordinate system? How about an element with a hinge on one end? What would you expect for $M(x)$
    - Which degrees-of-freedom are relevant for an element with hinges on both ends?
-   - Can you calculate the rotation of hinged nodes? And if so, what is the meaning of those rotations?
-   - What is the difference in terms of degrees of freedom for nodes which contains hinged and clamped connections, compared to nodes which are fully hinged or fully clamped?
-   - Can you reuse the element classes derived before?
-   - Can you find an exact solution to this model using the matrix method?
+   - Can you calculate the rotation of hinged nodes? And if so, what is the meaning of those rotations? Does it matter if a node is connected with a himge to either one or all of the neighboring elements?
+   - If degrees of freedom are irrelevant, what would that mean for the size of your K-matrix? How could you solve it?
+   - Can you reuse the element classes derived before? If yes, which tricks do you need to make it work? Are those tricks exact and do they mimic physical behaviour? If not, what new element types do you need? How do the values in those element types correspond to each other?
+   - Is the stiffness matrix of an element with two hinges contained within the stiffness matrix of the full element? Is the K matrix of an element with just one hinge contained within the system matrix of the full element? If not, what are the differences?
 2. Explain in words and math how you adapted/added code and/or procedures to solve this structure including hinges.
 3. Describe alternatives you considered for your implementation in the previous steps.
 4. Explain why your sanity checks prove that all of your code implementations are correct.
