@@ -19,8 +19,8 @@ Please open the assignment from GitHub Classroom (to be provided) to work on it 
 
 First, analyse the model and the questions you're required to answer:
 1. Explain what effect hinges have on the matrix method. The following questions might help you:
-   - Which deformations would you expect for an element with hinges on both ends? How about an element with a hinge on one end? What would you expect for $w(x)$
-   - Which internal forces would you expect for an element with hinges on both ends? And how do those forces relate to forces in the global coordinate system? How about an element with a hinge on one end? What would you expect for $M(x)$
+   - Which deformations would you expect for an element with hinges on both ends? How about an element with a hinge on one end? What would you expect for $w(x)$?
+   - Which internal forces would you expect for an element with hinges on both ends? And how do those forces relate to forces in the global coordinate system? How about an element with a hinge on one end? What would you expect for $M(x)$?
    - Which degrees-of-freedom are relevant for an element with hinges on both ends?
    - Can you calculate the rotation of hinged nodes? And if so, what is the meaning of those rotations? Does it matter if a node is connected with a himge to either one or all of the neighboring elements?
    - If degrees of freedom are irrelevant, what would that mean for the size of your K-matrix? How could you solve it?
