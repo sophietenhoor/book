@@ -14,7 +14,7 @@ kernelspec:
 # `__init__.py`
 
 ::::::{attention}
-This page shows a preview of the `matrixmethod` package. Please fork and clone the assignment to work on it locally from [GitHub](https://github.com/CIEM5000-2025/practice-assignments)
+This page shows a preview of the `matrixmethod` package. Please fork and clone the practice assignments to work on it locally from [GitHub](https://github.com/CIEM5000-2025/practice-assignments)
 ::::::
 
 

@@ -14,7 +14,7 @@ kernelspec:
 # `constrainer.py`
 
 ::::::{attention}
-This page shows a preview of the `matrixmethod` package. Please fork and clone the assignment to work on it locally from [GitHub](https://github.com/CIEM5000-2025/practice-assignments)
+This page shows a preview of the `matrixmethod` package. Please fork and clone the practice assignments to work on it locally from [GitHub](https://github.com/CIEM5000-2025/practice-assignments)
 
 After each workshop, the solution will be added to this preview and to the [GitHub-repository](https://github.com/CIEM5000-2025/practice-assignments)
 ::::::
