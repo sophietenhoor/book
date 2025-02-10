@@ -1,6 +1,6 @@
 # Lecture 1
 
-::::::{versionadded} v2025.1.1 before first lecture
+::::::{versionadded} v2025.0.1 before first lecture
 Updated lecture slides: moved slides on python packages and updated installation requirements first workshop
 ::::::
 
