@@ -40,6 +40,6 @@ This can represented as follows too:
 $$\mathbf{K}\mathbf{u}=\mathbf{f}$$
 
 
-$\mathbf{K}$ is known as the global stiffness matrix, $\mathbf{u}$ the glocal displacement vector and $\mathbf{f}$ the glocal force vector.
+$\mathbf{K}$ is known as the global stiffness matrix, $\mathbf{u}$ the global displacement vector and $\mathbf{f}$ the glocal force vector.
 
 As you might see, the local matrices are visible as 'blocks' in the global matrix, while the displacement and force vector are very clean. It seems to be possible to define the global stiffness matrix directly without manually evaluating the force equilibrium at every node! You'll look at that in the next chapter!
