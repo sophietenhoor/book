@@ -2,7 +2,7 @@
 
 This changelog will include all changes, except for minor adjustments like typos.
 
-## v2025.0.1 before first lecture
+## v2025.0.1 2025-02-10 15:02
 - Updated [lecture slides lecture 1](./lecture1.md): moved slides on python packages and updated installation requirements first workshop
 - Fixed various typos
 - Full changelog [here](https://github.com/CIEM5000-2025/book/releases/tag/v2025.0.1)
