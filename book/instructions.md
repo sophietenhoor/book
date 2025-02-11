@@ -1,5 +1,9 @@
 # How to use this TeachBook 📘
 
+::::::{versionadded} v2025.0.21 2025-02-11 10:42
+Added html export of book as zip
+::::::
+
 This TeachBook combines the course schedule and content. Announcement an grading results are provided via Brightspace.
 
 ## Interactive features
