@@ -3,7 +3,7 @@
 This changelog will include all changes, except for minor adjustments like typos.
 
 ## v2025.0.2, 2025-02-11 10:42, after first lecture
-- Added html export of book as a zip to [](./course_information.md) and most other pages as additional download.
+- Added html export of book as a zip to [](./instructions.md) and most other pages as additional download.
 - Fixed various typos
 - Full changelog [here](https://github.com/CIEM5000-2025/book/releases/tag/v2025.0.2)
 
