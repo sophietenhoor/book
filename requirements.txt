@@ -7,7 +7,7 @@ sphinx-tudelft-theme == 1.1.5
 sphinx-exercise == 1.0.1
 sphinx-named-colors == 1.0.1
 teachbooks-sphinx-tippy == 1.0.6
-sphinx-launch-buttons == 1.0.3
+sphinx_launch_buttons == 1.0.3
 
 # now list the packages (and the respective url) you wish to download from the GitLab package registry
 --extra-index-url https://gitlab.tudelft.nl/api/v4/projects/11239/packages/pypi/simple

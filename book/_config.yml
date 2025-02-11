@@ -50,6 +50,7 @@ sphinx:
     - sphinx_tudelft_theme
     - sphinx_named_colors
     - teachbooks_sphinx_tippy
-    - custom-launch-buttons
+    - custom_launch_buttons
+    
 bibtex_bibfiles: 
   - references.bib
