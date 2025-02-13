@@ -238,7 +238,7 @@ Do the matrices match with what you'd expect?
 :label: exercise2.6
 :nonumber: true
 
-For the previous element, a global displacement vector $\mathbf{u}^{(e)} = \begin{bmatrix} 0 \\0 \\ 0 \\ \sqrt{3} \\ 1 \\ 0 \end{bmatrix}$ is given. What would be displacement vector $\mathbf{u}^{(e)}$?
+For the previous element, a global displacement vector $\mathbf{u}^{(e)} = \begin{bmatrix} 0 \\0 \\ 0 \\ \sqrt{3} \\ 1 \\ 0 \end{bmatrix}$ is given. What would be the local displacement vector $\bar{\mathbf{u}}^{(e)}$?
 
 Check your answer using pen and paper. Tip: make a drawing instead of doing all the algebra.
 ```
