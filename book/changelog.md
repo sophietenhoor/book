@@ -3,7 +3,7 @@
 This changelog will include all changes, except for minor adjustments like typos.
 
 ## v2025.0.3, 2025-02-13 13:33, before workshop 1
-- Fixed typo in {numref}`{name}<exercise2.6>`
+- Fixed typo in [Workshop 1 - Exercise 2.6](exercise2.6)
 - Full changelog [here](https://github.com/CIEM5000-2025/book/releases/tag/v2025.0.3)
 
 

@@ -20,7 +20,7 @@ After the workshop, the solution will be added to this preview and to the [GitHu
 ::::::
 
 ::::::{versionchanged} v2025.0.3 2025-02-10 13:33, before workshop 1
-Fixed typo in {numref}`{name}<exercise2.6>`
+Fixed typo in [Exercise 2.6](exercise2.6)
 ::::::
 
 In this notebook you will implement the matrix method and check it with some sanity checks.
