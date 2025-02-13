@@ -19,6 +19,10 @@ This page shows a preview of the assignment. Please fork and clone the assignmen
 After the workshop, the solution will be added to this preview and to the [GitHub-repository](https://github.com/CIEM5000-2025/practice-assignments)
 ::::::
 
+::::::{versionchanged} v2025.0.3 2025-02-10 13:33, before workshop 1
+Fixed typo in {numref}`{name}<exercise2.6>`
+::::::
+
 In this notebook you will implement the matrix method and check it with some sanity checks.
 
 +++
