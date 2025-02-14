@@ -45,7 +45,7 @@ class Element:
         """
         Element.ne = 0
         
-    def __init__(self, node1, node2):
+    def __init__(self, node1, node2, T):
         """
         Initializes an Element object.
 
@@ -72,10 +72,10 @@ class Element:
 
         T = np.zeros((6, 6))
 
-        T[0, 0] = T[1, 1] = T[3, 3] = T[4, 4] #YOUR CODE HERE
-        T[0, 1] = T[3, 4] #YOUR CODE HERE
-        T[1, 0] = T[4, 3] #YOUR CODE HERE
-        T[2, 2] = T[5, 5] #YOUR CODE HERE
+        T[0, 0] = T[1, 1] = T[3, 3] = T[4, 4] = np.cos(alpha)
+        T[0, 1] = T[3, 4] = -np.sin(alpha)
+        T[1, 0] = T[4, 3] = np.sin(alpha)
+        T[2, 2] = T[5, 5] = 1
 
         self.T = T
         self.Tt = np.transpose(T)
@@ -128,8 +128,15 @@ class Element:
         EA = self.EA
         EI = self.EI
         L = self.L
+    
 
-        #YOUR CODE HERE
+        k[:, 0] = [EA/L, 0, 0, -EA/L, 0, 0]
+        k[:, 1] = [0, 12*EI/(L**3), -6*EI/(L**2), 0, -12*EI/(L**3), -6*EI/(L**2)]
+        k[:, 2] = [0, -6*EI/(L**2), 4*EI/L, 0, 6*EI/(L**2), 2*EI/L]
+        k[:, 3] = [-EA/L, 0, 0, EA/L, 0, 0]
+        k[:, 4] = [0, -12*EI/(L**3), 6*EI/(L**2), 0, 12*EI/(L**3), 6*EI/(L**2)]
+        k[:, 5] = [0, -6*EI/(L**2), 2*EI/L, 0, 6*EI/(L**2), 4*EI*L]
+
 
         return np.matmul(np.matmul(self.Tt, k), self.T)
 
