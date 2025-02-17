@@ -45,7 +45,7 @@ class Element:
         """
         Element.ne = 0
         
-    def __init__(self, node1, node2, T):
+    def __init__(self, node1, node2):
         """
         Initializes an Element object.
 
@@ -68,7 +68,7 @@ class Element:
 
         self.L = np.sqrt((self.nodes[1].x - self.nodes[0].x)**2.0 + (self.nodes[1].z - self.nodes[0].z)**2.0)
 
-        alpha = np.arctan2 #YOUR CODE HERE
+        alpha = np.arctan2( -(self.nodes[1].z - self.nodes[0].z), (self.nodes[1].x - self.nodes[0].x))
 
         T = np.zeros((6, 6))
 
